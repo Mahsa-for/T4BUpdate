@@ -1,0 +1,29 @@
+{ "class": "GraphLinksModel",
+  "ModelData": {"boxologyId":"4d8f3c6a-7da2-42c0-b11f-7b99ee0757ff","boxologyLabel":"T4B-67"},
+  "nodeDataArray": [
+{"key":"node_17639860682101","name":"Data","label":"Clinical Records CKD Patients","shape":"Rectangle","color":"#b7eaffff","stroke":"#1E5F8B","loc":"53.5 123.5","type":"Data","width":193,"height":60,"group":"group_1763986253641"},
+{"key":"node_17639860682182","name":"Transform","label":"Transform","shape":"RoundedRectangle","color":"#fbf2a2ff","stroke":"#B8A600","loc":"250 123.5","type":"Transform","parameter1":45,"group":"group_1763986253641"},
+{"key":"node_17639860682193","name":"Data","label":"Pre-processed Data","shape":"Rectangle","color":"#b7eaffff","stroke":"#1E5F8B","loc":"454.75 123.5","type":"Data","width":163,"height":60,"group":"group_1763986253641"},
+{"key":"node_17639860720532","name":"Transform","label":"Transform","shape":"RoundedRectangle","color":"#fbf2a2ff","stroke":"#B8A600","loc":"454.75 295.5","type":"Transform","parameter1":45,"group":"group_1763986274326"},
+{"key":"node_17639860720533","name":"Data","label":"Selected Variables","shape":"Rectangle","color":"#b7eaffff","stroke":"#1E5F8B","loc":"654.5 295.5","type":"Data","width":142,"height":60,"group":"group_1763986274326"},
+{"key":"node_17639860800512","name":"Train","label":"Train","shape":"RoundedRectangle","color":"#FFA07A","stroke":"#CD5C5C","loc":"654.5 436.25","type":"Train","parameter1":45,"group":"group_1763986293648"},
+{"key":"node_17639860800523","name":"Model","label":"ANFIS","shape":"Hexagon","color":"#f4ccf4ff","stroke":"#8B4F8B","loc":"914 436.25","type":"HybridModel","group":"group_1763986293648"},
+{"key":"node_17639860925681","name":"Data","label":"New GFR and Patient Data","shape":"Rectangle","color":"#b7eaffff","stroke":"#1E5F8B","loc":"693.5 582.5","type":"Data","width":181,"height":60,"group":"group_1763986323052"},
+{"key":"node_17639860925703","name":"Deduce","label":"Deduce","shape":"RoundedRectangle","color":"#ff81f7ff","stroke":"#4c003bff","loc":"884 622.5","type":"Deduce","parameter1":45,"group":"group_1763986323052"},
+{"key":"node_17639860925714","name":"Symbol","label":"Predicted GFR Values","shape":"Rectangle","color":"#ccffccff","stroke":"#218721ff","loc":"1067.5 622.5","type":"Symbol","width":167,"height":60,"group":"group_1763986323052"},
+{"key":"group_1763986253641","isGroup":true,"category":"ClusterGroup","label":"1d Pre-processing"},
+{"key":"group_1763986274326","isGroup":true,"category":"ClusterGroup","label":"1d Variable Selection and Correlation Analysis"},
+{"key":"group_1763986293648","isGroup":true,"category":"ClusterGroup","label":"1a ANFIS Train"},
+{"key":"group_1763986323052","isGroup":true,"category":"ClusterGroup","label":"2a Prediction of GFR Values"}
+],
+  "linkDataArray": [
+{"key":"link_1763986068220_1_2","from":"node_17639860682101","to":"node_17639860682182"},
+{"key":"link_1763986068221_2_3","from":"node_17639860682182","to":"node_17639860682193"},
+{"key":"link_1763986072054_1_2","from":"node_17639860682193","to":"node_17639860720532"},
+{"key":"link_1763986072054_2_3","from":"node_17639860720532","to":"node_17639860720533"},
+{"key":"link_1763986080054_1_2","from":"node_17639860720533","to":"node_17639860800512"},
+{"key":"link_1763986080054_2_3","from":"node_17639860800512","to":"node_17639860800523"},
+{"key":"link_1763986092571_1_3","from":"node_17639860925681","to":"node_17639860925703"},
+{"key":"link_1763986092572_2_3","from":"node_17639860800523","to":"node_17639860925703"},
+{"key":"link_1763986092572_3_4","from":"node_17639860925703","to":"node_17639860925714"}
+]}

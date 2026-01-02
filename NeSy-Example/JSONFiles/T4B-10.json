@@ -1,0 +1,178 @@
+{
+  "metaData": {
+    "exportId": "d412f5c5",
+    "userId": "user_pnpnxuhk",
+    "exportDate": "2025-11-11T13:10:22.099Z"
+  },
+  "boxologies": [
+    {
+      "id": "e357f0b8-dbec-4952-a9eb-da7de219da53",
+      "label": "Diagram",
+      "DesignPattern": [
+        {
+          "id": "group_1762865876943",
+          "label": "1d Pre-Processing",
+          "input": [
+            {
+              "id": "node_17628658504481",
+              "name": "Number",
+              "label": "id-Data"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_17628658504513",
+              "name": "Number",
+              "label": "Cleaned Physiological Signals"
+            }
+          ],
+          "process": {
+            "id": "node_17628658504502",
+            "name": "transform",
+            "label": "Transform"
+          }
+        },
+        {
+          "id": "group_1762866056939",
+          "label": "1c Adapting Symbolic Fusion for Sleep Staging",
+          "input": [
+            {
+              "id": "node_17628658960611",
+              "name": "actor",
+              "label": "Physician"
+            },
+            {
+              "id": "node_17628658504513",
+              "name": "Number",
+              "label": "Cleaned Physiological Signals"
+            },
+            {
+              "id": "node_1762865912352",
+              "name": "Data",
+              "label": "Clinical Guidlines for Sleep Staging"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_17628658960633",
+              "name": "SemanticModel",
+              "label": "Symbolic Fusion Framework"
+            }
+          ],
+          "process": {
+            "id": "node_17628658960622",
+            "name": "Engineer",
+            "label": "Engineer"
+          }
+        },
+        {
+          "id": "group_1762866231003",
+          "label": "1d Personal Epoch Selection and Scoring",
+          "input": [
+            {
+              "id": "node_17628658960611",
+              "name": "actor",
+              "label": "Physician"
+            },
+            {
+              "id": "node_17628658504513",
+              "name": "Number",
+              "label": "Cleaned Physiological Signals"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_1762866158737",
+              "name": "Data",
+              "label": "Partially Scored Hypnogram"
+            }
+          ],
+          "process": {
+            "id": "node_17628660937572",
+            "name": "Engineer",
+            "label": "Engineer"
+          }
+        },
+        {
+          "id": "group_1762866249081",
+          "label": "1d Feature Extraction",
+          "input": [
+            {
+              "id": "node_17628658504513",
+              "name": "Number",
+              "label": "Cleaned Physiological Signals"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_1762866175994",
+              "name": "Data",
+              "label": "Sleep Events Parameters"
+            }
+          ],
+          "process": {
+            "id": "node_1762866172302",
+            "name": "embed",
+            "label": "Transform"
+          }
+        },
+        {
+          "id": "group_1762866330966",
+          "label": "2a Automated Sleep Staging",
+          "input": [
+            {
+              "id": "node_17628660767971",
+              "name": "Data",
+              "label": "Personalized Threshold"
+            },
+            {
+              "id": "node_17628658960633",
+              "name": "SemanticModel",
+              "label": "Symbolic Fusion Framework"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_17628660767984",
+              "name": "Symbol",
+              "label": "Hypnogram"
+            }
+          ],
+          "process": {
+            "id": "node_17628660767983",
+            "name": "Deduce",
+            "label": "Deduce"
+          }
+        },
+        {
+          "id": "group_1762866481258",
+          "label": "1a Integrating Differential Evolution for Personalization",
+          "input": [
+            {
+              "id": "node_1762866158737",
+              "name": "Data",
+              "label": "Partially Scored Hypnogram"
+            },
+            {
+              "id": "node_1762866175994",
+              "name": "Data",
+              "label": "Sleep Events Parameters"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_17628660767971",
+              "name": "Data",
+              "label": "Personalized Threshold"
+            }
+          ],
+          "process": {
+            "id": "node_1762866340264",
+            "name": "embed",
+            "label": "Transform"
+          }
+        }
+      ]
+    }
+  ]
+}

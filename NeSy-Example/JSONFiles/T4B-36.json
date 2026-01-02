@@ -1,0 +1,122 @@
+{
+  "metaData": {
+    "exportId": "8f91bebb",
+    "userId": "user_pnpnxuhk",
+    "exportDate": "2025-11-11T15:22:30.291Z"
+  },
+  "boxologies": [
+    {
+      "id": "cb497c1c-11cc-41b9-8b3b-edc23125170b",
+      "label": "T4B-36",
+      "DesignPattern": [
+        {
+          "id": "group_1761750061871",
+          "label": "1d Image Preprocessing",
+          "input": [
+            {
+              "id": "node_1761749729207_n1",
+              "name": "Image",
+              "label": "Raw Chest MRI Image"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_1761749729214_n3",
+              "name": "Image",
+              "label": "Standardized Images"
+            }
+          ],
+          "process": {
+            "id": "node_1761749729213_n2",
+            "name": "transform",
+            "label": "Transform"
+          }
+        },
+        {
+          "id": "group_1761750114513",
+          "label": "2a Feature Extraction Using GLCM",
+          "input": [
+            {
+              "id": "node_1761749729214_n3",
+              "name": "Image",
+              "label": "Standardized Images"
+            },
+            {
+              "id": "node_1761749750668_n2",
+              "name": "StatisticModel",
+              "label": "GLCM"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_1761749782699_n1",
+              "name": "Data",
+              "label": "Feature Vector"
+            }
+          ],
+          "process": {
+            "id": "node_1761749750669_n3",
+            "name": "Deduce",
+            "label": "Deduce"
+          }
+        },
+        {
+          "id": "group_1761750150963",
+          "label": "ANFIS Fine-tuning",
+          "input": [
+            {
+              "id": "node_1761749782699_n1",
+              "name": "Data",
+              "label": "Feature Vector"
+            },
+            {
+              "id": "node_1761749729214_n3",
+              "name": "Image",
+              "label": "Standardized Images"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_1761749782701_n3",
+              "name": "Model",
+              "label": "Hybrid ANFIS"
+            }
+          ],
+          "process": {
+            "id": "node_1761749782700_n2",
+            "name": "Train",
+            "label": "Train"
+          }
+        },
+        {
+          "id": "group_1761750194005",
+          "label": "2a Classification with ANFIS",
+          "input": [
+            {
+              "id": "node_1761749815205_n1",
+              "name": "Image",
+              "label": "Patient Chest MRI Images"
+            },
+            {
+              "id": "node_1761749782701_n3",
+              "name": "Model",
+              "label": "Hybrid ANFIS"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_1761749815208_n4",
+              "name": "Symbol",
+              "label": "COVID-19 Prediction"
+            }
+          ],
+          "process": {
+            "id": "node_1761749815207_n3",
+            "name": "Deduce",
+            "label": "Deduce"
+          }
+        }
+      ]
+    }
+  ]
+}

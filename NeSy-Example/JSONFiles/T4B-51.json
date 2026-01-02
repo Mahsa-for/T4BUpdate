@@ -1,0 +1,209 @@
+{
+  "metaData": {
+    "exportId": "57e3c4d5",
+    "userId": "user_pnpnxuhk",
+    "exportDate": "2025-11-17T11:13:52.829Z"
+  },
+  "boxologies": [
+    {
+      "id": "90d0ba01-b974-4a4c-8723-8aa0e0dbf459",
+      "label": "Diagram",
+      "DesignPattern": [
+        {
+          "id": "group_1763377657148",
+          "label": "1d Data Preparation and Splitting",
+          "input": [
+            {
+              "id": "node_17633772025551",
+              "name": "Data",
+              "label": "Observational Data"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_17633772025723",
+              "name": "Data",
+              "label": "Inference Data"
+            }
+          ],
+          "process": {
+            "id": "node_17633772025702",
+            "name": "Transform",
+            "label": "Transform"
+          }
+        },
+        {
+          "id": "group_1763377680091",
+          "label": "1a Data Preparation and Splitting",
+          "input": [
+            {
+              "id": "node_17633772025551",
+              "name": "Data",
+              "label": "Observational Data"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_17633772079023",
+              "name": "Data",
+              "label": "Discovery Data"
+            }
+          ],
+          "process": {
+            "id": "node_17633772079002",
+            "name": "Transform",
+            "label": "Transform"
+          }
+        },
+        {
+          "id": "group_1763377774361",
+          "label": "1d Pseudo-outcome Extimation",
+          "input": [
+            {
+              "id": "node_17633772079023",
+              "name": "Data",
+              "label": "Discovery Data"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_17633772368543",
+              "name": "Data",
+              "label": "Individual Pseudo Outcomes"
+            }
+          ],
+          "process": {
+            "id": "node_17633772368522",
+            "name": "Transform",
+            "label": "Transform"
+          }
+        },
+        {
+          "id": "group_1763377811067",
+          "label": "1d Rule Generation",
+          "input": [
+            {
+              "id": "node_17633772368543",
+              "name": "Data",
+              "label": "Individual Pseudo Outcomes"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_17633772463833",
+              "name": "Symbol",
+              "label": "Potential Decsion Rules"
+            }
+          ],
+          "process": {
+            "id": "node_17633772463822",
+            "name": "Transform",
+            "label": "Transform"
+          }
+        },
+        {
+          "id": "group_1763377844600",
+          "label": "2a Rule Selection",
+          "input": [
+            {
+              "id": "node_17633772463833",
+              "name": "Symbol",
+              "label": "Potential Decsion Rules"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_17633772810593",
+              "name": "Symbol",
+              "label": "Candidate Rules"
+            }
+          ],
+          "process": {
+            "id": "node_17633772810582",
+            "name": "Transform",
+            "label": "Transform"
+          }
+        },
+        {
+          "id": "group_1763377890274",
+          "label": "1d Pseudo-outcome Re-estimation",
+          "input": [
+            {
+              "id": "node_17633772025723",
+              "name": "Data",
+              "label": "Inference Data"
+            },
+            {
+              "id": "node_17633772810593",
+              "name": "Symbol",
+              "label": "Candidate Rules"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_17633772264393",
+              "name": "Symbol",
+              "label": "Re-estimated Pseudo Outcomes"
+            }
+          ],
+          "process": {
+            "id": "node_17633772264372",
+            "name": "Transform",
+            "label": "Transform"
+          }
+        },
+        {
+          "id": "group_1763377946502",
+          "label": "2a Effect Estimation",
+          "input": [
+            {
+              "id": "node_17633772264393",
+              "name": "Symbol",
+              "label": "Re-estimated Pseudo Outcomes"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_17633773400793",
+              "name": "Model",
+              "label": "Treatment Model"
+            }
+          ],
+          "process": {
+            "id": "node_17633773400782",
+            "name": "Train",
+            "label": "Train"
+          }
+        },
+        {
+          "id": "group_1763377995698",
+          "label": "2a Model Application",
+          "input": [
+            {
+              "id": "node_17633773704521",
+              "name": "Data",
+              "label": "Clinical Data"
+            },
+            {
+              "id": "node_17633773400793",
+              "name": "Model",
+              "label": "Treatment Model"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_17633773704534",
+              "name": "Symbol",
+              "label": "Treatment Effects"
+            }
+          ],
+          "process": {
+            "id": "node_17633773704533",
+            "name": "Deduce",
+            "label": "Deduce"
+          }
+        }
+      ]
+    }
+  ]
+}

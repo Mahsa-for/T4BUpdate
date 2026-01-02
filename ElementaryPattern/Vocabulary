@@ -1,0 +1,22 @@
+digraph G {
+
+    subgraph cluster_instances {
+    label = "Instances"
+    Actor [ id= "Actor" ,color=black ,fillcolor= white , style=filled , shape=triangle , class = "instance"]
+    Data [ id= "Data" ,color= green ,fillcolor= white ,style=filled ,shape=box ,class = "instance"]
+    Symbol [ id= "Symbol" ,color= red ,fillcolor= white ,style=filled ,shape=box ,class = "instance"]
+}
+
+subgraph cluster_process {
+    label = "Process"
+    Inference [ id= "Inference" ,color=cyan fillcolor=white style=filled shape=Mrecord]
+    ML_Training [ id= "ML_Training" ,color=blue2 fillcolor=white style=filled shape=Mrecord]
+    Knowledge_Engineering [ id= "Knowledge_Engineering" ,color=blue4 fillcolor=white style=filled shape=Mrecord]
+    Transformation [ id= "Transformation" ,color=coral fillcolor=white style=filled shape=Mrecord]
+}
+subgraph cluster_model  {
+    label= "Model"
+    ML_model [ id= "ML_model" ,color= blue fillcolor=white style=filled shape=hexagon]
+    Symbolic_model [ id= "Symbolic" ,color= purple fillcolor=white style=filled shape=hexagon]
+
+}}

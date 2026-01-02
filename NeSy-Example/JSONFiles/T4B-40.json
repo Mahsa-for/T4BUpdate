@@ -1,0 +1,117 @@
+{
+  "metaData": {
+    "exportId": "8d7afc00",
+    "userId": "user_pnpnxuhk",
+    "exportDate": "2025-11-12T13:27:07.974Z"
+  },
+  "boxologies": [
+    {
+      "id": "a2cae88b-15a9-4614-b267-239755e91a81",
+      "label": "Diagram",
+      "DesignPattern": [
+        {
+          "id": "group_1762953638498",
+          "label": "1d Data Preprocessing",
+          "input": [
+            {
+              "id": "node_17629535820121",
+              "name": "Data",
+              "label": "Raw UCI Data"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_17629535820263",
+              "name": "Data",
+              "label": "Cleaned and Normalized Data"
+            }
+          ],
+          "process": {
+            "id": "node_17629535820242",
+            "name": "transform",
+            "label": "Transform"
+          }
+        },
+        {
+          "id": "group_1762953874031",
+          "label": "2a Mining and Selection of Suitable Attributes",
+          "input": [
+            {
+              "id": "node_17629535820263",
+              "name": "Data",
+              "label": "Cleaned and Normalized Data"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_1762953675354",
+              "name": "Data",
+              "label": "Selected Attributes"
+            }
+          ],
+          "process": {
+            "id": "node_1762953670344",
+            "name": "transform",
+            "label": "Transform"
+          }
+        },
+        {
+          "id": "group_1762953899715",
+          "label": "2a Finding Weigted Fuzzy Rules",
+          "input": [
+            {
+              "id": "node_17629535820263",
+              "name": "Data",
+              "label": "Cleaned and Normalized Data"
+            },
+            {
+              "id": "node_1762953675354",
+              "name": "Data",
+              "label": "Selected Attributes"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_1762953726729",
+              "name": "Model",
+              "label": "Weighted Fuzzy Rules"
+            }
+          ],
+          "process": {
+            "id": "node_1762953667307",
+            "name": "Train",
+            "label": "Train"
+          }
+        },
+        {
+          "id": "group_1762953918368",
+          "label": "2a Prediction Making",
+          "input": [
+            {
+              "id": "node_1762953726729",
+              "name": "Model",
+              "label": "Weighted Fuzzy Rules"
+            },
+            {
+              "id": "node_1762953784942",
+              "name": "Data",
+              "label": "Patient Data"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_1762953802740",
+              "name": "Symbol",
+              "label": "Risk Levels"
+            }
+          ],
+          "process": {
+            "id": "node_1762953748159",
+            "name": "Deduce",
+            "label": "Deduce"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{ "class": "GraphLinksModel",
+  "ModelData": {"boxologyId":"a2cae88b-15a9-4614-b267-239755e91a81","boxologyLabel":"Diagram"},
+  "nodeDataArray": [
+{"key":"node_17629535820121","name":"Data","label":"Raw UCI Data","shape":"Rectangle","color":"#b7eaffff","stroke":"#1E5F8B","loc":"170 147","type":"Data","group":"group_1762953638498"},
+{"key":"node_17629535820242","name":"Transform","label":"Transform","shape":"RoundedRectangle","color":"#fbf2a2ff","stroke":"#B8A600","loc":"320 147","type":"Transform","parameter1":45,"group":"group_1762953638498"},
+{"key":"node_17629535820263","name":"Data","label":"Cleaned and Normalized Data","shape":"Rectangle","color":"#b7eaffff","stroke":"#1E5F8B","loc":"500 140","type":"Data","width":204,"height":60,"group":"group_1762953638498"},
+{"key":"group_1762953638498","isGroup":true,"category":"ClusterGroup","label":"1d Data Preprocessing"},
+{"key":"node_1762953667307","name":"Train","label":"Train","shape":"RoundedRectangle","color":"#FFA07A","stroke":"#CD5C5C","loc":"725.1278339959391 140.00043934783034","type":"Train","parameter1":45,"group":"group_1762953899715"},
+{"key":"node_1762953670344","name":"Transform","label":"Transform","shape":"RoundedRectangle","color":"#fbf2a2ff","stroke":"#B8A600","loc":"488 372.7757507133258","type":"Transform","parameter1":45,"group":"group_1762953874031"},
+{"key":"node_1762953675354","name":"Data","label":"Selected Attributes","shape":"Rectangle","color":"#b7eaffff","stroke":"#1E5F8B","loc":"488 530.7757507133258","type":"Data","width":151,"height":60,"group":"group_1762953874031"},
+{"key":"node_1762953726729","name":"Model","label":"Weighted Fuzzy Rules","shape":"Hexagon","color":"#f4ccf4ff","stroke":"#8B4F8B","loc":"980 380","type":"Model","parameter1":1,"width":144,"height":60,"group":"group_1762953918368"},
+{"key":"node_1762953748159","name":"Deduce","label":"Deduce","shape":"RoundedRectangle","color":"#ff81f7ff","stroke":"#4c003bff","loc":"1129.6239658299492 454.32728977582576","type":"Deduce","parameter1":45,"group":"group_1762953918368"},
+{"key":"node_1762953784942","name":"Data","label":"Patient Data","shape":"Rectangle","color":"#b7eaffff","stroke":"#1E5F8B","loc":"1129.6239658299492 575.8789906318167","type":"Data","group":"group_1762953918368"},
+{"key":"node_1762953802740","name":"Symbol","label":"Risk Levels","shape":"Rectangle","color":"#ccffccff","stroke":"#218721ff","loc":"1129.6239658299492 332.77558891983483","type":"Symbol","group":"group_1762953918368"},
+{"key":"group_1762953874031","isGroup":true,"category":"ClusterGroup","label":"2a Mining and Selection of Suitable Attributes"},
+{"key":"group_1762953899715","isGroup":true,"category":"ClusterGroup","label":"2a Finding Weigted Fuzzy Rules"},
+{"key":"group_1762953918368","isGroup":true,"category":"ClusterGroup","label":"2a Prediction Making"}
+],
+  "linkDataArray": [
+{"key":"link_1762953582027_1_2","from":"node_17629535820121","to":"node_17629535820242"},
+{"key":"link_1762953582030_2_3","from":"node_17629535820242","to":"node_17629535820263"},
+{"from":"node_1762953670344","to":"node_1762953675354"},
+{"from":"node_17629535820263","to":"node_1762953670344"},
+{"from":"node_17629535820263","to":"node_1762953667307"},
+{"from":"node_1762953675354","to":"node_1762953667307"},
+{"from":"node_1762953667307","to":"node_1762953726729"},
+{"from":"node_1762953726729","to":"node_1762953748159"},
+{"from":"node_1762953784942","to":"node_1762953748159"},
+{"from":"node_1762953748159","to":"node_1762953802740"}
+]}

@@ -1,0 +1,145 @@
+{
+  "metaData": {
+    "exportId": "5f72c4bb",
+    "userId": "user_wkgt4g8b",
+    "exportDate": "2025-11-24T09:42:37.004Z"
+  },
+  "boxologies": [
+    {
+      "id": "box_eb240286",
+      "label": "T4B-56",
+      "DesignPattern": [
+        {
+          "id": "group_1763976392807",
+          "label": "1d Feature Extraction",
+          "input": [
+            {
+              "id": "node_17639762474711",
+              "name": "Data",
+              "label": "Respiratory Signals"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_17639762474763",
+              "name": "Data",
+              "label": "Extracted Features"
+            }
+          ],
+          "process": {
+            "id": "node_17639762474762",
+            "name": "transform",
+            "label": "Transform"
+          }
+        },
+        {
+          "id": "group_1763976441323",
+          "label": "1d Patient Clustering Based on Breating Features",
+          "input": [
+            {
+              "id": "node_17639762474763",
+              "name": "Data",
+              "label": "Extracted Features"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_17639762515023",
+              "name": "Symbol",
+              "label": "Patient Group Clusters"
+            }
+          ],
+          "process": {
+            "id": "node_17639762515022",
+            "name": "transform",
+            "label": "Transform"
+          }
+        },
+        {
+          "id": "group_1763976481924",
+          "label": "1a Train Fuzzy Deep Learning (FDL) Models",
+          "input": [
+            {
+              "id": "node_17639762652771",
+              "name": "Symbol",
+              "label": "Expert Fuzzy Rules"
+            },
+            {
+              "id": "node_17639762515023",
+              "name": "Symbol",
+              "label": "Patient Group Clusters"
+            },
+            {
+              "id": "node_17639763461723",
+              "name": "Symbol",
+              "label": "Expert Fuzzy Rules"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_17639762652793",
+              "name": "Model",
+              "label": "FDL"
+            }
+          ],
+          "process": {
+            "id": "node_17639762652792",
+            "name": "Train",
+            "label": "Train"
+          }
+        },
+        {
+          "id": "group_1763976498543",
+          "label": "1c Expert Rules",
+          "input": [
+            {
+              "id": "node_17639763461701",
+              "name": "actor",
+              "label": "Experts"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_17639763461723",
+              "name": "Symbol",
+              "label": "Expert Fuzzy Rules"
+            }
+          ],
+          "process": {
+            "id": "node_17639763461712",
+            "name": "Engineer",
+            "label": "Engineer"
+          }
+        },
+        {
+          "id": "group_1763976513879",
+          "label": "2a Prediction Making",
+          "input": [
+            {
+              "id": "node_17639763227481",
+              "name": "Data",
+              "label": "Patient Respiratory Signals"
+            },
+            {
+              "id": "node_17639762652793",
+              "name": "Model",
+              "label": "FDL"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_17639763227504",
+              "name": "Symbol",
+              "label": "Tumor Position Predictions"
+            }
+          ],
+          "process": {
+            "id": "node_17639763227503",
+            "name": "Deduce",
+            "label": "Deduce"
+          }
+        }
+      ]
+    }
+  ]
+}

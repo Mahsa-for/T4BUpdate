@@ -1,0 +1,29 @@
+{ "class": "GraphLinksModel",
+  "ModelData": {"boxologyId":"2b74bdf9-69d4-4a99-ad0f-b5af1c694703","boxologyLabel":"T4B-20"},
+  "nodeDataArray": [
+{"key":"node_1761731895312_n1","name":"Data","label":"Brain MRI Images","shape":"Rectangle","color":"#b7eaffff","stroke":"#1E5F8B","loc":"179.84117635332058 115","type":"Image","group":"group_1761732125477"},
+{"key":"node_1761731895328_n2","name":"Transform","label":"Transform Wavelet Transformation","shape":"RoundedRectangle","color":"#fbf2a2ff","stroke":"#B8A600","loc":"179.84117635332058 236.55170085599087","type":"Transform","parameter1":45,"width":212,"height":60,"group":"group_1761732125477"},
+{"key":"node_1761731895330_n3","name":"Data","label":"Numeric Wavelet Features","shape":"Rectangle","color":"#b7eaffff","stroke":"#1E5F8B","loc":"179.84117635332058 358.10340171198175","type":"Number","width":162,"height":60,"group":"group_1761732125477"},
+{"key":"node_1761731904616_n2","name":"Transform","label":"Transform Fuzzy Logic Analysis","shape":"RoundedRectangle","color":"#fbf2a2ff","stroke":"#B8A600","loc":"179.84117635332052 530.7774414409421","type":"Transform","parameter1":45,"width":183,"height":60,"group":"group_1761732214485"},
+{"key":"node_1761731904617_n3","name":"Data","label":"Numeric Refined Set of Features","shape":"Rectangle","color":"#b7eaffff","stroke":"#1E5F8B","loc":"179.84117635332052 652.3291422969329","type":"Number","width":189,"height":60,"group":"group_1761732214485"},
+{"key":"node_1761731925440_n2","name":"Train","label":"Train","shape":"RoundedRectangle","color":"#FFA07A","stroke":"#CD5C5C","loc":"179.8411763533205 828.1955536199456","type":"Train","parameter1":45,"group":"group_1761732231517"},
+{"key":"node_1761731925441_n3","name":"Model","label":"WNN","shape":"Hexagon","color":"#f4ccf4ff","stroke":"#8B4F8B","loc":"179.84117635332058 968.3593292619387","type":"SemanticModel","group":"group_1761732231517"},
+{"key":"node_1761731973506_n1","name":"Data","label":"Brain MRI Images","shape":"Rectangle","color":"#b7eaffff","stroke":"#1E5F8B","loc":"389.508042412098 828.1955536199456","type":"Image","group":"group_1761732295471"},
+{"key":"node_1761731973507_n3","name":"Deduce","label":"Deduce","shape":"RoundedRectangle","color":"#ff81f7ff","stroke":"#4c003bff","loc":"389.508042412098 977.6653666549398","type":"Deduce","parameter1":45,"group":"group_1761732295471"},
+{"key":"node_1761731973507_n4","name":"Symbol","label":"Diagnosis Report","shape":"Rectangle","color":"#ccffccff","stroke":"#218721ff","loc":"576.258042412098 977.6653666549398","type":"Symbol","width":124,"height":60,"group":"group_1761732295471"},
+{"key":"group_1761732125477","isGroup":true,"category":"ClusterGroup","label":"1d Feature Extraction"},
+{"key":"group_1761732214485","isGroup":true,"category":"ClusterGroup","label":"1d Fuzzy Logic Analysis"},
+{"key":"group_1761732231517","isGroup":true,"category":"ClusterGroup","label":"1a Train WNN"},
+{"key":"group_1761732295471","isGroup":true,"category":"ClusterGroup","label":"2a Output"}
+],
+  "linkDataArray": [
+{"key":"link_1761731895332_n1_n2","from":"node_1761731895312_n1","to":"node_1761731895328_n2"},
+{"key":"link_1761731895334_n2_n3","from":"node_1761731895328_n2","to":"node_1761731895330_n3"},
+{"key":"link_1761731904618_n1_n2","from":"node_1761731895330_n3","to":"node_1761731904616_n2"},
+{"key":"link_1761731904619_n2_n3","from":"node_1761731904616_n2","to":"node_1761731904617_n3"},
+{"key":"link_1761731925442_n1_n2","from":"node_1761731904617_n3","to":"node_1761731925440_n2"},
+{"key":"link_1761731925443_n2_n3","from":"node_1761731925440_n2","to":"node_1761731925441_n3"},
+{"key":"link_1761731973507_n1_n3","from":"node_1761731973506_n1","to":"node_1761731973507_n3"},
+{"key":"link_1761731973508_n2_n3","from":"node_1761731925441_n3","to":"node_1761731973507_n3"},
+{"key":"link_1761731973508_n3_n4","from":"node_1761731973507_n3","to":"node_1761731973507_n4"}
+]}

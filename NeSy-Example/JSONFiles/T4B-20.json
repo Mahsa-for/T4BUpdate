@@ -1,0 +1,112 @@
+{
+  "metaData": {
+    "exportId": "7337b568",
+    "userId": "user_pnpnxuhk",
+    "exportDate": "2025-11-11T13:26:25.321Z"
+  },
+  "boxologies": [
+    {
+      "id": "2b74bdf9-69d4-4a99-ad0f-b5af1c694703",
+      "label": "T4B-20",
+      "DesignPattern": [
+        {
+          "id": "group_1761732125477",
+          "label": "1d Feature Extraction",
+          "input": [
+            {
+              "id": "node_1761731895312_n1",
+              "name": "Image",
+              "label": "Brain MRI Images"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_1761731895330_n3",
+              "name": "Number",
+              "label": "Numeric Wavelet Features"
+            }
+          ],
+          "process": {
+            "id": "node_1761731895328_n2",
+            "name": "embed",
+            "label": "Embed Wavelet Transformation"
+          }
+        },
+        {
+          "id": "group_1761732214485",
+          "label": "1d Fuzzy Logic Analysis",
+          "input": [
+            {
+              "id": "node_1761731895330_n3",
+              "name": "Number",
+              "label": "Numeric Wavelet Features"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_1761731904617_n3",
+              "name": "Number",
+              "label": "Numeric Refined Set of Features"
+            }
+          ],
+          "process": {
+            "id": "node_1761731904616_n2",
+            "name": "transform",
+            "label": "Embed Fuzzy Logic Analysis"
+          }
+        },
+        {
+          "id": "group_1761732231517",
+          "label": "1a Train WNN",
+          "input": [
+            {
+              "id": "node_1761731904617_n3",
+              "name": "Number",
+              "label": "Numeric Refined Set of Features"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_1761731925441_n3",
+              "name": "SemanticModel",
+              "label": "WNN"
+            }
+          ],
+          "process": {
+            "id": "node_1761731925440_n2",
+            "name": "Train",
+            "label": "Train"
+          }
+        },
+        {
+          "id": "group_1761732295471",
+          "label": "2a Output",
+          "input": [
+            {
+              "id": "node_1761731973506_n1",
+              "name": "Image",
+              "label": "Brain MRI Images"
+            },
+            {
+              "id": "node_1761731925441_n3",
+              "name": "SemanticModel",
+              "label": "WNN"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_1761731973507_n4",
+              "name": "Symbol",
+              "label": "Diagnosis Report"
+            }
+          ],
+          "process": {
+            "id": "node_1761731973507_n3",
+            "name": "Deduce",
+            "label": "Deduce"
+          }
+        }
+      ]
+    }
+  ]
+}

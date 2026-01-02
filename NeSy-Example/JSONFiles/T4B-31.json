@@ -1,0 +1,189 @@
+{
+  "metaData": {
+    "exportId": "301fa69a",
+    "userId": "user_pnpnxuhk",
+    "exportDate": "2025-11-11T14:44:00.092Z"
+  },
+  "boxologies": [
+    {
+      "id": "1eff2e08-0f6f-4ec7-854c-bd17d37e88fb",
+      "label": "T4B-31",
+      "DesignPattern": [
+        {
+          "id": "group_1761747446153",
+          "label": "1d Data Collection",
+          "input": [
+            {
+              "id": "node_1761747214823_n1",
+              "name": "Data",
+              "label": "Raw Patient Data"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_1761747214832_n3",
+              "name": "Data",
+              "label": "Structured and Relevant Data"
+            }
+          ],
+          "process": {
+            "id": "node_1761747214831_n2",
+            "name": "transform",
+            "label": "Transform"
+          }
+        },
+        {
+          "id": "group_1761747479103",
+          "label": "1d Fuzzification",
+          "input": [
+            {
+              "id": "node_1761747214832_n3",
+              "name": "Data",
+              "label": "Structured and Relevant Data"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_1761747354150_n3",
+              "name": "Data",
+              "label": "Fuzzified Data"
+            }
+          ],
+          "process": {
+            "id": "node_1761747354149_n2",
+            "name": "transform",
+            "label": "Transform"
+          }
+        },
+        {
+          "id": "group_1761747497863",
+          "label": "1a Create Fuzzy Rules",
+          "input": [
+            {
+              "id": "node_1761747247578_n1",
+              "name": "Human",
+              "label": "Expert"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_1761747278732",
+              "name": "Rules",
+              "label": "Fuzzy Rules"
+            }
+          ],
+          "process": {
+            "id": "node_1761747247578_n2",
+            "name": "Engineer",
+            "label": "Engineer"
+          }
+        },
+        {
+          "id": "group_1761747588968",
+          "label": "1d Defuzzification",
+          "input": [
+            {
+              "id": "node_1761747295436",
+              "name": "Symbol",
+              "label": "Fuzzy Risk Level"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_1761747601259_n1",
+              "name": "Data",
+              "label": "Crisp Risk Level"
+            }
+          ],
+          "process": {
+            "id": "node_1761747303687",
+            "name": "transform",
+            "label": "Transform"
+          }
+        },
+        {
+          "id": "group_1761747815702",
+          "label": "1a Train ML",
+          "input": [
+            {
+              "id": "node_1761747601259_n1",
+              "name": "Data",
+              "label": "Crisp Risk Level"
+            },
+            {
+              "id": "node_1761747214832_n3",
+              "name": "Data",
+              "label": "Structured and Relevant Data"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_1761747601264_n3",
+              "name": "Model",
+              "label": "Hybrid ML Model"
+            }
+          ],
+          "process": {
+            "id": "node_1761747601263_n2",
+            "name": "Train",
+            "label": "Train"
+          }
+        },
+        {
+          "id": "group_1761747840483",
+          "label": "2a Prediction Making",
+          "input": [
+            {
+              "id": "node_1761747703701_n1",
+              "name": "Data",
+              "label": "Patient Data"
+            },
+            {
+              "id": "node_1761747601264_n3",
+              "name": "Model",
+              "label": "Hybrid ML Model"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_1761747703705_n4",
+              "name": "Symbol",
+              "label": "Risk and Likelihood COVID-19"
+            }
+          ],
+          "process": {
+            "id": "node_1761747703704_n3",
+            "name": "prediction",
+            "label": "Predict"
+          }
+        },
+        {
+          "id": "group_1762872215872",
+          "label": "2a Rule-Based Processing",
+          "input": [
+            {
+              "id": "node_1761747278732",
+              "name": "Rules",
+              "label": "Fuzzy Rules"
+            },
+            {
+              "id": "node_1761747354150_n3",
+              "name": "Data",
+              "label": "Fuzzified Data"
+            },
+            {
+              "id": "node_1761747295436",
+              "name": "Symbol",
+              "label": "Fuzzy Risk Level"
+            }
+          ],
+          "process": {
+            "id": "node_1762872188654",
+            "name": "transform",
+            "label": "Transform"
+          }
+        }
+      ]
+    }
+  ]
+}

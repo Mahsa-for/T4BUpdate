@@ -1,0 +1,94 @@
+{
+  "metaData": {
+    "exportId": "27afc05f",
+    "userId": "user_pnpnxuhk",
+    "exportDate": "2025-11-11T13:24:31.114Z"
+  },
+  "boxologies": [
+    {
+      "id": "6e165536-2ea2-40bd-b9a0-81514be6939b",
+      "label": "T4B-18",
+      "DesignPattern": [
+        {
+          "id": "group_1761675561003",
+          "label": "1c Rules from experts",
+          "input": [
+            {
+              "id": "node_1761675425469_n1",
+              "name": "actor",
+              "label": "Physicians"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_1761675425485_n3",
+              "name": "Model",
+              "label": "Rules-based"
+            }
+          ],
+          "process": {
+            "id": "node_1761675425483_n2",
+            "name": "Engineer",
+            "label": "Engineer"
+          }
+        },
+        {
+          "id": "group_1761675655943",
+          "label": "2a Final Decision",
+          "input": [
+            {
+              "id": "node_1761675445233_n1",
+              "name": "Data",
+              "label": "Current Case"
+            },
+            {
+              "id": "node_1761675425485_n3",
+              "name": "Model",
+              "label": "Rules-based"
+            },
+            {
+              "id": "node_1761675473481_n3",
+              "name": "Model",
+              "label": "Case-Based"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_1761675445236_n4",
+              "name": "Symbol",
+              "label": "Final Diagnosis"
+            }
+          ],
+          "process": {
+            "id": "node_1761675445235_n3",
+            "name": "Deduce",
+            "label": "Deduce"
+          }
+        },
+        {
+          "id": "group_1761675683649",
+          "label": "1a Train from Previous cases",
+          "input": [
+            {
+              "id": "node_1761675473478_n1",
+              "name": "Data",
+              "label": "Previous Cases"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_1761675473481_n3",
+              "name": "Model",
+              "label": "Case-Based"
+            }
+          ],
+          "process": {
+            "id": "node_1761675473480_n2",
+            "name": "Train",
+            "label": "Train"
+          }
+        }
+      ]
+    }
+  ]
+}

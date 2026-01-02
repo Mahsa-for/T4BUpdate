@@ -1,0 +1,168 @@
+{
+  "metaData": {
+    "exportId": "c97e0129",
+    "userId": "user_pnpnxuhk",
+    "exportDate": "2025-11-11T14:35:17.114Z"
+  },
+  "boxologies": [
+    {
+      "id": "06c6f4cd-8fdf-44f6-a2e2-53c0c7543d42",
+      "label": "T4B-24",
+      "DesignPattern": [
+        {
+          "id": "group_1761734887996",
+          "label": "1d Fuzzification",
+          "input": [
+            {
+              "id": "node_1761734709290_n1",
+              "name": "Data",
+              "label": "Vital Signs Data"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_1761734719676",
+              "name": "Symbol",
+              "label": "Fuzzy Values"
+            }
+          ],
+          "process": {
+            "id": "node_1761734709294_n2",
+            "name": "transform",
+            "label": "Transform"
+          }
+        },
+        {
+          "id": "group_1761735000246",
+          "label": "1c Generate Fuzzy Rules",
+          "input": [
+            {
+              "id": "node_1761734730306_n1",
+              "name": "actor",
+              "label": "Clinicians"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_1761734730308_n3",
+              "name": "SemanticModel",
+              "label": "Semantic Rules"
+            }
+          ],
+          "process": {
+            "id": "node_1761734730307_n2",
+            "name": "Engineer",
+            "label": "Engineer"
+          }
+        },
+        {
+          "id": "group_1761735060208",
+          "label": "2a First Layer FIS",
+          "input": [
+            {
+              "id": "node_1761734730308_n3",
+              "name": "SemanticModel",
+              "label": "Semantic Rules"
+            },
+            {
+              "id": "node_1761734719676",
+              "name": "Symbol",
+              "label": "Fuzzy Values"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_1761734751183_n4",
+              "name": "Symbol",
+              "label": "Intermediate Fuzzy Values (Y1)"
+            }
+          ],
+          "process": {
+            "id": "node_1761734751182_n3",
+            "name": "Deduce",
+            "label": "Deduce"
+          }
+        },
+        {
+          "id": "group_1761735116580",
+          "label": "2a Second Layer FIS",
+          "input": [
+            {
+              "id": "node_1761734751183_n4",
+              "name": "Symbol",
+              "label": "Intermediate Fuzzy Values (Y1)"
+            },
+            {
+              "id": "node_1761734730308_n3",
+              "name": "SemanticModel",
+              "label": "Semantic Rules"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_1761734793109",
+              "name": "Symbol",
+              "label": "Intermediate Fuzzy Values (Y2)"
+            }
+          ],
+          "process": {
+            "id": "node_1761734786321",
+            "name": "Deduce",
+            "label": "Deduce"
+          }
+        },
+        {
+          "id": "group_1761735198617",
+          "label": "2a Final Layer FIS",
+          "input": [
+            {
+              "id": "node_1761734793109",
+              "name": "Symbol",
+              "label": "Intermediate Fuzzy Values (Y2)"
+            },
+            {
+              "id": "node_1761734730308_n3",
+              "name": "SemanticModel",
+              "label": "Semantic Rules"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_1761734835981",
+              "name": "Symbol",
+              "label": "Cardiovasculer Risk Level"
+            }
+          ],
+          "process": {
+            "id": "node_1761734831094",
+            "name": "Deduce",
+            "label": "Deduce"
+          }
+        },
+        {
+          "id": "group_1761735222139",
+          "label": "1d Defuzzification Final Decision",
+          "input": [
+            {
+              "id": "node_1761734835981",
+              "name": "Symbol",
+              "label": "Cardiovasculer Risk Level"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_1761734853872",
+              "name": "Symbol",
+              "label": "Crisp Risk Level"
+            }
+          ],
+          "process": {
+            "id": "node_1761734847281",
+            "name": "transform",
+            "label": "Transform"
+          }
+        }
+      ]
+    }
+  ]
+}

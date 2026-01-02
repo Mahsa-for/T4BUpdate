@@ -1,0 +1,163 @@
+{
+  "metaData": {
+    "exportId": "625b89c8",
+    "userId": "user_pnpnxuhk",
+    "exportDate": "2025-11-17T10:57:14.518Z"
+  },
+  "boxologies": [
+    {
+      "id": "b8053717-e768-49e2-94cc-1c166c7f7979",
+      "label": "Diagram",
+      "DesignPattern": [
+        {
+          "id": "group_1763376488676",
+          "label": "1d Segmentation w/ Morphological Operations",
+          "input": [
+            {
+              "id": "node_17633763147163",
+              "name": "Data",
+              "label": "Image Adjusted Images"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_17633763175053",
+              "name": "Data",
+              "label": "Image Segmented Lung Regions"
+            }
+          ],
+          "process": {
+            "id": "node_17633763175042",
+            "name": "transform",
+            "label": "Transform"
+          }
+        },
+        {
+          "id": "group_1763376562125",
+          "label": "1d Feature Extraction",
+          "input": [
+            {
+              "id": "node_17633763175053",
+              "name": "Data",
+              "label": "Image Segmented Lung Regions"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_17633763275353",
+              "name": "Data",
+              "label": "Numerical Feature Vectors"
+            }
+          ],
+          "process": {
+            "id": "node_17633763275352",
+            "name": "transform",
+            "label": "Transform"
+          }
+        },
+        {
+          "id": "group_1763376686968",
+          "label": "1a Model Train",
+          "input": [
+            {
+              "id": "node_17633763275353",
+              "name": "Data",
+              "label": "Numerical Feature Vectors"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_17633763436183",
+              "name": "Model",
+              "label": "Hybrid NN Model"
+            }
+          ],
+          "process": {
+            "id": "node_17633763436162",
+            "name": "Train",
+            "label": "Train"
+          }
+        },
+        {
+          "id": "group_1763376798731",
+          "label": "2a Predicting",
+          "input": [
+            {
+              "id": "node_17633766092691",
+              "name": "actor",
+              "label": "Actor Radiologist"
+            },
+            {
+              "id": "node_17633763436183",
+              "name": "Model",
+              "label": "Hybrid NN Model"
+            },
+            {
+              "id": "node_17633766360343",
+              "name": "Data",
+              "label": "Numerical Features "
+            }
+          ],
+          "output": [
+            {
+              "id": "node_17633766092713",
+              "name": "Symbol",
+              "label": "Diagnostic Report"
+            }
+          ],
+          "process": {
+            "id": "node_17633766092702",
+            "name": "Engineer",
+            "label": "Engineer"
+          }
+        },
+        {
+          "id": "group_1763376832001",
+          "label": "1d Data Transformation",
+          "input": [
+            {
+              "id": "node_17633766360301",
+              "name": "Data",
+              "label": "Images Patient CT"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_17633766360343",
+              "name": "Data",
+              "label": "Numerical Features "
+            }
+          ],
+          "process": {
+            "id": "node_17633766360332",
+            "name": "transform",
+            "label": "Transform"
+          }
+        },
+        {
+          "id": "group_1763376931262",
+          "label": "1d Pre-processing",
+          "input": [
+            {
+              "id": "node_17633763147101",
+              "name": "Data",
+              "label": "Image Raw CT Images"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_17633763147163",
+              "name": "Data",
+              "label": "Image Adjusted Images"
+            }
+          ],
+          "process": {
+            "id": "node_17633763147152",
+            "name": "transform",
+            "label": "Transform"
+          }
+        }
+      ]
+    }
+  ]
+}

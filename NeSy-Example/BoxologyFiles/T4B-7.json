@@ -1,0 +1,28 @@
+{ "class": "GraphLinksModel",
+  "ModelData": {"boxologyId":"725c5eb6-a622-4dbd-be1a-0c80d11a9647","boxologyLabel":"Diagram"},
+  "nodeDataArray": [
+{"key":"node_17628638858701","name":"Data","label":"Clinical Dataset","shape":"Rectangle","color":"#b7eaffff","stroke":"#1E5F8B","loc":"111.5 92.77600000000001","type":"Dataset","group":"group_1762863957355"},
+{"key":"node_17628638858772","name":"Train","label":"Train","shape":"RoundedRectangle","color":"#FFA07A","stroke":"#CD5C5C","loc":"100.5 232.77600000000007","type":"Train","parameter1":45,"group":"group_1762863957355"},
+{"key":"node_17628638858783","name":"Model","label":"Static Decision Tree","shape":"Hexagon","color":"#f4ccf4ff","stroke":"#8B4F8B","loc":"100.5 352.77600000000007","type":"StatisticModel","width":176,"height":60,"group":"group_1762863957355"},
+{"key":"group_1762863957355","isGroup":true,"category":"ClusterGroup","label":"1a Generation and Extraction of Decision"},
+{"key":"node_1762863975701","name":"Transform","label":"id-Transform","shape":"RoundedRectangle","color":"#fbf2a2ff","stroke":"#B8A600","loc":"62.5 538.4449616039603","type":"Transform","parameter1":45,"group":"group_1762864060961"},
+{"key":"node_1762863980119","name":"Model","label":"Static Selected Rules DT","shape":"Hexagon","color":"#f4ccf4ff","stroke":"#8B4F8B","loc":"119.50000000000006 724.1139232079208","type":"StatisticModel","parameter1":1,"width":214,"height":60,"group":"group_1762864139328"},
+{"key":"node_17628640026713","name":"Deduce","label":"Deduce","shape":"RoundedRectangle","color":"#ff81f7ff","stroke":"#4c003bff","loc":"410.50000000000006 747.1139232079208","type":"Deduce","parameter1":45,"group":"group_1762864139328"},
+{"key":"node_17628640026724","name":"Symbol","label":"Predicted Rule Accuracy","shape":"Rectangle","color":"#ccffccff","stroke":"#218721ff","loc":"944.5 412.77599999999995","type":"Symbol","width":224,"height":60,"group":"group_1762864208318"},
+{"key":"group_1762864060961","isGroup":true,"category":"ClusterGroup","label":"1d Selection of a Set of Best Decision Rules"},
+{"key":"group_1762864139328","isGroup":true,"category":"ClusterGroup","label":"1d Prediction of Correctness of Each Rule"},
+{"key":"node_1762864153094","name":"Transform","label":"Transform","shape":"RoundedRectangle","color":"#fbf2a2ff","stroke":"#B8A600","loc":"884.5 572.776","type":"Transform","parameter1":45,"group":"group_1762864208318"},
+{"key":"node_1762864158264","name":"Data","label":"Probablity Score","shape":"Rectangle","color":"#b7eaffff","stroke":"#1E5F8B","loc":"996.3369163879457 737.51009557165","type":"Data","group":"group_1762864208318"},
+{"key":"group_1762864208318","isGroup":true,"category":"ClusterGroup","label":"1d Computation of the Probablity of Each Class"}
+],
+  "linkDataArray": [
+{"key":"link_1762863885878_1_2","from":"node_17628638858701","to":"node_17628638858772"},
+{"key":"link_1762863885880_2_3","from":"node_17628638858772","to":"node_17628638858783"},
+{"key":"link_1762864002674_2_3","from":"node_1762863980119","to":"node_17628640026713"},
+{"key":"link_1762864002675_3_4","from":"node_17628640026713","to":"node_17628640026724"},
+{"from":"node_17628638858701","to":"node_17628640026713"},
+{"from":"node_17628638858783","to":"node_1762863975701"},
+{"from":"node_1762863975701","to":"node_1762863980119"},
+{"from":"node_17628640026724","to":"node_1762864153094"},
+{"from":"node_1762864153094","to":"node_1762864158264"}
+]}

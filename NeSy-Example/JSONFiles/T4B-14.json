@@ -1,0 +1,186 @@
+{
+  "metaData": {
+    "exportId": "7dc0d90b",
+    "userId": "user_pnpnxuhk",
+    "exportDate": "2025-11-12T12:37:24.523Z"
+  },
+  "boxologies": [
+    {
+      "id": "8a3cfb97-5ab4-4417-947b-01890c2a6872",
+      "label": "T4B-14",
+      "DesignPattern": [
+        {
+          "id": "group_1761671529411",
+          "label": "1d Pre-Process Data",
+          "input": [
+            {
+              "id": "node_1761670868470_n1",
+              "name": "Time Series",
+              "label": "Time-series Raw EEG Signals"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_1761670868478_n3",
+              "name": "Time Series",
+              "label": "Segmented EEG Signals"
+            }
+          ],
+          "process": {
+            "id": "node_1761670868477_n2",
+            "name": "transform",
+            "label": "Transform"
+          }
+        },
+        {
+          "id": "group_1761671552167",
+          "label": "1d Feature Extraction",
+          "input": [
+            {
+              "id": "node_1761670868478_n3",
+              "name": "Time Series",
+              "label": "Segmented EEG Signals"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_1761670883940_n3",
+              "name": "Data",
+              "label": "Time-series Extracted Features"
+            }
+          ],
+          "process": {
+            "id": "node_1761670883939_n2",
+            "name": "embed",
+            "label": "Embed"
+          }
+        },
+        {
+          "id": "group_1761671571565",
+          "label": "1d Annotate Data",
+          "input": [
+            {
+              "id": "node_1761670883940_n3",
+              "name": "Data",
+              "label": "Time-series Extracted Features"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_1761671040433_n3",
+              "name": "Time Series",
+              "label": "Time-series Labeled + Unlabeled Data"
+            }
+          ],
+          "process": {
+            "id": "node_1761671040432_n2",
+            "name": "embed",
+            "label": "Embed"
+          }
+        },
+        {
+          "id": "group_1761671630441",
+          "label": "1a Semi-supervised Learning",
+          "input": [
+            {
+              "id": "node_1761671040433_n3",
+              "name": "Time Series",
+              "label": "Time-series Labeled + Unlabeled Data"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_1761671172255_n3",
+              "name": "Model",
+              "label": "Classification Model"
+            }
+          ],
+          "process": {
+            "id": "node_1761671172255_n2",
+            "name": "Train",
+            "label": "Train"
+          }
+        },
+        {
+          "id": "group_1761671697286",
+          "label": "1a TSK Fuzzy System Integration and Train",
+          "input": [
+            {
+              "id": "node_1761671229261",
+              "name": "Rules",
+              "label": "Fuzzy Rules"
+            },
+            {
+              "id": "node_1761671172255_n3",
+              "name": "Model",
+              "label": "Classification Model"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_1761671255454",
+              "name": "Model",
+              "label": "Hybrid TSK Fuzzy System"
+            }
+          ],
+          "process": {
+            "id": "node_1761671244394",
+            "name": "Train",
+            "label": "Train"
+          }
+        },
+        {
+          "id": "group_1761671734083",
+          "label": "2a Clinical Application",
+          "input": [
+            {
+              "id": "node_1761671351404_n1",
+              "name": "Time Series",
+              "label": "Time-series EEG Data"
+            },
+            {
+              "id": "node_1761671255454",
+              "name": "Model",
+              "label": "Hybrid TSK Fuzzy System"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_1761671351407_n4",
+              "name": "Symbol",
+              "label": "Seizure Instance"
+            }
+          ],
+          "process": {
+            "id": "node_1761671351407_n3",
+            "name": "Deduce",
+            "label": "Deduce"
+          }
+        },
+        {
+          "id": "group_1762950950194",
+          "label": "2a Fuzzy Rules Construction",
+          "input": [
+            {
+              "id": "node_1761670883940_n3",
+              "name": "Data",
+              "label": "Time-series Extracted Features"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_1761671229261",
+              "name": "Rules",
+              "label": "Fuzzy Rules"
+            }
+          ],
+          "process": {
+            "id": "node_1762950927576",
+            "name": "transform",
+            "label": "Transform"
+          }
+        }
+      ]
+    }
+  ]
+}

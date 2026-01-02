@@ -1,0 +1,117 @@
+{
+  "metaData": {
+    "exportId": "69fc9c04",
+    "userId": "user_pnpnxuhk",
+    "exportDate": "2025-11-12T12:41:28.859Z"
+  },
+  "boxologies": [
+    {
+      "id": "ca0b10c7-d6b0-43df-b24c-014190c11041",
+      "label": "T4B-15",
+      "DesignPattern": [
+        {
+          "id": "group_1761672417565",
+          "label": "1d Feature Extraction",
+          "input": [
+            {
+              "id": "node_1761672159278_n1",
+              "name": "Data",
+              "label": "Raw Measurements"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_1761672159294_n3",
+              "name": "Data",
+              "label": "Extracted Features"
+            }
+          ],
+          "process": {
+            "id": "node_1761672159291_n2",
+            "name": "transform",
+            "label": "Transform"
+          }
+        },
+        {
+          "id": "group_1761672454772",
+          "label": "1a Ensemble Machine Learning Model Train",
+          "input": [
+            {
+              "id": "node_1761672159294_n3",
+              "name": "Data",
+              "label": "Extracted Features"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_1761672179401_n3",
+              "name": "Model",
+              "label": "Dynamic Boosting Model"
+            }
+          ],
+          "process": {
+            "id": "node_1761672179401_n2",
+            "name": "Train",
+            "label": "Train"
+          }
+        },
+        {
+          "id": "group_1761672474916",
+          "label": "2a Health Score Prediction",
+          "input": [
+            {
+              "id": "node_1761672199645_n1",
+              "name": "Data",
+              "label": "Measurements"
+            },
+            {
+              "id": "node_1761672179401_n3",
+              "name": "Model",
+              "label": "Dynamic Boosting Model"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_1761672199649_n4",
+              "name": "Symbol",
+              "label": "Health Score and Epilepsy Prediction"
+            }
+          ],
+          "process": {
+            "id": "node_1761672199648_n3",
+            "name": "Deduce",
+            "label": "Deduce"
+          }
+        },
+        {
+          "id": "group_1762951220865",
+          "label": "2a Fuzzy Logic Inference",
+          "input": [
+            {
+              "id": "node_1761672199649_n4",
+              "name": "Symbol",
+              "label": "Health Score and Epilepsy Prediction"
+            },
+            {
+              "id": "node_1762951184283",
+              "name": "Model",
+              "label": "Fuzzy Rules"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_1761672235394",
+              "name": "Symbol",
+              "label": "Diagnosis and Treatment"
+            }
+          ],
+          "process": {
+            "id": "node_1761672230428",
+            "name": "Deduce",
+            "label": "Deduce"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,140 @@
+{
+  "metaData": {
+    "exportId": "547df639",
+    "userId": "user_pnpnxuhk",
+    "exportDate": "2025-11-12T13:17:27.958Z"
+  },
+  "boxologies": [
+    {
+      "id": "99cf33f1-b9cb-461f-b84f-0d6d899a0633",
+      "label": "Diagram",
+      "DesignPattern": [
+        {
+          "id": "group_1762876272577",
+          "label": "1d Data Preprocessing",
+          "input": [
+            {
+              "id": "node_17628761977341",
+              "name": "Data",
+              "label": "Raw Patient Data"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_17628761977493",
+              "name": "Data",
+              "label": "Cleaned w/ Resistance and Reactance param"
+            }
+          ],
+          "process": {
+            "id": "node_17628761977482",
+            "name": "transform",
+            "label": "Transform"
+          }
+        },
+        {
+          "id": "group_1762876291709",
+          "label": "2a Feature Selection and Reduction",
+          "input": [
+            {
+              "id": "node_17628761977493",
+              "name": "Data",
+              "label": "Cleaned w/ Resistance and Reactance param"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_17628762167983",
+              "name": "Data",
+              "label": "Reduced Dataset"
+            }
+          ],
+          "process": {
+            "id": "node_17628762167962",
+            "name": "transform",
+            "label": "Transform"
+          }
+        },
+        {
+          "id": "group_1762876372631",
+          "label": "2a Prediction",
+          "input": [
+            {
+              "id": "node_17628763103671",
+              "name": "Data",
+              "label": "Patient Data"
+            },
+            {
+              "id": "node_161762953424807",
+              "name": "StatisticModel",
+              "label": "Statistic ML Model"
+            },
+            {
+              "id": "node_171762953424807",
+              "name": "Model",
+              "label": "Hybrid Neuro-Fuzzy Classifier"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_17628763103714",
+              "name": "Symbol",
+              "label": "Diagnosis + Explenation"
+            }
+          ],
+          "process": {
+            "id": "node_17628763103703",
+            "name": "Deduce",
+            "label": "Deduce"
+          }
+        },
+        {
+          "id": "group_1762953386851",
+          "label": "1a Traininf the Models",
+          "input": [
+            {
+              "id": "node_17628762167983",
+              "name": "Data",
+              "label": "Reduced Dataset"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_161762953424807",
+              "name": "StatisticModel",
+              "label": "Statistic ML Model"
+            }
+          ],
+          "process": {
+            "id": "node_1762953335022",
+            "name": "Train",
+            "label": "Train"
+          }
+        },
+        {
+          "id": "group_1762953400549",
+          "label": "1a Traininf the Models",
+          "input": [
+            {
+              "id": "node_17628762167983",
+              "name": "Data",
+              "label": "Reduced Dataset"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_171762953424807",
+              "name": "Model",
+              "label": "Hybrid Neuro-Fuzzy Classifier"
+            }
+          ],
+          "process": {
+            "id": "node_1762953336405",
+            "name": "Train",
+            "label": "Train"
+          }
+        }
+      ]
+    }
+  ]
+}

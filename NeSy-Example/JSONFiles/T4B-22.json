@@ -1,0 +1,145 @@
+{
+  "metaData": {
+    "exportId": "0490ef0f",
+    "userId": "user_pnpnxuhk",
+    "exportDate": "2025-11-12T12:46:54.960Z"
+  },
+  "boxologies": [
+    {
+      "id": "a8d9f1c7-7e43-4d6d-8c99-9fe9e7fb6916",
+      "label": "T4B-22",
+      "DesignPattern": [
+        {
+          "id": "group_1761733919792",
+          "label": "1c Expert Knowledge",
+          "input": [
+            {
+              "id": "node_1761733743063_n1",
+              "name": "Human",
+              "label": "Experiences \nCardiac Clinicians"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_1761733743081_n3",
+              "name": "SemanticModel",
+              "label": "Semantic Risk"
+            }
+          ],
+          "process": {
+            "id": "node_1761733743078_n2",
+            "name": "Engineer",
+            "label": "Engineer"
+          }
+        },
+        {
+          "id": "group_1761734067088",
+          "label": "2a Pairwise Comparison",
+          "input": [
+            {
+              "id": "node_1761733757124_n1",
+              "name": "Data",
+              "label": "Patient Data"
+            },
+            {
+              "id": "node_1761733743081_n3",
+              "name": "SemanticModel",
+              "label": "Semantic Risk"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_1761733757128_n3",
+              "name": "Number",
+              "label": "Numeric Fuzzy Numbers"
+            }
+          ],
+          "process": {
+            "id": "node_1761733757126_n2",
+            "name": "embed",
+            "label": "Embed"
+          }
+        },
+        {
+          "id": "group_1761734102906",
+          "label": "1d Fuzzy Analytic Hierarchy",
+          "input": [
+            {
+              "id": "node_1761733757128_n3",
+              "name": "Number",
+              "label": "Numeric Fuzzy Numbers"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_1761733789338_n3",
+              "name": "Number",
+              "label": "Numeric Local and Global Weights"
+            }
+          ],
+          "process": {
+            "id": "node_1761733789338_n2",
+            "name": "embed",
+            "label": "Embed"
+          }
+        },
+        {
+          "id": "group_1761734120122",
+          "label": "1a Train ANN",
+          "input": [
+            {
+              "id": "node_1761733789338_n3",
+              "name": "Number",
+              "label": "Numeric Local and Global Weights"
+            },
+            {
+              "id": "node_1761733757124_n1",
+              "name": "Data",
+              "label": "Patient Data"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_1761733829508_n3",
+              "name": "StatisticModel",
+              "label": "Static ANN"
+            }
+          ],
+          "process": {
+            "id": "node_1761733829507_n2",
+            "name": "Train",
+            "label": "Train"
+          }
+        },
+        {
+          "id": "group_1761734144242",
+          "label": "2b Predict",
+          "input": [
+            {
+              "id": "node_1761733829508_n3",
+              "name": "StatisticModel",
+              "label": "Static ANN"
+            },
+            {
+              "id": "node_1761733757124_n1",
+              "name": "Data",
+              "label": "Patient Data"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_1761733859582",
+              "name": "Symbol",
+              "label": "Heart Failure Risk"
+            }
+          ],
+          "process": {
+            "id": "node_1761733852234",
+            "name": "Deduce",
+            "label": "Deduce"
+          }
+        }
+      ]
+    }
+  ]
+}

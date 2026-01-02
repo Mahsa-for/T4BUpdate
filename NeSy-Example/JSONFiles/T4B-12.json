@@ -1,0 +1,158 @@
+{
+  "metaData": {
+    "exportId": "a690c370",
+    "userId": "user_pnpnxuhk",
+    "exportDate": "2025-11-11T13:20:30.574Z"
+  },
+  "boxologies": [
+    {
+      "id": "b76e4c17-74e3-4723-93e5-2064b67f1897",
+      "label": "T4B-12",
+      "DesignPattern": [
+        {
+          "id": "group_1761669026935",
+          "label": "1d Medical Database Selection",
+          "input": [
+            {
+              "id": "node_1761668342358_n1",
+              "name": "Dataset",
+              "label": "Raw Medical Databases"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_1761668342364_n3",
+              "name": "Dataset",
+              "label": "Structured Datasets"
+            }
+          ],
+          "process": {
+            "id": "node_1761668342364_n2",
+            "name": "embed",
+            "label": "Embed"
+          }
+        },
+        {
+          "id": "group_1761669084832",
+          "label": "1d Preprocessing with Stepwise Regression Analysis (SRA)",
+          "input": [
+            {
+              "id": "node_1761668342364_n3",
+              "name": "Dataset",
+              "label": "Structured Datasets"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_1761668358769_n3",
+              "name": "Data",
+              "label": "Features for Each Condition"
+            }
+          ],
+          "process": {
+            "id": "node_1761668358768_n2",
+            "name": "embed",
+            "label": "Embed"
+          }
+        },
+        {
+          "id": "group_1761669170631",
+          "label": "1a Fuzzy Decision Tree (FDT) Construction",
+          "input": [
+            {
+              "id": "node_1761668458461",
+              "name": "Data",
+              "label": "Clusters of Cases"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_1761668482277_n3",
+              "name": "Model",
+              "label": "Hybrid Fuzzy Decision Tree"
+            }
+          ],
+          "process": {
+            "id": "node_1761668482275_n2",
+            "name": "Train",
+            "label": "Train"
+          }
+        },
+        {
+          "id": "group_1761669246844",
+          "label": "2a Medical Diagnosis",
+          "input": [
+            {
+              "id": "node_1761668358769_n3",
+              "name": "Data",
+              "label": "Features for Each Condition"
+            },
+            {
+              "id": "node_1761668629904_n2",
+              "name": "Model",
+              "label": "Hybrid Optimized Set"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_1761668629906_n4",
+              "name": "Symbol",
+              "label": "Condition"
+            }
+          ],
+          "process": {
+            "id": "node_1761668629905_n3",
+            "name": "Deduce",
+            "label": "Deduce"
+          }
+        },
+        {
+          "id": "group_1762867111054",
+          "label": "2a Case-Base Clustering",
+          "input": [
+            {
+              "id": "node_1761668358769_n3",
+              "name": "Data",
+              "label": "Features for Each Condition"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_1761668458461",
+              "name": "Data",
+              "label": "Clusters of Cases"
+            }
+          ],
+          "process": {
+            "id": "node_1762867086490",
+            "name": "transform",
+            "label": "Transform"
+          }
+        },
+        {
+          "id": "group_1762867191397",
+          "label": "1a Genetic Algorithm Optimization",
+          "input": [
+            {
+              "id": "node_1761668482277_n3",
+              "name": "Model",
+              "label": "Hybrid Fuzzy Decision Tree"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_1761668629904_n2",
+              "name": "Model",
+              "label": "Hybrid Optimized Set"
+            }
+          ],
+          "process": {
+            "id": "node_1762867153580",
+            "name": "transform",
+            "label": "Transform"
+          }
+        }
+      ]
+    }
+  ]
+}

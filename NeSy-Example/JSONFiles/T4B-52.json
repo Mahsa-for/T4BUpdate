@@ -1,0 +1,196 @@
+{
+  "metaData": {
+    "exportId": "c3440220",
+    "userId": "user_pnpnxuhk",
+    "exportDate": "2025-11-17T11:34:42.706Z"
+  },
+  "boxologies": [
+    {
+      "id": "8a80b7e2-954a-4e23-ba27-b45449d2fd95",
+      "label": "Diagram",
+      "DesignPattern": [
+        {
+          "id": "group_1763378900249",
+          "label": "1d Data Collection and Preparation",
+          "input": [
+            {
+              "id": "node_17633785757561",
+              "name": "Number",
+              "label": "Physiological Signals"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_17633785757623",
+              "name": "Data",
+              "label": "Resampled Signals"
+            }
+          ],
+          "process": {
+            "id": "node_17633785757622",
+            "name": "transform",
+            "label": "Transform"
+          }
+        },
+        {
+          "id": "group_1763378926514",
+          "label": "1d Signal Analysis and Band Decomposition",
+          "input": [
+            {
+              "id": "node_17633785757623",
+              "name": "Data",
+              "label": "Resampled Signals"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_17633785792223",
+              "name": "Number",
+              "label": "Seprated Signal Components"
+            }
+          ],
+          "process": {
+            "id": "node_17633785792212",
+            "name": "transform",
+            "label": "Transform"
+          }
+        },
+        {
+          "id": "group_1763378956831",
+          "label": "1d Cross-Correlation",
+          "input": [
+            {
+              "id": "node_17633785792223",
+              "name": "Number",
+              "label": "Seprated Signal Components"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_1763378743452",
+              "name": "Symbol",
+              "label": "Degree of Correlation"
+            }
+          ],
+          "process": {
+            "id": "node_17633785905072",
+            "name": "transform",
+            "label": "Transform"
+          }
+        },
+        {
+          "id": "group_1763379030718",
+          "label": "1a System Modeling Using NFIS",
+          "input": [
+            {
+              "id": "node_17633785792223",
+              "name": "Number",
+              "label": "Seprated Signal Components"
+            },
+            {
+              "id": "node_1763378743452",
+              "name": "Symbol",
+              "label": "Degree of Correlation"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_17633786070433",
+              "name": "SemanticModel",
+              "label": "NFIS"
+            }
+          ],
+          "process": {
+            "id": "node_17633786070422",
+            "name": "Train",
+            "label": "Train"
+          }
+        },
+        {
+          "id": "group_1763379039149",
+          "label": "1a System Modeling Using AR",
+          "input": [
+            {
+              "id": "node_1763378743452",
+              "name": "Symbol",
+              "label": "Degree of Correlation"
+            },
+            {
+              "id": "node_17633785792223",
+              "name": "Number",
+              "label": "Seprated Signal Components"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_1763378779002",
+              "name": "StatisticModel",
+              "label": "AR"
+            }
+          ],
+          "process": {
+            "id": "node_1763378775243",
+            "name": "Train",
+            "label": "Train"
+          }
+        },
+        {
+          "id": "group_1763379088407",
+          "label": "1c Integration",
+          "input": [
+            {
+              "id": "node_17633786070433",
+              "name": "SemanticModel",
+              "label": "NFIS"
+            },
+            {
+              "id": "node_1763378779002",
+              "name": "StatisticModel",
+              "label": "AR"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_1763378840615",
+              "name": "Model",
+              "label": "ANFIS Hybrid Model"
+            }
+          ],
+          "process": {
+            "id": "node_1763378834742",
+            "name": "transform",
+            "label": "Transform"
+          }
+        },
+        {
+          "id": "group_1763379148323",
+          "label": "2a Clinical Application",
+          "input": [
+            {
+              "id": "node_17633788680911",
+              "name": "Symbol",
+              "label": "Cardiovascular prediction"
+            },
+            {
+              "id": "node_1763378840615",
+              "name": "Model",
+              "label": "ANFIS Hybrid Model"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_17633788680924",
+              "name": "Data",
+              "label": "Physiological Data"
+            }
+          ],
+          "process": {
+            "id": "node_17633788680923",
+            "name": "Deduce",
+            "label": "Deduce"
+          }
+        }
+      ]
+    }
+  ]
+}

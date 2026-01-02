@@ -1,0 +1,135 @@
+{
+  "metaData": {
+    "exportId": "b116f0dc",
+    "userId": "user_wkgt4g8b",
+    "exportDate": "2025-11-24T11:13:38.572Z"
+  },
+  "boxologies": [
+    {
+      "id": "35820a95-7d27-4e7b-b663-1654cabff840",
+      "label": "T4B-63",
+      "DesignPattern": [
+        {
+          "id": "group_1763982526135",
+          "label": "1d Pre0processing",
+          "input": [
+            {
+              "id": "node_17639823719901",
+              "name": "Image",
+              "label": "Image Raw Brain MRI"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_17639823719943",
+              "name": "Data",
+              "label": "Image Pre-processed Images"
+            }
+          ],
+          "process": {
+            "id": "node_17639823719932",
+            "name": "transform",
+            "label": "Transform"
+          }
+        },
+        {
+          "id": "group_1763982560808",
+          "label": "1d Feature Extraction",
+          "input": [
+            {
+              "id": "node_17639823719943",
+              "name": "Data",
+              "label": "Image Pre-processed Images"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_17639823748053",
+              "name": "Data",
+              "label": "Numeric Extracted Features"
+            }
+          ],
+          "process": {
+            "id": "node_17639823748052",
+            "name": "transform",
+            "label": "Transform"
+          }
+        },
+        {
+          "id": "group_1763982647538",
+          "label": "2a Tissue Classification Using FCM (Fuzzy C-Means)",
+          "input": [
+            {
+              "id": "node_17639823748053",
+              "name": "Data",
+              "label": "Numeric Extracted Features"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_17639823824233",
+              "name": "Number",
+              "label": "Numeric Labeled Tissue Region"
+            }
+          ],
+          "process": {
+            "id": "node_17639823824232",
+            "name": "transform",
+            "label": "Transform"
+          }
+        },
+        {
+          "id": "group_1763982714289",
+          "label": "1a Model Creation",
+          "input": [
+            {
+              "id": "node_17639823824233",
+              "name": "Number",
+              "label": "Numeric Labeled Tissue Region"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_17639823925873",
+              "name": "HybridModel",
+              "label": "Hybrid ANFIS"
+            }
+          ],
+          "process": {
+            "id": "node_17639823925862",
+            "name": "Train",
+            "label": "Train"
+          }
+        },
+        {
+          "id": "group_1763982778964",
+          "label": "2a Classification and Segmentation",
+          "input": [
+            {
+              "id": "node_17639824408941",
+              "name": "Image",
+              "label": "Image Patient Brain MRI"
+            },
+            {
+              "id": "node_17639823925873",
+              "name": "HybridModel",
+              "label": "Hybrid ANFIS"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_17639824408994",
+              "name": "Symbol",
+              "label": "Segmented Images"
+            }
+          ],
+          "process": {
+            "id": "node_17639824408983",
+            "name": "Deduce",
+            "label": "Deduce"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,145 @@
+{
+  "metaData": {
+    "exportId": "1e1a27ff",
+    "userId": "user_pnpnxuhk",
+    "exportDate": "2025-11-12T15:09:48.122Z"
+  },
+  "boxologies": [
+    {
+      "id": "04d2ac19-c674-4452-accd-1228462bc17c",
+      "label": "Diagram",
+      "DesignPattern": [
+        {
+          "id": "group_1762959905025",
+          "label": "1d Pre-processing",
+          "input": [
+            {
+              "id": "node_17629595498491",
+              "name": "Data",
+              "label": "Raw Mammographic"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_17629595498653",
+              "name": "Data",
+              "label": "Pre-processed Data"
+            }
+          ],
+          "process": {
+            "id": "node_17629595498622",
+            "name": "transform",
+            "label": "Transform"
+          }
+        },
+        {
+          "id": "group_1762959929024",
+          "label": "1 Fuzzy Rough Set Application",
+          "input": [
+            {
+              "id": "node_17629595498653",
+              "name": "Data",
+              "label": "Pre-processed Data"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_17629595556723",
+              "name": "Data",
+              "label": "Features"
+            }
+          ],
+          "process": {
+            "id": "node_17629595556712",
+            "name": "transform",
+            "label": "Transform"
+          }
+        },
+        {
+          "id": "group_1762959965632",
+          "label": "1c Generate the Equivalent ANFIS Architecture",
+          "input": [
+            {
+              "id": "node_17629595556723",
+              "name": "Data",
+              "label": "Features"
+            },
+            {
+              "id": "node_1762959593190",
+              "name": "Symbol",
+              "label": "Fuzzy Rules"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_17629595793943",
+              "name": "Model",
+              "label": "Hybrid ANFIS Framework"
+            }
+          ],
+          "process": {
+            "id": "node_17629595793932",
+            "name": "Train",
+            "label": "Train"
+          }
+        },
+        {
+          "id": "group_1762960083665",
+          "label": "1a Train the ANFIS Model",
+          "input": [
+            {
+              "id": "node_17629595498653",
+              "name": "Data",
+              "label": "Pre-processed Data"
+            },
+            {
+              "id": "node_17629595793943",
+              "name": "Model",
+              "label": "Hybrid ANFIS Framework"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_1762959641760",
+              "name": "Model",
+              "label": "Hybrid ANFIS"
+            }
+          ],
+          "process": {
+            "id": "node_1762959627663",
+            "name": "Train",
+            "label": "Train"
+          }
+        },
+        {
+          "id": "group_1762960112499",
+          "label": "2a Use the ANFIS Model for Prediction",
+          "input": [
+            {
+              "id": "node_1762959641760",
+              "name": "Model",
+              "label": "Hybrid ANFIS"
+            },
+            {
+              "id": "node_1762959664376",
+              "name": "Data",
+              "label": "Patient Mammographic"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_1762959661894",
+              "name": "Symbol",
+              "label": "Diagnosis Severity"
+            }
+          ],
+          "process": {
+            "id": "node_1762959656566",
+            "name": "prediction",
+            "label": "Predict"
+          }
+        }
+      ]
+    }
+  ]
+}

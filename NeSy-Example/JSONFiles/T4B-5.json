@@ -1,0 +1,178 @@
+{
+  "metaData": {
+    "exportId": "ce21f226",
+    "userId": "user_wkgt4g8b",
+    "exportDate": "2025-11-28T15:12:12.379Z"
+  },
+  "boxologies": [
+    {
+      "id": "21947fa1-8f9b-466b-9656-7f90ce622b6b",
+      "label": "T4B-5",
+      "DesignPattern": [
+        {
+          "id": "group_1762859598577",
+          "label": "1d Classification",
+          "input": [
+            {
+              "id": "node_1762859492712_n1",
+              "name": "Number",
+              "label": "Numeric Blood Glucose Measurement"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_1762859492716_n3",
+              "name": "Dataset",
+              "label": "Dataset w/ Glycaemia Classified"
+            }
+          ],
+          "process": {
+            "id": "node_1762859492716_n2",
+            "name": "embed",
+            "label": "Embed"
+          }
+        },
+        {
+          "id": "group_1762859773841",
+          "label": "2a First Automation",
+          "input": [
+            {
+              "id": "node_1762859634338_n2",
+              "name": "SemanticModel",
+              "label": "Semantic First Automation"
+            },
+            {
+              "id": "node_1762859492716_n3",
+              "name": "Dataset",
+              "label": "Dataset w/ Glycaemia Classified"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_1762859727928",
+              "name": "Number",
+              "label": "Numeric Blood Glucose Ranges"
+            }
+          ],
+          "process": {
+            "id": "node_1762859634339_n3",
+            "name": "Deduce",
+            "label": "Deduce"
+          }
+        },
+        {
+          "id": "group_1762860065695",
+          "label": "2c Create Rule-Based Model",
+          "input": [
+            {
+              "id": "node_1762859861099_n1",
+              "name": "actor",
+              "label": "Endocrinologist"
+            },
+            {
+              "id": "node_1762859914607",
+              "name": "SemanticModel",
+              "label": "Guidelines"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_1762859861102_n3",
+              "name": "SemanticModel",
+              "label": "Semantic Rule-Based"
+            }
+          ],
+          "process": {
+            "id": "node_1762859861101_n2",
+            "name": "Engineer",
+            "label": "Engineer"
+          }
+        },
+        {
+          "id": "group_1762860287747",
+          "label": "2a Second Automation",
+          "input": [
+            {
+              "id": "node_1762859792061_n1",
+              "name": "Number",
+              "label": "Numeric Ketonuria Status"
+            },
+            {
+              "id": "node_1762859792063_n2",
+              "name": "SemanticModel",
+              "label": "Semantic Second Automation"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_1762859819417",
+              "name": "Data",
+              "label": "Numeric Ketones Urine"
+            }
+          ],
+          "process": {
+            "id": "node_1762859792064_n3",
+            "name": "Deduce",
+            "label": "Deduce"
+          }
+        },
+        {
+          "id": "group_1762860357001",
+          "label": "2a Determine Status",
+          "input": [
+            {
+              "id": "node_1762859819417",
+              "name": "Data",
+              "label": "Numeric Ketones Urine"
+            },
+            {
+              "id": "node_1762859727928",
+              "name": "Number",
+              "label": "Numeric Blood Glucose Ranges"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_1762859832892_n3",
+              "name": "Number",
+              "label": "Numeric Patient's Metabolic Condition"
+            }
+          ],
+          "process": {
+            "id": "node_1762859832891_n2",
+            "name": "transform",
+            "label": "Transform"
+          }
+        },
+        {
+          "id": "group_1762860398731",
+          "label": "2a Decision support for therapy Planning",
+          "input": [
+            {
+              "id": "node_1762859861102_n3",
+              "name": "SemanticModel",
+              "label": "Semantic Rule-Based"
+            },
+            {
+              "id": "node_1762859832892_n3",
+              "name": "Number",
+              "label": "Numeric Patient's Metabolic Condition"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_1762859875928",
+              "name": "Symbol",
+              "label": "Healthcare Provider Interventions + \nDirect Patient Interventions"
+            }
+          ],
+          "process": {
+            "id": "node_1762859868457",
+            "name": "Deduce",
+            "label": "Deduce"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{ "class": "GraphLinksModel",
+  "ModelData": {"boxologyId":"cb497c1c-11cc-41b9-8b3b-edc23125170b","boxologyLabel":"T4B-36"},
+  "nodeDataArray": [
+{"key":"node_1761749729207_n1","name":"Data","label":"Raw Chest MRI Image","shape":"Rectangle","color":"#b7eaffff","stroke":"#1E5F8B","loc":"427.00021354166665 92.77600000000001","type":"Image","width":138,"height":60,"group":"group_1761750061871"},
+{"key":"node_1761749729213_n2","name":"Transform","label":"Transform","shape":"RoundedRectangle","color":"#fbf2a2ff","stroke":"#B8A600","loc":"427.00021354166665 214.32770085599088","type":"Transform","parameter1":45,"group":"group_1761750061871"},
+{"key":"node_1761749729214_n3","name":"Data","label":"Standardized Images","shape":"Rectangle","color":"#b7eaffff","stroke":"#1E5F8B","loc":"427.00021354166665 335.87940171198176","type":"Image","width":189,"height":60,"group":"group_1761750061871"},
+{"key":"node_1761749750668_n2","name":"Model","label":"GLCM","shape":"Hexagon","color":"#f4ccf4ff","stroke":"#8B4F8B","loc":"119.28603786571138 320","type":"StatisticModel","group":"group_1761750114513"},
+{"key":"node_1761749750669_n3","name":"Deduce","label":"Deduce","shape":"RoundedRectangle","color":"#ff81f7ff","stroke":"#4c003bff","loc":"119.28603786571136 441.5517008559909","type":"Deduce","parameter1":45,"group":"group_1761750114513"},
+{"key":"node_1761749782699_n1","name":"Data","label":"Feature Vector","shape":"Rectangle","color":"#b7eaffff","stroke":"#1E5F8B","loc":"119.28603786571136 563.1034017119817","type":"Data","group":"group_1761750114513"},
+{"key":"node_1761749782700_n2","name":"Train","label":"Train","shape":"RoundedRectangle","color":"#FFA07A","stroke":"#CD5C5C","loc":"380 560","type":"Train","parameter1":45,"group":"group_1761750150963"},
+{"key":"node_1761749782701_n3","name":"Model","label":"Hybrid ANFIS","shape":"Hexagon","color":"#f4ccf4ff","stroke":"#8B4F8B","loc":"560 560","type":"Model","group":"group_1761750150963"},
+{"key":"node_1761749815205_n1","name":"Data","label":"Patient Chest MRI Images","shape":"Rectangle","color":"#b7eaffff","stroke":"#1E5F8B","loc":"756 440","type":"Image","width":167,"height":60,"group":"group_1761750194005"},
+{"key":"node_1761749815207_n3","name":"Deduce","label":"Deduce","shape":"RoundedRectangle","color":"#ff81f7ff","stroke":"#4c003bff","loc":"756 560","type":"Deduce","parameter1":45,"group":"group_1761750194005"},
+{"key":"node_1761749815208_n4","name":"Symbol","label":"COVID-19 Prediction","shape":"Rectangle","color":"#ccffccff","stroke":"#218721ff","loc":"920 560","type":"Symbol","width":155,"height":60,"group":"group_1761750194005"},
+{"key":"group_1761750061871","isGroup":true,"category":"ClusterGroup","label":"1d Image Preprocessing"},
+{"key":"group_1761750114513","isGroup":true,"category":"ClusterGroup","label":"2a Feature Extraction Using GLCM"},
+{"key":"group_1761750150963","isGroup":true,"category":"ClusterGroup","label":"ANFIS Fine-tuning"},
+{"key":"group_1761750194005","isGroup":true,"category":"ClusterGroup","label":"2a Classification with ANFIS"}
+],
+  "linkDataArray": [
+{"key":"link_1761749729215_n1_n2","from":"node_1761749729207_n1","to":"node_1761749729213_n2"},
+{"key":"link_1761749729216_n2_n3","from":"node_1761749729213_n2","to":"node_1761749729214_n3"},
+{"key":"link_1761749750671_n1_n3","from":"node_1761749729214_n3","to":"node_1761749750669_n3"},
+{"key":"link_1761749750672_n2_n3","from":"node_1761749750668_n2","to":"node_1761749750669_n3"},
+{"key":"link_1761749782702_n1_n2","from":"node_1761749782699_n1","to":"node_1761749782700_n2"},
+{"key":"link_1761749782702_n2_n3","from":"node_1761749782700_n2","to":"node_1761749782701_n3"},
+{"from":"node_1761749750669_n3","to":"node_1761749782699_n1"},
+{"from":"node_1761749729214_n3","to":"node_1761749782700_n2"},
+{"key":"link_1761749815209_n1_n3","from":"node_1761749815205_n1","to":"node_1761749815207_n3"},
+{"key":"link_1761749815209_n2_n3","from":"node_1761749782701_n3","to":"node_1761749815207_n3"},
+{"key":"link_1761749815209_n3_n4","from":"node_1761749815207_n3","to":"node_1761749815208_n4"}
+]}

@@ -1,0 +1,158 @@
+{
+  "metaData": {
+    "exportId": "8211c5ad",
+    "userId": "user_pnpnxuhk",
+    "exportDate": "2025-11-17T13:26:49.882Z"
+  },
+  "boxologies": [
+    {
+      "id": "1d4a7392-de91-4e67-9115-0d6b7fa3ed30",
+      "label": "Diagram",
+      "DesignPattern": [
+        {
+          "id": "group_1763385544092",
+          "label": "1d Data Collection and Preparation",
+          "input": [
+            {
+              "id": "node_17633853315261",
+              "name": "Data",
+              "label": "Raw Breast Cancer + Heart Disease Datset"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_17633853315303",
+              "name": "Data",
+              "label": "Cleaned and Pre-processed Data"
+            }
+          ],
+          "process": {
+            "id": "node_17633853315292",
+            "name": "transform",
+            "label": "Transform"
+          }
+        },
+        {
+          "id": "group_1763385592050",
+          "label": "1d Feature Extraction via Wavelet Transformation",
+          "input": [
+            {
+              "id": "node_17633853315303",
+              "name": "Data",
+              "label": "Cleaned and Pre-processed Data"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_17633853334303",
+              "name": "Data",
+              "label": "Reduced Datasets"
+            }
+          ],
+          "process": {
+            "id": "node_17633853334302",
+            "name": "transform",
+            "label": "Transform"
+          }
+        },
+        {
+          "id": "group_1763385699317",
+          "label": "1a Unsupervised LEarning by Adaptive Vector Quantization (AVQ) Clustering",
+          "input": [
+            {
+              "id": "node_17633853334303",
+              "name": "Data",
+              "label": "Reduced Datasets"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_17633853408563",
+              "name": "Model",
+              "label": "Fuzzy Rules"
+            }
+          ],
+          "process": {
+            "id": "node_17633853408562",
+            "name": "Train",
+            "label": "Train"
+          }
+        },
+        {
+          "id": "group_1763385811379",
+          "label": "2a Fuzzy Rule Optimization using Genetic Algorithms (GA)",
+          "input": [
+            {
+              "id": "node_17633853408563",
+              "name": "Model",
+              "label": "Fuzzy Rules"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_1763385366626",
+              "name": "Model",
+              "label": "Optimized Fuzzy Rules"
+            }
+          ],
+          "process": {
+            "id": "node_1763385358206",
+            "name": "transform",
+            "label": "Transform"
+          }
+        },
+        {
+          "id": "group_1763385911832",
+          "label": "1a Supervised Learning to Tune Rule Parameters",
+          "input": [
+            {
+              "id": "node_1763385366626",
+              "name": "Model",
+              "label": "Optimized Fuzzy Rules"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_1763385377717",
+              "name": "Model",
+              "label": "Hybrid GSAM system"
+            }
+          ],
+          "process": {
+            "id": "node_1763385369146",
+            "name": "transform",
+            "label": "Transform"
+          }
+        },
+        {
+          "id": "group_1763385955423",
+          "label": "2a Prediction Making",
+          "input": [
+            {
+              "id": "node_17633853944881",
+              "name": "Data",
+              "label": "Patient Data"
+            },
+            {
+              "id": "node_1763385377717",
+              "name": "Model",
+              "label": "Hybrid GSAM system"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_17633853944894",
+              "name": "Symbol",
+              "label": "Clinical Diagnosis"
+            }
+          ],
+          "process": {
+            "id": "node_17633853944893",
+            "name": "Deduce",
+            "label": "Deduce"
+          }
+        }
+      ]
+    }
+  ]
+}

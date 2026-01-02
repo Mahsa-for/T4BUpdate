@@ -1,0 +1,132 @@
+{
+  "metaData": {
+    "exportId": "86556ac2",
+    "userId": "user_pnpnxuhk",
+    "exportDate": "2025-11-12T12:19:54.776Z"
+  },
+  "boxologies": [
+    {
+      "id": "831d3d7e-19cd-4916-ae83-161b2a97d68f",
+      "label": "Diagram",
+      "DesignPattern": [
+        {
+          "id": "group_1762949532340",
+          "label": "2a Preliminary Diagnosis",
+          "input": [
+            {
+              "id": "node_17629494178591",
+              "name": "Data",
+              "label": "Symptoms"
+            },
+            {
+              "id": "node_17629494178682",
+              "name": "StatisticModel",
+              "label": "Static Diagnostic Rules"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_17629494178694",
+              "name": "Symbol",
+              "label": "Final Diagnosis"
+            }
+          ],
+          "process": {
+            "id": "node_17629494178693",
+            "name": "Deduce",
+            "label": "Deduce"
+          }
+        },
+        {
+          "id": "group_1762949656026",
+          "label": "2a CBR Process",
+          "input": [
+            {
+              "id": "node_17629496389871",
+              "name": "Data",
+              "label": "Previos Cases"
+            },
+            {
+              "id": "node_17629494178694",
+              "name": "Symbol",
+              "label": "Final Diagnosis"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_17629496389893",
+              "name": "Symbol",
+              "label": "Similarity Score"
+            }
+          ],
+          "process": {
+            "id": "node_17629496389882",
+            "name": "transform",
+            "label": "Transform"
+          }
+        },
+        {
+          "id": "group_1762949853357",
+          "label": "1d Similarity Assesment",
+          "input": [
+            {
+              "id": "node_17629497662901",
+              "name": "actor",
+              "label": "Medical Professional"
+            },
+            {
+              "id": "node_17629494178694",
+              "name": "Symbol",
+              "label": "Final Diagnosis"
+            },
+            {
+              "id": "node_17629496389893",
+              "name": "Symbol",
+              "label": "Similarity Score"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_17629497662913",
+              "name": "Symbol",
+              "label": "Final Diagnosis CBR"
+            }
+          ],
+          "process": {
+            "id": "node_17629497662912",
+            "name": "Engineer",
+            "label": "Engineer"
+          }
+        },
+        {
+          "id": "group_1762949958758",
+          "label": "1c Knowledge Engineer",
+          "input": [
+            {
+              "id": "node_17629498869111",
+              "name": "actor",
+              "label": "Actor Physicians"
+            },
+            {
+              "id": "node_17629497662913",
+              "name": "Symbol",
+              "label": "Final Diagnosis CBR"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_17629494178682",
+              "name": "StatisticModel",
+              "label": "Static Diagnostic Rules"
+            }
+          ],
+          "process": {
+            "id": "node_17629498869122",
+            "name": "Engineer",
+            "label": "Engineer"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,135 @@
+{
+  "metaData": {
+    "exportId": "2542fed7",
+    "userId": "user_pnpnxuhk",
+    "exportDate": "2025-11-17T10:15:03.904Z"
+  },
+  "boxologies": [
+    {
+      "id": "0555f48f-2793-4cd2-9e25-e3e9d5ebf1d3",
+      "label": "Diagram",
+      "DesignPattern": [
+        {
+          "id": "group_1763374078171",
+          "label": "1d Pre-processing",
+          "input": [
+            {
+              "id": "node_17633738896391",
+              "name": "Data",
+              "label": "Raw Clinical and Pathalogical Data"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_17633738896643",
+              "name": "Data",
+              "label": "Processed and Normalized"
+            }
+          ],
+          "process": {
+            "id": "node_17633738896632",
+            "name": "transform",
+            "label": "Transform"
+          }
+        },
+        {
+          "id": "group_1763374106951",
+          "label": "1d Division of Follow-up Time into Intervals",
+          "input": [
+            {
+              "id": "node_17633738896643",
+              "name": "Data",
+              "label": "Processed and Normalized"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_17633738967843",
+              "name": "Data",
+              "label": "Time Segmented Data"
+            }
+          ],
+          "process": {
+            "id": "node_17633738967832",
+            "name": "transform",
+            "label": "Transform"
+          }
+        },
+        {
+          "id": "group_1763374135660",
+          "label": "2a Selection of Pronostic Factors with Decision Trees",
+          "input": [
+            {
+              "id": "node_17633738967843",
+              "name": "Data",
+              "label": "Time Segmented Data"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_17633739136403",
+              "name": "Symbol",
+              "label": "Progonostic Factors per Time"
+            }
+          ],
+          "process": {
+            "id": "node_17633739136392",
+            "name": "transform",
+            "label": "Transform"
+          }
+        },
+        {
+          "id": "group_1763374177868",
+          "label": "1a Neural Network Model Construction",
+          "input": [
+            {
+              "id": "node_17633739136403",
+              "name": "Symbol",
+              "label": "Progonostic Factors per Time"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_17633739291193",
+              "name": "Model",
+              "label": "Hybrid DS Tool"
+            }
+          ],
+          "process": {
+            "id": "node_17633739291192",
+            "name": "Train",
+            "label": "Train"
+          }
+        },
+        {
+          "id": "group_1763374242030",
+          "label": "2a Prediction Making",
+          "input": [
+            {
+              "id": "node_17633739450861",
+              "name": "Data",
+              "label": "Patient Clinical and Pathalogical Data"
+            },
+            {
+              "id": "node_17633739291193",
+              "name": "Model",
+              "label": "Hybrid DS Tool"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_17633739450924",
+              "name": "Symbol",
+              "label": "Relapse and Factors"
+            }
+          ],
+          "process": {
+            "id": "node_17633739450903",
+            "name": "Deduce",
+            "label": "Deduce"
+          }
+        }
+      ]
+    }
+  ]
+}

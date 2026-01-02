@@ -1,0 +1,145 @@
+{
+  "metaData": {
+    "exportId": "bcf11ccf",
+    "userId": "user_pnpnxuhk",
+    "exportDate": "2025-11-11T15:20:30.263Z"
+  },
+  "boxologies": [
+    {
+      "id": "c1f301d0-c83e-4f1b-83e7-9d06e8116d37",
+      "label": "T4B-35",
+      "DesignPattern": [
+        {
+          "id": "group_1761749152662",
+          "label": "1c Generate Fuzzy Parameters",
+          "input": [
+            {
+              "id": "node_1761749001259_n1",
+              "name": "Human",
+              "label": "Experts"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_1761749010894",
+              "name": "Symbol",
+              "label": "Fuzzy Parameters"
+            }
+          ],
+          "process": {
+            "id": "node_1761749001291_n2",
+            "name": "Engineer",
+            "label": "Engineer"
+          }
+        },
+        {
+          "id": "group_1761749348228",
+          "label": "1d Fuzzification of Clinical Variables",
+          "input": [
+            {
+              "id": "node_1761749022037_n1",
+              "name": "Data",
+              "label": "Patient Database"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_1761749022042_n3",
+              "name": "Data",
+              "label": "Relevant Clinical Variables"
+            }
+          ],
+          "process": {
+            "id": "node_1761749022041_n2",
+            "name": "transform",
+            "label": "Transform"
+          }
+        },
+        {
+          "id": "group_1761749427311",
+          "label": "Generate Model base on treatment and variables",
+          "input": [
+            {
+              "id": "node_1761749060353_n1",
+              "name": "Symbol",
+              "label": "Ranked List of Tratments"
+            },
+            {
+              "id": "node_1761749041442",
+              "name": "Symbol",
+              "label": "Fuzzy Values Clinical Variables"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_1761749060356_n3",
+              "name": "SemanticModel",
+              "label": "Semantic FFSMs"
+            }
+          ],
+          "process": {
+            "id": "node_1761749060355_n2",
+            "name": "Train",
+            "label": "Train"
+          }
+        },
+        {
+          "id": "group_1761749486285",
+          "label": "2a Integration and System Deployment",
+          "input": [
+            {
+              "id": "node_1761749087919",
+              "name": "Data",
+              "label": "Patient Data"
+            },
+            {
+              "id": "node_1761749060356_n3",
+              "name": "SemanticModel",
+              "label": "Semantic FFSMs"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_1761749060353_n1",
+              "name": "Symbol",
+              "label": "Ranked List of Tratments"
+            }
+          ],
+          "process": {
+            "id": "node_1761749079811",
+            "name": "Deduce",
+            "label": "Deduce"
+          }
+        },
+        {
+          "id": "group_1762874323031",
+          "label": "2a Fuzzy Finite State Machine Learning",
+          "input": [
+            {
+              "id": "node_1761749022042_n3",
+              "name": "Data",
+              "label": "Relevant Clinical Variables"
+            },
+            {
+              "id": "node_1761749010894",
+              "name": "Symbol",
+              "label": "Fuzzy Parameters"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_1761749041442",
+              "name": "Symbol",
+              "label": "Fuzzy Values Clinical Variables"
+            }
+          ],
+          "process": {
+            "id": "node_1762874298304",
+            "name": "transform",
+            "label": "Transform"
+          }
+        }
+      ]
+    }
+  ]
+}

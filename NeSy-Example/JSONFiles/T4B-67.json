@@ -1,0 +1,112 @@
+{
+  "metaData": {
+    "exportId": "b350c619",
+    "userId": "user_wkgt4g8b",
+    "exportDate": "2025-11-24T12:12:39.538Z"
+  },
+  "boxologies": [
+    {
+      "id": "4d8f3c6a-7da2-42c0-b11f-7b99ee0757ff",
+      "label": "T4B-67",
+      "DesignPattern": [
+        {
+          "id": "group_1763986253641",
+          "label": "1d Pre-processing",
+          "input": [
+            {
+              "id": "node_17639860682101",
+              "name": "Data",
+              "label": "Clinical Records CKD Patients"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_17639860682193",
+              "name": "Data",
+              "label": "Pre-processed Data"
+            }
+          ],
+          "process": {
+            "id": "node_17639860682182",
+            "name": "transform",
+            "label": "Transform"
+          }
+        },
+        {
+          "id": "group_1763986274326",
+          "label": "1d Variable Selection and Correlation Analysis",
+          "input": [
+            {
+              "id": "node_17639860682193",
+              "name": "Data",
+              "label": "Pre-processed Data"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_17639860720533",
+              "name": "Data",
+              "label": "Selected Variables"
+            }
+          ],
+          "process": {
+            "id": "node_17639860720532",
+            "name": "transform",
+            "label": "Transform"
+          }
+        },
+        {
+          "id": "group_1763986293648",
+          "label": "1a ANFIS Train",
+          "input": [
+            {
+              "id": "node_17639860720533",
+              "name": "Data",
+              "label": "Selected Variables"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_17639860800523",
+              "name": "HybridModel",
+              "label": "ANFIS"
+            }
+          ],
+          "process": {
+            "id": "node_17639860800512",
+            "name": "Train",
+            "label": "Train"
+          }
+        },
+        {
+          "id": "group_1763986323052",
+          "label": "2a Prediction of GFR Values",
+          "input": [
+            {
+              "id": "node_17639860925681",
+              "name": "Data",
+              "label": "New GFR and Patient Data"
+            },
+            {
+              "id": "node_17639860800523",
+              "name": "HybridModel",
+              "label": "ANFIS"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_17639860925714",
+              "name": "Symbol",
+              "label": "Predicted GFR Values"
+            }
+          ],
+          "process": {
+            "id": "node_17639860925703",
+            "name": "Deduce",
+            "label": "Deduce"
+          }
+        }
+      ]
+    }
+  ]
+}

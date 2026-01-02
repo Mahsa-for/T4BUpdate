@@ -1,0 +1,112 @@
+{
+  "metaData": {
+    "exportId": "360327ef",
+    "userId": "user_pnpnxuhk",
+    "exportDate": "2025-11-12T13:44:52.392Z"
+  },
+  "boxologies": [
+    {
+      "id": "dc0e83f0-6d79-4173-9877-5a20a38d5198",
+      "label": "Diagram",
+      "DesignPattern": [
+        {
+          "id": "group_1762954977582",
+          "label": "1d Data Collection and Preprocessing",
+          "input": [
+            {
+              "id": "node_17629548161271",
+              "name": "Data",
+              "label": "Clinical Data"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_17629548161413",
+              "name": "Data",
+              "label": "Structured Data"
+            }
+          ],
+          "process": {
+            "id": "node_17629548161392",
+            "name": "transform",
+            "label": "Transform"
+          }
+        },
+        {
+          "id": "group_1762955013825",
+          "label": "2a Attribute Reduction Using Rough Set Theory",
+          "input": [
+            {
+              "id": "node_17629548161413",
+              "name": "Data",
+              "label": "Structured Data"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_17629548207463",
+              "name": "Data",
+              "label": "Reduced Dataset"
+            }
+          ],
+          "process": {
+            "id": "node_17629548207452",
+            "name": "transform",
+            "label": "Deduce"
+          }
+        },
+        {
+          "id": "group_1762955031820",
+          "label": "1a Rule Generation",
+          "input": [
+            {
+              "id": "node_17629548207463",
+              "name": "Data",
+              "label": "Reduced Dataset"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_17629548405053",
+              "name": "StatisticModel",
+              "label": "Statistical IL Algorithms"
+            }
+          ],
+          "process": {
+            "id": "node_17629548405042",
+            "name": "Train",
+            "label": "Train"
+          }
+        },
+        {
+          "id": "group_1762955054769",
+          "label": "2a Decision Making",
+          "input": [
+            {
+              "id": "node_17629548583741",
+              "name": "Data",
+              "label": "Patient Data"
+            },
+            {
+              "id": "node_17629548405053",
+              "name": "StatisticModel",
+              "label": "Statistical IL Algorithms"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_17629548583784",
+              "name": "Symbol",
+              "label": "Various Clinical Prediction"
+            }
+          ],
+          "process": {
+            "id": "node_17629548583773",
+            "name": "Deduce",
+            "label": "Deduce"
+          }
+        }
+      ]
+    }
+  ]
+}

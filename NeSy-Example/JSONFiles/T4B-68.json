@@ -1,0 +1,150 @@
+{
+  "metaData": {
+    "exportId": "9c8fc2a1",
+    "userId": "user_wkgt4g8b",
+    "exportDate": "2025-11-24T13:22:47.792Z"
+  },
+  "boxologies": [
+    {
+      "id": "995043b2-773e-4d9d-b8f9-9a94cddb9c4e",
+      "label": "T4B-68",
+      "DesignPattern": [
+        {
+          "id": "group_1763990265899",
+          "label": "1d Data Input and Ontology Mapping",
+          "input": [
+            {
+              "id": "node_17639898044741",
+              "name": "Data",
+              "label": "EECG Data and Medical Records"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_17639898045013",
+              "name": "Data",
+              "label": "Structured Representation"
+            }
+          ],
+          "process": {
+            "id": "node_17639898044992",
+            "name": "transform",
+            "label": "Transform"
+          }
+        },
+        {
+          "id": "group_1763990309619",
+          "label": "2a Rule-Based Reasoning",
+          "input": [
+            {
+              "id": "node_17639898045013",
+              "name": "Data",
+              "label": "Structured Representation"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_17639898139003",
+              "name": "Symbol",
+              "label": "Inferred Knowledge"
+            }
+          ],
+          "process": {
+            "id": "node_17639898138982",
+            "name": "transform",
+            "label": "Transform"
+          }
+        },
+        {
+          "id": "group_1763990382155",
+          "label": "1a LCS Train",
+          "input": [
+            {
+              "id": "node_17639898045013",
+              "name": "Data",
+              "label": "Structured Representation"
+            },
+            {
+              "id": "node_17639898139003",
+              "name": "Symbol",
+              "label": "Inferred Knowledge"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_17639898252803",
+              "name": "HybridModel",
+              "label": "LCS"
+            }
+          ],
+          "process": {
+            "id": "node_17639898252792",
+            "name": "Train",
+            "label": "Train"
+          }
+        },
+        {
+          "id": "group_1763990498295",
+          "label": "2a Decision Support Generate",
+          "input": [
+            {
+              "id": "node_17639898675041",
+              "name": "Data",
+              "label": "Patient ECG and Medical Data"
+            },
+            {
+              "id": "node_17639898252803",
+              "name": "HybridModel",
+              "label": "LCS"
+            },
+            {
+              "id": "node_17639898916363",
+              "name": "Symbol",
+              "label": "Expert Adjusted Advice"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_17639898675064",
+              "name": "Symbol",
+              "label": "Decision Support Recommendation"
+            }
+          ],
+          "process": {
+            "id": "node_17639898675053",
+            "name": "Deduce",
+            "label": "id-Deduce"
+          }
+        },
+        {
+          "id": "group_1763990522272",
+          "label": "1d Human Involvement and System Feedback",
+          "input": [
+            {
+              "id": "node_17639898916331",
+              "name": "actor",
+              "label": "Actor"
+            },
+            {
+              "id": "node_17639898675064",
+              "name": "Symbol",
+              "label": "Decision Support Recommendation"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_17639898916363",
+              "name": "Symbol",
+              "label": "Expert Adjusted Advice"
+            }
+          ],
+          "process": {
+            "id": "node_17639898916352",
+            "name": "Engineer",
+            "label": "Engineer"
+          }
+        }
+      ]
+    }
+  ]
+}

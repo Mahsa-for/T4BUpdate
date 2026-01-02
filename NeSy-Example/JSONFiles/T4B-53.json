@@ -1,0 +1,163 @@
+{
+  "metaData": {
+    "exportId": "efe9d22e",
+    "userId": "user_pnpnxuhk",
+    "exportDate": "2025-11-17T11:47:46.671Z"
+  },
+  "boxologies": [
+    {
+      "id": "68823803-1654-47b0-a159-863f2094b70e",
+      "label": "Diagram",
+      "DesignPattern": [
+        {
+          "id": "group_1763379709997",
+          "label": "1d Data Preprocessing",
+          "input": [
+            {
+              "id": "node_17633794541331",
+              "name": "Number",
+              "label": "Raw Gene Expression"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_17633794541493",
+              "name": "Number",
+              "label": "Normalized Gene\nExpression Data"
+            }
+          ],
+          "process": {
+            "id": "node_17633794541472",
+            "name": "transform",
+            "label": "Transform"
+          }
+        },
+        {
+          "id": "group_1763379753427",
+          "label": "1d Gene Selection UsingModified AHP",
+          "input": [
+            {
+              "id": "node_17633794541493",
+              "name": "Number",
+              "label": "Normalized Gene\nExpression Data"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_17633794580493",
+              "name": "Data",
+              "label": "Ranked Informative Genes"
+            }
+          ],
+          "process": {
+            "id": "node_17633794580482",
+            "name": "transform",
+            "label": "Transform"
+          }
+        },
+        {
+          "id": "group_1763379862211",
+          "label": "1a Unsupervised LEarning by Fuzzy C-Means (FCM) Clustering",
+          "input": [
+            {
+              "id": "node_17633794580493",
+              "name": "Data",
+              "label": "Ranked Informative Genes"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_17633794851283",
+              "name": "SemanticModel",
+              "label": "Semantic FCM"
+            }
+          ],
+          "process": {
+            "id": "node_17633794851272",
+            "name": "Train",
+            "label": "Train"
+          }
+        },
+        {
+          "id": "group_1763379878022",
+          "label": "2a Fuzzy Model Setup",
+          "input": [
+            {
+              "id": "node_17633794580493",
+              "name": "Data",
+              "label": "Ranked Informative Genes"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_17633794813483",
+              "name": "Model",
+              "label": "Type-2 Fuzzy Rules"
+            }
+          ],
+          "process": {
+            "id": "node_17633794813482",
+            "name": "Train",
+            "label": "Train"
+          }
+        },
+        {
+          "id": "group_1763379955127",
+          "label": "1 Fuzzy Rough Set Application",
+          "input": [
+            {
+              "id": "node_17633794851283",
+              "name": "SemanticModel",
+              "label": "Semantic FCM"
+            },
+            {
+              "id": "node_17633794813483",
+              "name": "Model",
+              "label": "Type-2 Fuzzy Rules"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_1763379543191",
+              "name": "Model",
+              "label": "Hybrid IT2FLS"
+            }
+          ],
+          "process": {
+            "id": "node_1763379506096",
+            "name": "transform",
+            "label": "Transform"
+          }
+        },
+        {
+          "id": "group_1763380021940",
+          "label": "2a Prediction Making",
+          "input": [
+            {
+              "id": "node_17633795707141",
+              "name": "Number",
+              "label": "Gene Expression Data"
+            },
+            {
+              "id": "node_1763379543191",
+              "name": "Model",
+              "label": "Hybrid IT2FLS"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_17633795707184",
+              "name": "Symbol",
+              "label": "Classified Sample"
+            }
+          ],
+          "process": {
+            "id": "node_17633795707173",
+            "name": "Deduce",
+            "label": "Deduce"
+          }
+        }
+      ]
+    }
+  ]
+}

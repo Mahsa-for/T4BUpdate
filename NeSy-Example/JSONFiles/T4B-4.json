@@ -1,0 +1,132 @@
+{
+  "metaData": {
+    "exportId": "a36b6271",
+    "userId": "user_pnpnxuhk",
+    "exportDate": "2025-11-11T11:03:43.090Z"
+  },
+  "boxologies": [
+    {
+      "id": "ab3e220c-fdb5-4a56-9ee6-24ae2933745f",
+      "label": "T4B-4",
+      "DesignPattern": [
+        {
+          "id": "group_1761651139216",
+          "label": "1d Data Pre-processing",
+          "input": [
+            {
+              "id": "node_1761650204185_n1",
+              "name": "Data",
+              "label": "EHRs"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_1761650204200_n3",
+              "name": "Data",
+              "label": "Preprocessed Data"
+            }
+          ],
+          "process": {
+            "id": "node_1761650204198_n2",
+            "name": "embed",
+            "label": "Embed"
+          }
+        },
+        {
+          "id": "group_1761651158016",
+          "label": "1d Data Transformation",
+          "input": [
+            {
+              "id": "node_1761650204200_n3",
+              "name": "Data",
+              "label": "Preprocessed Data"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_1761650214648_n3",
+              "name": "Data",
+              "label": "Transformed Data"
+            }
+          ],
+          "process": {
+            "id": "node_1761650214647_n2",
+            "name": "embed",
+            "label": "Embed"
+          }
+        },
+        {
+          "id": "group_1761651197868",
+          "label": "Knowledge Integration",
+          "input": [
+            {
+              "id": "node_1761650445836_n1",
+              "name": "actor",
+              "label": "Actor"
+            },
+            {
+              "id": "node_1761650214648_n3",
+              "name": "Data",
+              "label": "Transformed Data"
+            },
+            {
+              "id": "node_1762858585492",
+              "name": "Symbol",
+              "label": "Risk Assessment"
+            },
+            {
+              "id": "node_1762858589548",
+              "name": "Symbol",
+              "label": "Recommendation"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_1761650445840_n3",
+              "name": "Model",
+              "label": "Engineered Model Patterns"
+            }
+          ],
+          "process": {
+            "id": "node_1761650445839_n2",
+            "name": "Engineer",
+            "label": "Engineer"
+          }
+        },
+        {
+          "id": "group_1762858927651",
+          "label": "2a Decision Support Generation",
+          "input": [
+            {
+              "id": "node_1761650543075_n1",
+              "name": "Data",
+              "label": "Patient Data"
+            },
+            {
+              "id": "node_1761650445840_n3",
+              "name": "Model",
+              "label": "Engineered Model Patterns"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_1762858589548",
+              "name": "Symbol",
+              "label": "Recommendation"
+            },
+            {
+              "id": "node_1762858585492",
+              "name": "Symbol",
+              "label": "Risk Assessment"
+            }
+          ],
+          "process": {
+            "id": "node_1761650543077_n3",
+            "name": "Deduce",
+            "label": "Deduce"
+          }
+        }
+      ]
+    }
+  ]
+}

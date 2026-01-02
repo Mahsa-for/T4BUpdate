@@ -1,0 +1,140 @@
+{
+  "metaData": {
+    "exportId": "401645f0",
+    "userId": "user_pnpnxuhk",
+    "exportDate": "2025-11-11T13:15:59.494Z"
+  },
+  "boxologies": [
+    {
+      "id": "4733ca51-5796-4034-a705-c23c0445ba97",
+      "label": "T4B-11",
+      "DesignPattern": [
+        {
+          "id": "group_1761665932859",
+          "label": "1d Pre-process",
+          "input": [
+            {
+              "id": "node_1761665743115_n1",
+              "name": "Image",
+              "label": "Image Raw Multidimensional 13C MRI Data"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_1761665743129_n3",
+              "name": "Image",
+              "label": "Image Preprocessed Data"
+            }
+          ],
+          "process": {
+            "id": "node_1761665743127_n2",
+            "name": "embed",
+            "label": "Embed"
+          }
+        },
+        {
+          "id": "group_1761665946224",
+          "label": "1d Initialization",
+          "input": [
+            {
+              "id": "node_1761665743129_n3",
+              "name": "Image",
+              "label": "Image Preprocessed Data"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_1761665751448_n3",
+              "name": "Image",
+              "label": "Image Initial Segmentation Estimates"
+            }
+          ],
+          "process": {
+            "id": "node_1761665751448_n2",
+            "name": "embed",
+            "label": "Embed"
+          }
+        },
+        {
+          "id": "group_1761666024462",
+          "label": "1d Segmentation Refinement",
+          "input": [
+            {
+              "id": "node_1761665796364_n4",
+              "name": "Symbol",
+              "label": "Refined Segmentation"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_1761665832017",
+              "name": "Symbol",
+              "label": "Segmentation Maps"
+            }
+          ],
+          "process": {
+            "id": "node_1761665839166",
+            "name": "transform",
+            "label": "Transform"
+          }
+        },
+        {
+          "id": "group_1761666295586",
+          "label": "2a Fuzzy MRF Model Application",
+          "input": [
+            {
+              "id": "node_1761665777513_n3",
+              "name": "Model",
+              "label": "Hybrid Fuzzy MRF Model"
+            },
+            {
+              "id": "node_1761665751448_n3",
+              "name": "Image",
+              "label": "Image Initial Segmentation Estimates"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_1761665796364_n4",
+              "name": "Symbol",
+              "label": "Refined Segmentation"
+            }
+          ],
+          "process": {
+            "id": "node_1761665796364_n3",
+            "name": "Deduce",
+            "label": "Deduce"
+          }
+        },
+        {
+          "id": "group_1762866871836",
+          "label": "1a Development",
+          "input": [
+            {
+              "id": "node_1761665777510_n1",
+              "name": "Data",
+              "label": "Silico Data"
+            },
+            {
+              "id": "node_1762866808972",
+              "name": "Data",
+              "label": " Vivo Data"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_1761665777513_n3",
+              "name": "Model",
+              "label": "Hybrid Fuzzy MRF Model"
+            }
+          ],
+          "process": {
+            "id": "node_1761665777512_n2",
+            "name": "Train",
+            "label": "Train"
+          }
+        }
+      ]
+    }
+  ]
+}

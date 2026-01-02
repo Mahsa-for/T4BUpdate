@@ -1,0 +1,158 @@
+{
+  "metaData": {
+    "exportId": "03d7db7a",
+    "userId": "user_wkgt4g8b",
+    "exportDate": "2025-11-24T12:05:39.459Z"
+  },
+  "boxologies": [
+    {
+      "id": "74df1376-08d1-4c04-9822-594f94e1f0e2",
+      "label": "T4B-66",
+      "DesignPattern": [
+        {
+          "id": "group_1763985459437",
+          "label": "1d Pre-processing",
+          "input": [
+            {
+              "id": "node_17639852875831",
+              "name": "Image",
+              "label": "Image Raw Mammogram"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_17639852875903",
+              "name": "Data",
+              "label": "Image Pre-processed Mammogram"
+            }
+          ],
+          "process": {
+            "id": "node_17639852875892",
+            "name": "transform",
+            "label": "Transform"
+          }
+        },
+        {
+          "id": "group_1763985518096",
+          "label": "1d Feature Extraction using Discrete Wavelet Tansform (DWT)",
+          "input": [
+            {
+              "id": "node_17639852875903",
+              "name": "Data",
+              "label": "Image Pre-processed Mammogram"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_17639852904133",
+              "name": "Data",
+              "label": "Numeric HF Components"
+            }
+          ],
+          "process": {
+            "id": "node_17639852904092",
+            "name": "transform",
+            "label": "Transform"
+          }
+        },
+        {
+          "id": "group_1763985617417",
+          "label": "2a Location of Suspicious Microclacifications Using Thresholding with Hysteresis",
+          "input": [
+            {
+              "id": "node_17639852904133",
+              "name": "Data",
+              "label": "Numeric HF Components"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_17639853170483",
+              "name": "Symbol",
+              "label": "Initial Detected Locations"
+            }
+          ],
+          "process": {
+            "id": "node_17639853170482",
+            "name": "transform",
+            "label": "Transform"
+          }
+        },
+        {
+          "id": "group_1763985643688",
+          "label": "1a ANFIS",
+          "input": [
+            {
+              "id": "node_17639853170483",
+              "name": "Symbol",
+              "label": "Initial Detected Locations"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_17639853377313",
+              "name": "HybridModel",
+              "label": "Hybrid ANFIS"
+            }
+          ],
+          "process": {
+            "id": "node_17639853377302",
+            "name": "Train",
+            "label": "Train"
+          }
+        },
+        {
+          "id": "group_1763985823081",
+          "label": "2a Location of Suspicious Microcalcifications Using Thresholding with Hysteresis",
+          "input": [
+            {
+              "id": "node_17639853772361",
+              "name": "Number",
+              "label": "Patient HF Components"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_17639853772403",
+              "name": "Symbol",
+              "label": "Initial Detected Locations"
+            }
+          ],
+          "process": {
+            "id": "node_17639853772392",
+            "name": "transform",
+            "label": "Transform"
+          }
+        },
+        {
+          "id": "group_1763985852904",
+          "label": "2a Region Segmentation",
+          "input": [
+            {
+              "id": "node_17639853772403",
+              "name": "Symbol",
+              "label": "Initial Detected Locations"
+            },
+            {
+              "id": "node_17639853377313",
+              "name": "HybridModel",
+              "label": "Hybrid ANFIS"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_1763985681220",
+              "name": "Symbol",
+              "label": "Segmented Regions"
+            }
+          ],
+          "process": {
+            "id": "node_17639853587633",
+            "name": "Deduce",
+            "label": "Deduce"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,168 @@
+{
+  "metaData": {
+    "exportId": "d4573784",
+    "userId": "user_pnpnxuhk",
+    "exportDate": "2025-11-12T14:13:14.522Z"
+  },
+  "boxologies": [
+    {
+      "id": "d5c0676d-c248-49df-8c96-cb3590883df1",
+      "label": "Diagram",
+      "DesignPattern": [
+        {
+          "id": "group_1762955552065",
+          "label": "1d Pre-processing",
+          "input": [
+            {
+              "id": "node_17629553580251",
+              "name": "Data",
+              "label": "Raw Patient Data"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_17629553580393",
+              "name": "Data",
+              "label": "Structured Data"
+            }
+          ],
+          "process": {
+            "id": "node_17629553580382",
+            "name": "transform",
+            "label": "Transform"
+          }
+        },
+        {
+          "id": "group_1762955636520",
+          "label": "1d Transform Data is Fuzzy",
+          "input": [
+            {
+              "id": "node_17629553933731",
+              "name": "Data",
+              "label": "Patient Data"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_17629553933763",
+              "name": "Data",
+              "label": "Fuzzified Value"
+            }
+          ],
+          "process": {
+            "id": "node_17629553933752",
+            "name": "embed",
+            "label": "Embedding"
+          }
+        },
+        {
+          "id": "group_1762955749189",
+          "label": "1a ANFIS Method",
+          "input": [
+            {
+              "id": "node_17629553580393",
+              "name": "Data",
+              "label": "Structured Data"
+            },
+            {
+              "id": "node_17629554120573",
+              "name": "Data",
+              "label": "Structured Data"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_17629553783463",
+              "name": "Model",
+              "label": "Hybrid ANFIS"
+            }
+          ],
+          "process": {
+            "id": "node_17629553783462",
+            "name": "Train",
+            "label": "Train"
+          }
+        },
+        {
+          "id": "group_1762956521313",
+          "label": "2a Fuzzy Inference",
+          "input": [
+            {
+              "id": "node_17629553933763",
+              "name": "Data",
+              "label": "Fuzzified Value"
+            },
+            {
+              "id": "node_17629553783463",
+              "name": "Model",
+              "label": "Hybrid ANFIS"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_17629554466224",
+              "name": "Symbol",
+              "label": "Fuzzy Diagnosis"
+            }
+          ],
+          "process": {
+            "id": "node_17629554466213",
+            "name": "Deduce",
+            "label": "Deduce"
+          }
+        },
+        {
+          "id": "group_1762956556212",
+          "label": "1d Diagnosis and Recommendation",
+          "input": [
+            {
+              "id": "node_17629554466224",
+              "name": "Symbol",
+              "label": "Fuzzy Diagnosis"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_17629554817083",
+              "name": "Symbol",
+              "label": "MEdical Report"
+            }
+          ],
+          "process": {
+            "id": "node_17629554817072",
+            "name": "transform",
+            "label": "Transform"
+          }
+        },
+        {
+          "id": "group_1762956692212",
+          "label": "Fuzzy Rough Set Application",
+          "input": [
+            {
+              "id": "node_17629554120551",
+              "name": "actor",
+              "label": "Experts"
+            },
+            {
+              "id": "node_1762956622530",
+              "name": "Symbol",
+              "label": "Diagnosis Parameters"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_17629554120573",
+              "name": "Data",
+              "label": "Structured Data"
+            }
+          ],
+          "process": {
+            "id": "node_17629554120562",
+            "name": "Engineer",
+            "label": "Engineer"
+          }
+        }
+      ]
+    }
+  ]
+}

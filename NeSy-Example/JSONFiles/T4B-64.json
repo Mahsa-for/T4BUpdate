@@ -1,0 +1,140 @@
+{
+  "metaData": {
+    "exportId": "42ab99b7",
+    "userId": "user_wkgt4g8b",
+    "exportDate": "2025-11-24T11:23:13.741Z"
+  },
+  "boxologies": [
+    {
+      "id": "da05d6cd-c1e9-44e1-86e3-957cd6da9ca6",
+      "label": "T4B-64",
+      "DesignPattern": [
+        {
+          "id": "group_1763983114669",
+          "label": "1d Definition of Input Variables",
+          "input": [
+            {
+              "id": "node_17639829396991",
+              "name": "Number",
+              "label": "Numeric Measurements"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_17639829397093",
+              "name": "Number",
+              "label": "Numeric Normalized Data"
+            }
+          ],
+          "process": {
+            "id": "node_17639829397082",
+            "name": "transform",
+            "label": "Transform"
+          }
+        },
+        {
+          "id": "group_1763983160397",
+          "label": "1d Fuzzification",
+          "input": [
+            {
+              "id": "node_17639829397093",
+              "name": "Number",
+              "label": "Numeric Normalized Data"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_17639829418743",
+              "name": "Data",
+              "label": "Numeric Fuzzified Input"
+            }
+          ],
+          "process": {
+            "id": "node_17639829418742",
+            "name": "transform",
+            "label": "Transform"
+          }
+        },
+        {
+          "id": "group_1763983234838",
+          "label": "1c Rules Creation",
+          "input": [
+            {
+              "id": "node_17639829508741",
+              "name": "actor",
+              "label": "Actor"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_17639829508763",
+              "name": "Symbol",
+              "label": "Fuzzy Rule Base"
+            }
+          ],
+          "process": {
+            "id": "node_17639829508752",
+            "name": "Engineer",
+            "label": "Engineer"
+          }
+        },
+        {
+          "id": "group_1763983249562",
+          "label": "1a Inference Engine",
+          "input": [
+            {
+              "id": "node_17639829418743",
+              "name": "Data",
+              "label": "Numeric Fuzzified Input"
+            },
+            {
+              "id": "node_17639829508763",
+              "name": "Symbol",
+              "label": "Fuzzy Rule Base"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_17639829732363",
+              "name": "HybridModel",
+              "label": "Hybrid Inference Engine"
+            }
+          ],
+          "process": {
+            "id": "node_17639829732352",
+            "name": "Train",
+            "label": "Train"
+          }
+        },
+        {
+          "id": "group_1763983332837",
+          "label": "2a Prediction Making",
+          "input": [
+            {
+              "id": "node_17639830107841",
+              "name": "Number",
+              "label": "Numeric Patient Measurements"
+            },
+            {
+              "id": "node_17639829732363",
+              "name": "HybridModel",
+              "label": "Hybrid Inference Engine"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_17639830107864",
+              "name": "Symbol",
+              "label": "Adviced Infusion Rate"
+            }
+          ],
+          "process": {
+            "id": "node_17639830107863",
+            "name": "Deduce",
+            "label": "Deduce"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+/* src/components/Canvas.module.css */
+.canvasBackground {
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #f0f8ff;
+  background-image:
+    linear-gradient(to right, #ccc 1px, transparent 1px),
+    linear-gradient(to bottom, #ccc 1px, transparent 1px);
+  background-size: 20px 20px;
+  cursor: grab;
+}
+
+.canvasBackground.grabbing {
+  cursor: grabbing;
+}
+
+.canvasInner {
+  position: relative;
+  width: 3000px;
+  height: 2000px;
+}
+/* Canvas.module.css */
+.canvasWrapper {
+  flex: 1;
+  min-width: 0;
+  min-height: 0;
+  height: 100%;
+  display: flex;
+  position: relative;
+}

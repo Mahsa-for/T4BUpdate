@@ -1,0 +1,112 @@
+{
+  "metaData": {
+    "exportId": "2de83eab",
+    "userId": "user_pnpnxuhk",
+    "exportDate": "2025-11-12T12:26:29.194Z"
+  },
+  "boxologies": [
+    {
+      "id": "e4dbd398-643d-443e-a401-af7750067cdb",
+      "label": "T4B-9",
+      "DesignPattern": [
+        {
+          "id": "group_1761665021326",
+          "label": "1d Data Preparation",
+          "input": [
+            {
+              "id": "node_1761664834793_n1",
+              "name": "Time Series",
+              "label": "Time Series Data COVID-19"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_1761664834798_n3",
+              "name": "Time Series",
+              "label": "Prepared Time Series Data"
+            }
+          ],
+          "process": {
+            "id": "node_1761664834796_n2",
+            "name": "embed",
+            "label": "Embed"
+          }
+        },
+        {
+          "id": "group_1761665048711",
+          "label": "1d Calculation of Fractal Dimensions",
+          "input": [
+            {
+              "id": "node_1761664834798_n3",
+              "name": "Time Series",
+              "label": "Prepared Time Series Data"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_1761664840708_n3",
+              "name": "Data",
+              "label": "Fractal Dimensions"
+            }
+          ],
+          "process": {
+            "id": "node_1761664840707_n2",
+            "name": "embed",
+            "label": "Embed"
+          }
+        },
+        {
+          "id": "group_1761665116254",
+          "label": "1a Fuzzy Model Formation",
+          "input": [
+            {
+              "id": "node_1761664840708_n3",
+              "name": "Data",
+              "label": "Fractal Dimensions"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_1761664847555_n3",
+              "name": "SemanticModel",
+              "label": "Fuzzy Logic Model"
+            }
+          ],
+          "process": {
+            "id": "node_1761664847554_n2",
+            "name": "Train",
+            "label": "Train"
+          }
+        },
+        {
+          "id": "group_1761665147057",
+          "label": "2a Forecasting Using Fuzzy Logic",
+          "input": [
+            {
+              "id": "node_1761664847555_n3",
+              "name": "SemanticModel",
+              "label": "Fuzzy Logic Model"
+            },
+            {
+              "id": "node_1761664840708_n3",
+              "name": "Data",
+              "label": "Fractal Dimensions"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_1761664975912",
+              "name": "Symbol",
+              "label": "Forecasted Trends"
+            }
+          ],
+          "process": {
+            "id": "node_1761664967878",
+            "name": "Deduce",
+            "label": "Deduce"
+          }
+        }
+      ]
+    }
+  ]
+}

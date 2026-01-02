@@ -1,0 +1,242 @@
+{
+  "metaData": {
+    "exportId": "305e044d",
+    "userId": "user_pnpnxuhk",
+    "exportDate": "2025-11-12T12:57:35.644Z"
+  },
+  "boxologies": [
+    {
+      "id": "20a2622b-2a19-424b-a29d-6b5960f77d56",
+      "label": "T4B-29",
+      "DesignPattern": [
+        {
+          "id": "group_1761738894982",
+          "label": "1d Pre-processing",
+          "input": [
+            {
+              "id": "node_1761738720397_n1",
+              "name": "Image",
+              "label": "Image Brain MRI Images"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_1761738720404_n3",
+              "name": "Image",
+              "label": "Image Contrast Enhanced Images"
+            }
+          ],
+          "process": {
+            "id": "node_1761738720403_n2",
+            "name": "transform",
+            "label": "Transform"
+          }
+        },
+        {
+          "id": "group_1761739039032",
+          "label": "2a Dual-Tree Complex Wavelet Transform (DTCWT)",
+          "input": [
+            {
+              "id": "node_1761738720404_n3",
+              "name": "Image",
+              "label": "Image Contrast Enhanced Images"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_1761738723869_n3",
+              "name": "Image",
+              "label": "Image Decomposed sub-band images"
+            }
+          ],
+          "process": {
+            "id": "node_1761738723867_n2",
+            "name": "transform",
+            "label": "Transform"
+          }
+        },
+        {
+          "id": "group_1761739096612",
+          "label": "2a Fuzzy Logic-based Edge Detection",
+          "input": [
+            {
+              "id": "node_1761738723869_n3",
+              "name": "Image",
+              "label": "Image Decomposed sub-band images"
+            },
+            {
+              "id": "node_1762952069000",
+              "name": "Model",
+              "label": "Fuzzy Rules"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_1761738765612",
+              "name": "Data",
+              "label": "Edge-detected Images"
+            }
+          ],
+          "process": {
+            "id": "node_1761738762151",
+            "name": "Deduce",
+            "label": "Deduce"
+          }
+        },
+        {
+          "id": "group_1761739164255",
+          "label": "1d Feature Extraction",
+          "input": [
+            {
+              "id": "node_1761738765612",
+              "name": "Data",
+              "label": "Edge-detected Images"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_1761738780268_n3",
+              "name": "Image",
+              "label": "Image Extracted Features"
+            }
+          ],
+          "process": {
+            "id": "node_1761738780267_n2",
+            "name": "transform",
+            "label": "Embed"
+          }
+        },
+        {
+          "id": "group_1761739395756",
+          "label": "1a Model Train",
+          "input": [
+            {
+              "id": "node_1761739194335",
+              "name": "Data",
+              "label": "Labels"
+            },
+            {
+              "id": "node_1761738780268_n3",
+              "name": "Image",
+              "label": "Image Extracted Features"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_1761739309605",
+              "name": "StatisticModel",
+              "label": "U-NET CNN"
+            }
+          ],
+          "process": {
+            "id": "node_1761739204025",
+            "name": "Train",
+            "label": "Train"
+          }
+        },
+        {
+          "id": "group_1761739507892",
+          "label": "1d Data Processing",
+          "input": [
+            {
+              "id": "node_1761739407992_n1",
+              "name": "Image",
+              "label": "Image Patient Brain MRI"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_1761739407995_n3",
+              "name": "Image",
+              "label": "Image Processed Image"
+            }
+          ],
+          "process": {
+            "id": "node_1761739407994_n2",
+            "name": "embed",
+            "label": "Embed"
+          }
+        },
+        {
+          "id": "group_1761739681130",
+          "label": "2a U-NET CNN Classification",
+          "input": [
+            {
+              "id": "node_1761739407995_n3",
+              "name": "Image",
+              "label": "Image Processed Image"
+            },
+            {
+              "id": "node_1761739309605",
+              "name": "StatisticModel",
+              "label": "U-NET CNN"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_1761739538012",
+              "name": "Symbol",
+              "label": "Segregated and Classified Images"
+            }
+          ],
+          "process": {
+            "id": "node_1761739492119",
+            "name": "Deduce",
+            "label": "Deduce"
+          }
+        },
+        {
+          "id": "group_1762952099934",
+          "label": "1c Fuzzy-Rules Creation",
+          "input": [
+            {
+              "id": "node_1761738738324_n1",
+              "name": "actor",
+              "label": "Actor"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_1762952069000",
+              "name": "Model",
+              "label": "Fuzzy Rules"
+            }
+          ],
+          "process": {
+            "id": "node_1761738738325_n2",
+            "name": "Engineer",
+            "label": "Engineer"
+          }
+        },
+        {
+          "id": "group_1762952184084",
+          "label": "2a Annotation",
+          "input": [
+            {
+              "id": "node_1762952156462",
+              "name": "actor",
+              "label": "Actor"
+            },
+            {
+              "id": "node_1761738780268_n3",
+              "name": "Image",
+              "label": "Image Extracted Features"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_1761739194335",
+              "name": "Data",
+              "label": "Labels"
+            }
+          ],
+          "process": {
+            "id": "node_1762952151744",
+            "name": "Engineer",
+            "label": "Engineer"
+          }
+        }
+      ]
+    }
+  ]
+}

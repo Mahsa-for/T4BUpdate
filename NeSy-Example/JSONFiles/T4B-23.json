@@ -1,0 +1,140 @@
+{
+  "metaData": {
+    "exportId": "122af65d",
+    "userId": "user_pnpnxuhk",
+    "exportDate": "2025-11-11T14:31:39.932Z"
+  },
+  "boxologies": [
+    {
+      "id": "a19c7136-4977-4278-b547-ab5982f20e84",
+      "label": "Diagram",
+      "DesignPattern": [
+        {
+          "id": "group_1762870903459",
+          "label": "1d Factorization Machines",
+          "input": [
+            {
+              "id": "node_17628708601391",
+              "name": "Data",
+              "label": "Patient Records"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_17628708601403",
+              "name": "Dataset",
+              "label": "Prepared Dataser"
+            }
+          ],
+          "process": {
+            "id": "node_17628708601402",
+            "name": "embed",
+            "label": "Embed"
+          }
+        },
+        {
+          "id": "group_1762870959808",
+          "label": "1d Locally Weighted FM",
+          "input": [
+            {
+              "id": "node_17628708601403",
+              "name": "Dataset",
+              "label": "Prepared Dataser"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_17628709689171",
+              "name": "Data",
+              "label": "Weighted Train Instances"
+            }
+          ],
+          "process": {
+            "id": "node_17628708776322",
+            "name": "embed",
+            "label": "Embed"
+          }
+        },
+        {
+          "id": "group_1762871061692",
+          "label": "1d Fuzzy Partitioning with FCM",
+          "input": [
+            {
+              "id": "node_17628709689171",
+              "name": "Data",
+              "label": "Weighted Train Instances"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_17628710918261",
+              "name": "Data",
+              "label": "Partitioned Subsets"
+            }
+          ],
+          "process": {
+            "id": "node_17628709689202",
+            "name": "embed",
+            "label": "Embed"
+          }
+        },
+        {
+          "id": "group_1762871208772",
+          "label": "1b SubModel Construction",
+          "input": [
+            {
+              "id": "node_17628710918261",
+              "name": "Data",
+              "label": "Partitioned Subsets"
+            },
+            {
+              "id": "node_17628711384024",
+              "name": "Symbol",
+              "label": "Hospital Readmission"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_17628710918263",
+              "name": "Model",
+              "label": "WFM Model"
+            }
+          ],
+          "process": {
+            "id": "node_17628710918262",
+            "name": "Train",
+            "label": "Train"
+          }
+        },
+        {
+          "id": "group_1762871254450",
+          "label": "2d Prediction Generation",
+          "input": [
+            {
+              "id": "node_17628711384011",
+              "name": "Data",
+              "label": "Patient Records"
+            },
+            {
+              "id": "node_17628710918263",
+              "name": "Model",
+              "label": "WFM Model"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_17628711384024",
+              "name": "Symbol",
+              "label": "Hospital Readmission"
+            }
+          ],
+          "process": {
+            "id": "node_17628711384023",
+            "name": "Deduce",
+            "label": "Deduce"
+          }
+        }
+      ]
+    }
+  ]
+}

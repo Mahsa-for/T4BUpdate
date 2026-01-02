@@ -1,0 +1,12 @@
+services:
+  drawio:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: 'boxology-drawio'
+    container_name: 'boxology-drawio'
+    ports:
+      - '8080:8080'
+    restart: unless-stopped
+
+

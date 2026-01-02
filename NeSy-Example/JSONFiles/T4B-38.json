@@ -1,0 +1,224 @@
+{
+  "metaData": {
+    "exportId": "1cbd181e",
+    "userId": "user_pnpnxuhk",
+    "exportDate": "2025-11-12T13:09:17.616Z"
+  },
+  "boxologies": [
+    {
+      "id": "f8ef8753-2498-4932-8697-7a1df8989b85",
+      "label": "T4B-38",
+      "DesignPattern": [
+        {
+          "id": "group_1761751110261",
+          "label": "1d Data Collection and Preprocessing",
+          "input": [
+            {
+              "id": "node_1761750844951_n1",
+              "name": "Data",
+              "label": "Data Raw Patient"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_1761750844954_n3",
+              "name": "Data",
+              "label": "Normalized Data"
+            }
+          ],
+          "process": {
+            "id": "node_1761750844954_n2",
+            "name": "Normalize",
+            "label": "Transform"
+          }
+        },
+        {
+          "id": "group_1761751280150",
+          "label": "2a Defining Input Variables",
+          "input": [
+            {
+              "id": "node_1761750883293_n1",
+              "name": "Data",
+              "label": "Reduced Dataset w/ Principle Components"
+            },
+            {
+              "id": "node_1762952715734",
+              "name": "Model",
+              "label": "Statistical IVGR2"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_1761750948685",
+              "name": "Symbol",
+              "label": "Volume Growth Rate"
+            }
+          ],
+          "process": {
+            "id": "node_1761750928942",
+            "name": "Deduce",
+            "label": "Deduce"
+          }
+        },
+        {
+          "id": "group_1761751323775",
+          "label": "2a Defining Input Variables",
+          "input": [
+            {
+              "id": "node_1761750883293_n1",
+              "name": "Data",
+              "label": "Reduced Dataset w/ Principle Components"
+            },
+            {
+              "id": "node_241762952935606",
+              "name": "StatisticModel",
+              "label": "Statistical DHCN"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_1761750952078",
+              "name": "Symbol",
+              "label": "Surgery Prediction"
+            }
+          ],
+          "process": {
+            "id": "node_1761750938986",
+            "name": "Deduce",
+            "label": "Deduce"
+          }
+        },
+        {
+          "id": "group_1761751660602",
+          "label": "2a Final Decision",
+          "input": [
+            {
+              "id": "node_1761750971365",
+              "name": "SemanticModel",
+              "label": "Semantic FIS"
+            },
+            {
+              "id": "node_1761750948685",
+              "name": "Symbol",
+              "label": "Volume Growth Rate"
+            },
+            {
+              "id": "node_1761750952078",
+              "name": "Symbol",
+              "label": "Surgery Prediction"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_1761750999562",
+              "name": "Symbol",
+              "label": "Recommendations"
+            }
+          ],
+          "process": {
+            "id": "node_1761750983067",
+            "name": "Deduce",
+            "label": "Deduce"
+          }
+        },
+        {
+          "id": "group_1762875639067",
+          "label": "2a PICA",
+          "input": [
+            {
+              "id": "node_1761750844954_n3",
+              "name": "Data",
+              "label": "Normalized Data"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_1761750883293_n1",
+              "name": "Data",
+              "label": "Reduced Dataset w/ Principle Components"
+            }
+          ],
+          "process": {
+            "id": "node_1762875598080",
+            "name": "embed",
+            "label": "Transform"
+          }
+        },
+        {
+          "id": "group_1762875752579",
+          "label": "2a Integrating ML Predictions with Fuzzy Inference System (FIS)",
+          "input": [
+            {
+              "id": "node_1761750952078",
+              "name": "Symbol",
+              "label": "Surgery Prediction"
+            },
+            {
+              "id": "node_1761750948685",
+              "name": "Symbol",
+              "label": "Volume Growth Rate"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_1761750971365",
+              "name": "SemanticModel",
+              "label": "Semantic FIS"
+            }
+          ],
+          "process": {
+            "id": "node_1762875715365",
+            "name": "Train",
+            "label": "Train"
+          }
+        },
+        {
+          "id": "group_1762952749122",
+          "label": "1a Train ML Model1",
+          "input": [
+            {
+              "id": "node_1761750883293_n1",
+              "name": "Data",
+              "label": "Reduced Dataset w/ Principle Components"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_1762952715734",
+              "name": "Model",
+              "label": "Statistical IVGR2"
+            }
+          ],
+          "process": {
+            "id": "node_1762952666159",
+            "name": "Train",
+            "label": "Train"
+          }
+        },
+        {
+          "id": "group_1762952801702",
+          "label": "1a Train ML Model2",
+          "input": [
+            {
+              "id": "node_1761750883293_n1",
+              "name": "Data",
+              "label": "Reduced Dataset w/ Principle Components"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_241762952935606",
+              "name": "StatisticModel",
+              "label": "Statistical DHCN"
+            }
+          ],
+          "process": {
+            "id": "node_1762952669318",
+            "name": "Train",
+            "label": "Train"
+          }
+        }
+      ]
+    }
+  ]
+}

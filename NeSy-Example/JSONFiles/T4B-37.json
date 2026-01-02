@@ -1,0 +1,122 @@
+{
+  "metaData": {
+    "exportId": "8e14ad1e",
+    "userId": "user_pnpnxuhk",
+    "exportDate": "2025-11-12T13:02:10.772Z"
+  },
+  "boxologies": [
+    {
+      "id": "3270be6f-f68c-4bc6-ba35-2b298c4820a7",
+      "label": "Diagram",
+      "DesignPattern": [
+        {
+          "id": "group_1762875100538",
+          "label": "1d Pre-processing",
+          "input": [
+            {
+              "id": "node_17628750697801",
+              "name": "Data",
+              "label": "CT Scan"
+            },
+            {
+              "id": "node_1762875074960",
+              "name": "Data",
+              "label": "Clinical Data"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_17628750697943",
+              "name": "Data",
+              "label": "Cleaned and Normalized Data"
+            }
+          ],
+          "process": {
+            "id": "node_17628750697932",
+            "name": "transform",
+            "label": "Transform"
+          }
+        },
+        {
+          "id": "group_1762875159108",
+          "label": "2a Feature Recution Using PCA",
+          "input": [
+            {
+              "id": "node_17628750697943",
+              "name": "Data",
+              "label": "Cleaned and Normalized Data"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_17628751151653",
+              "name": "Data",
+              "label": "Dataset w/ Reduced Features"
+            }
+          ],
+          "process": {
+            "id": "node_17628751151642",
+            "name": "transform",
+            "label": "Transform"
+          }
+        },
+        {
+          "id": "group_1762875221870",
+          "label": "1a ANFIS Model Train",
+          "input": [
+            {
+              "id": "node_17628751151653",
+              "name": "Data",
+              "label": "Dataset w/ Reduced Features"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_17628751265913",
+              "name": "Model",
+              "label": "ANFIS"
+            }
+          ],
+          "process": {
+            "id": "node_17628751265902",
+            "name": "Train",
+            "label": "Train"
+          }
+        },
+        {
+          "id": "group_1762875241821",
+          "label": "2a Prediction",
+          "input": [
+            {
+              "id": "node_17628751847421",
+              "name": "Data",
+              "label": "CT Scan"
+            },
+            {
+              "id": "node_17628751265913",
+              "name": "Model",
+              "label": "ANFIS"
+            },
+            {
+              "id": "node_1762875203229",
+              "name": "Data",
+              "label": "Patient Data"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_17628751847424",
+              "name": "Symbol",
+              "label": "Predicted Infraction Volume Growth"
+            }
+          ],
+          "process": {
+            "id": "node_17628751847423",
+            "name": "Deduce",
+            "label": "Deduce"
+          }
+        }
+      ]
+    }
+  ]
+}

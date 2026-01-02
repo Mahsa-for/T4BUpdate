@@ -1,0 +1,135 @@
+{
+  "metaData": {
+    "exportId": "ae7f8c0a",
+    "userId": "user_wkgt4g8b",
+    "exportDate": "2025-11-24T10:10:44.226Z"
+  },
+  "boxologies": [
+    {
+      "id": "c74cb86f-23d2-497c-bc82-fdb61d794b64",
+      "label": "T4B-58_2025-11-24",
+      "DesignPattern": [
+        {
+          "id": "group_1763977637305",
+          "label": "1d Artifact Removal",
+          "input": [
+            {
+              "id": "node_17639775831531",
+              "name": "Image",
+              "label": "Image MRI Brain Tumor Scans"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_17639775831623",
+              "name": "Image",
+              "label": "MRI Removed Artifact"
+            }
+          ],
+          "process": {
+            "id": "node_17639775831612",
+            "name": "transform",
+            "label": "Transform"
+          }
+        },
+        {
+          "id": "group_1763977775292",
+          "label": "1d Noise Reduction",
+          "input": [
+            {
+              "id": "node_17639775831623",
+              "name": "Image",
+              "label": "MRI Removed Artifact"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_17639776502933",
+              "name": "Image",
+              "label": "Image Brain Normalized"
+            }
+          ],
+          "process": {
+            "id": "node_17639776502932",
+            "name": "transform",
+            "label": "Transform"
+          }
+        },
+        {
+          "id": "group_1763977809981",
+          "label": "1d Feature Extraction",
+          "input": [
+            {
+              "id": "node_17639776502933",
+              "name": "Image",
+              "label": "Image Brain Normalized"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_17639776696143",
+              "name": "Number",
+              "label": "Numeric Feature Vectors"
+            }
+          ],
+          "process": {
+            "id": "node_17639776696142",
+            "name": "transform",
+            "label": "Transform"
+          }
+        },
+        {
+          "id": "group_1763978963141",
+          "label": "1a Model Train",
+          "input": [
+            {
+              "id": "node_17639776696143",
+              "name": "Number",
+              "label": "Numeric Feature Vectors"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_17639776971593",
+              "name": "HybridModel",
+              "label": "Hybrid ANFIS"
+            }
+          ],
+          "process": {
+            "id": "node_17639776971582",
+            "name": "Train",
+            "label": "Train"
+          }
+        },
+        {
+          "id": "group_1763979007480",
+          "label": "Predition Making",
+          "input": [
+            {
+              "id": "node_17639777224221",
+              "name": "Data",
+              "label": "Image Patient Brain MRI"
+            },
+            {
+              "id": "node_17639776971593",
+              "name": "HybridModel",
+              "label": "Hybrid ANFIS"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_17639777224244",
+              "name": "Symbol",
+              "label": "Tumor Type"
+            }
+          ],
+          "process": {
+            "id": "node_17639777224243",
+            "name": "Deduce",
+            "label": "Deduce"
+          }
+        }
+      ]
+    }
+  ]
+}

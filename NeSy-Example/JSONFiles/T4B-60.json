@@ -1,0 +1,181 @@
+{
+  "metaData": {
+    "exportId": "0600e47e",
+    "userId": "user_wkgt4g8b",
+    "exportDate": "2025-11-24T10:58:07.226Z"
+  },
+  "boxologies": [
+    {
+      "id": "d95c0208-f889-4dae-a517-0456bdfd396c",
+      "label": "T4B-60",
+      "DesignPattern": [
+        {
+          "id": "group_1763981467438",
+          "label": "1d Pre-processing",
+          "input": [
+            {
+              "id": "node_17639812815871",
+              "name": "Data",
+              "label": "Medical Data"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_17639812815963",
+              "name": "Data",
+              "label": "Normalized Data"
+            }
+          ],
+          "process": {
+            "id": "node_17639812815952",
+            "name": "transform",
+            "label": "Transform"
+          }
+        },
+        {
+          "id": "group_1763981498477",
+          "label": "1d Divide Data",
+          "input": [
+            {
+              "id": "node_17639812815963",
+              "name": "Data",
+              "label": "Normalized Data"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_17639812851913",
+              "name": "Data",
+              "label": "Segmented Data"
+            }
+          ],
+          "process": {
+            "id": "node_17639812851902",
+            "name": "transform",
+            "label": "Transform"
+          }
+        },
+        {
+          "id": "group_1763981542811",
+          "label": "1c Agent Learning",
+          "input": [
+            {
+              "id": "node_17639812851913",
+              "name": "Data",
+              "label": "Segmented Data"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_17639813124253",
+              "name": "Symbol",
+              "label": "Local Rules"
+            }
+          ],
+          "process": {
+            "id": "node_17639813124252",
+            "name": "transform",
+            "label": "Transform"
+          }
+        },
+        {
+          "id": "group_1763981597427",
+          "label": "1d Communication and Neighborhood Formation",
+          "input": [
+            {
+              "id": "node_17639813124253",
+              "name": "Symbol",
+              "label": "Local Rules"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_17639813230963",
+              "name": "Symbol",
+              "label": "Enriched Rules"
+            }
+          ],
+          "process": {
+            "id": "node_17639813230952",
+            "name": "transform",
+            "label": "Transform"
+          }
+        },
+        {
+          "id": "group_1763981646943",
+          "label": "1d Probabilistic Fuzzy Rule Refinement",
+          "input": [
+            {
+              "id": "node_17639813230963",
+              "name": "Symbol",
+              "label": "Enriched Rules"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_17639813338293",
+              "name": "Symbol",
+              "label": "Probabilistic Rules"
+            }
+          ],
+          "process": {
+            "id": "node_17639813338282",
+            "name": "transform",
+            "label": "Transform"
+          }
+        },
+        {
+          "id": "group_1763981744292",
+          "label": "1c System Creation",
+          "input": [
+            {
+              "id": "node_17639813338293",
+              "name": "Symbol",
+              "label": "Probabilistic Rules"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_17639816795963",
+              "name": "HybridModel",
+              "label": "Hybrid DPFRM System"
+            }
+          ],
+          "process": {
+            "id": "node_17639816795962",
+            "name": "Train",
+            "label": "Train"
+          }
+        },
+        {
+          "id": "group_1763981833433",
+          "label": "2a Prediction Making",
+          "input": [
+            {
+              "id": "node_17639817612751",
+              "name": "Data",
+              "label": "Patient Data"
+            },
+            {
+              "id": "node_17639816795963",
+              "name": "HybridModel",
+              "label": "Hybrid DPFRM System"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_17639817612764",
+              "name": "Symbol",
+              "label": "Task Specific Prediction (e.g. Mortality)"
+            }
+          ],
+          "process": {
+            "id": "node_17639817612763",
+            "name": "Deduce",
+            "label": "Deduce"
+          }
+        }
+      ]
+    }
+  ]
+}

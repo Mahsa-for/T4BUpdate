@@ -1,0 +1,64 @@
+services:
+  # Backend (development) - runs the uvicorn command you use locally
+  backend:
+    build:
+      context: .
+      dockerfile: backend/Dockerfile
+    container_name: boxology-backend
+    ports:
+      - "8000:8000"
+    volumes:
+      - .:/app
+    working_dir: /app
+    command: python -m uvicorn backend.main:app --host 0.0.0.0 --port 8000 --reload --reload-dir backend --reload-dir src
+    restart: unless-stopped
+    networks:
+      - boxology-network
+    environment:
+      - PYTHONUNBUFFERED=1
+      - PYTHONPATH=/app
+      - SPARQL_QUERY_ENDPOINT=http://boxology_kg:8890/sparql
+      - SPARQL_UPDATE_ENDPOINT=http://boxology_kg:8890/sparql-auth
+    
+    depends_on:
+      - boxology_kg
+
+
+
+  # Development build (frontend) — depends on backend
+  boxology-interface-dev:
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    container_name: boxology-interface-dev
+    ports:
+      - "5173:5173"
+    volumes:
+      - .:/app
+      - /app/node_modules
+    networks:
+      - boxology-network
+    command: sh -c "npm install && npm run dev -- --host 0.0.0.0"
+    depends_on:
+      - backend
+    environment:
+      - VITE_BACKEND_URL=http://localhost:8000
+  
+  boxology_kg:
+    container_name: boxology_kg
+    image: kemele/virtuoso:7-stable
+    restart: unless-stopped
+    ports:
+      - "8890:8890"
+    volumes:
+      - kg_data:/data
+    networks:
+      - boxology-network
+
+
+networks:
+  boxology-network:
+    driver: bridge
+
+volumes:
+  kg_data:

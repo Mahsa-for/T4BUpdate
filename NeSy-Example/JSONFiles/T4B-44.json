@@ -1,0 +1,224 @@
+{
+  "metaData": {
+    "exportId": "9b842985",
+    "userId": "user_pnpnxuhk",
+    "exportDate": "2025-11-12T14:31:14.692Z"
+  },
+  "boxologies": [
+    {
+      "id": "f5c75aea-c773-4dd9-ad83-cf17e6fdb32d",
+      "label": "Diagram",
+      "DesignPattern": [
+        {
+          "id": "group_1762957593061",
+          "label": "1d Pre-processing",
+          "input": [
+            {
+              "id": "node_17629569732061",
+              "name": "Data",
+              "label": "Raw Microarray Gen\n Expression Datasets"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_17629569732153",
+              "name": "Data",
+              "label": "Cleaned and Normalized"
+            }
+          ],
+          "process": {
+            "id": "node_17629569732142",
+            "name": "transform",
+            "label": "Transform"
+          }
+        },
+        {
+          "id": "group_1762957629646",
+          "label": "1d Annotation",
+          "input": [
+            {
+              "id": "node_17629569910281",
+              "name": "actor",
+              "label": "Experts"
+            },
+            {
+              "id": "node_17629569732153",
+              "name": "Data",
+              "label": "Cleaned and Normalized"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_17629569910323",
+              "name": "Data",
+              "label": "Unlabeled Data"
+            }
+          ],
+          "process": {
+            "id": "node_1762957174670",
+            "name": "Engineer",
+            "label": "Engineer"
+          }
+        },
+        {
+          "id": "group_1762957643135",
+          "label": "1d Annotation",
+          "input": [
+            {
+              "id": "node_17629569910281",
+              "name": "actor",
+              "label": "Experts"
+            },
+            {
+              "id": "node_17629569732153",
+              "name": "Data",
+              "label": "Cleaned and Normalized"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_1762957002482",
+              "name": "Data",
+              "label": "Labeled Data"
+            }
+          ],
+          "process": {
+            "id": "node_1762957172658",
+            "name": "Engineer",
+            "label": "Engineer"
+          }
+        },
+        {
+          "id": "group_1762957697416",
+          "label": "1a Development of the Rough-Fuzzy Classifier",
+          "input": [
+            {
+              "id": "node_1762957002482",
+              "name": "Data",
+              "label": "Labeled Data"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_17629570147933",
+              "name": "Model",
+              "label": "Rough-Fuzzy Classifier"
+            }
+          ],
+          "process": {
+            "id": "node_17629570147912",
+            "name": "Train",
+            "label": "Train"
+          }
+        },
+        {
+          "id": "group_1762957738155",
+          "label": "2a Iterative Selection",
+          "input": [
+            {
+              "id": "node_17629569910323",
+              "name": "Data",
+              "label": "Unlabeled Data"
+            },
+            {
+              "id": "node_17629570147933",
+              "name": "Model",
+              "label": "Rough-Fuzzy Classifier"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_17629570301574",
+              "name": "Data",
+              "label": "Most Uncertain Data"
+            }
+          ],
+          "process": {
+            "id": "node_17629570301563",
+            "name": "Deduce",
+            "label": "Deduce"
+          }
+        },
+        {
+          "id": "group_1762957767073",
+          "label": "2a Expert Labeling",
+          "input": [
+            {
+              "id": "node_17629570618111",
+              "name": "actor",
+              "label": "Experts"
+            },
+            {
+              "id": "node_17629570301574",
+              "name": "Data",
+              "label": "Most Uncertain Data"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_17629570618153",
+              "name": "Data",
+              "label": "Labeled Data"
+            }
+          ],
+          "process": {
+            "id": "node_17629570618142",
+            "name": "Engineer",
+            "label": "Engineer"
+          }
+        },
+        {
+          "id": "group_1762957792339",
+          "label": "1a Classifier Update",
+          "input": [
+            {
+              "id": "node_17629570618153",
+              "name": "Data",
+              "label": "Labeled Data"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_17629570784853",
+              "name": "Model",
+              "label": "Rough Fuzzy Classifier"
+            }
+          ],
+          "process": {
+            "id": "node_17629570784842",
+            "name": "Train",
+            "label": "Train"
+          }
+        },
+        {
+          "id": "group_1762957807215",
+          "label": "2a Prediction",
+          "input": [
+            {
+              "id": "node_17629571053541",
+              "name": "Data",
+              "label": "Patient Data"
+            },
+            {
+              "id": "node_17629570784853",
+              "name": "Model",
+              "label": "Rough Fuzzy Classifier"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_17629571053584",
+              "name": "Symbol",
+              "label": "Cancer Type"
+            }
+          ],
+          "process": {
+            "id": "node_17629571053573",
+            "name": "prediction",
+            "label": "Predict"
+          }
+        }
+      ]
+    }
+  ]
+}

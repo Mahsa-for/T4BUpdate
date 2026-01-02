@@ -1,0 +1,183 @@
+{
+  "metaData": {
+    "exportId": "dc182fab",
+    "userId": "user_pnpnxuhk",
+    "exportDate": "2025-11-11T15:17:19.048Z"
+  },
+  "boxologies": [
+    {
+      "id": "0d5e2c84-6e94-4381-8a41-9bf4398479b0",
+      "label": "T4B-34",
+      "DesignPattern": [
+        {
+          "id": "group_1762873588165",
+          "label": "1d Preprocessing and Feature Selection",
+          "input": [
+            {
+              "id": "node_17628735574151",
+              "name": "Data",
+              "label": "Osteoarthritis Data"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_17628735574303",
+              "name": "Data",
+              "label": "Extracted Features"
+            }
+          ],
+          "process": {
+            "id": "node_17628735574282",
+            "name": "transform",
+            "label": "Transform"
+          }
+        },
+        {
+          "id": "group_1762873656641",
+          "label": "2a FIS 1",
+          "input": [
+            {
+              "id": "node_17628735574303",
+              "name": "Data",
+              "label": "Extracted Features"
+            },
+            {
+              "id": "node_17628736972053",
+              "name": "SemanticModel",
+              "label": "FIS 1"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_17628736297844",
+              "name": "Symbol",
+              "label": "Importance Score"
+            }
+          ],
+          "process": {
+            "id": "node_17628736297833",
+            "name": "Deduce",
+            "label": "Deduce"
+          }
+        },
+        {
+          "id": "group_1762873676071",
+          "label": "1a Learning Process",
+          "input": [
+            {
+              "id": "node_17628735574303",
+              "name": "Data",
+              "label": "Extracted Features"
+            },
+            {
+              "id": "node_17628737504294",
+              "name": "Symbol",
+              "label": "Overall Importance"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_17628736145213",
+              "name": "StatisticModel",
+              "label": "Prediction Model"
+            }
+          ],
+          "process": {
+            "id": "node_17628736145202",
+            "name": "Train",
+            "label": "Train"
+          }
+        },
+        {
+          "id": "group_1762873721386",
+          "label": "1c FIS Creation",
+          "input": [
+            {
+              "id": "node_17628736972021",
+              "name": "Human",
+              "label": "Expert"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_17628736972053",
+              "name": "SemanticModel",
+              "label": "FIS 1"
+            },
+            {
+              "id": "node_17628737504272",
+              "name": "SemanticModel",
+              "label": "FIS 2"
+            }
+          ],
+          "process": {
+            "id": "node_17628736972042",
+            "name": "Engineer",
+            "label": "Engineer"
+          }
+        },
+        {
+          "id": "group_1762873799831",
+          "label": "2a FIS 2",
+          "input": [
+            {
+              "id": "node_17628736297844",
+              "name": "Symbol",
+              "label": "Importance Score"
+            },
+            {
+              "id": "node_17628737504272",
+              "name": "SemanticModel",
+              "label": "FIS 2"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_17628737504294",
+              "name": "Symbol",
+              "label": "Overall Importance"
+            }
+          ],
+          "process": {
+            "id": "node_17628737504283",
+            "name": "Deduce",
+            "label": "Deduce"
+          }
+        },
+        {
+          "id": "group_1762873898825",
+          "label": "2a Prediction",
+          "input": [
+            {
+              "id": "node_17628738521881",
+              "name": "Data",
+              "label": "Patient Data"
+            },
+            {
+              "id": "node_17628736145213",
+              "name": "StatisticModel",
+              "label": "Prediction Model"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_17628738521914",
+              "name": "Data",
+              "label": "Certainity"
+            },
+            {
+              "id": "node_1762873884750",
+              "name": "Data",
+              "label": "Likelihood KOA"
+            }
+          ],
+          "process": {
+            "id": "node_17628738521913",
+            "name": "prediction",
+            "label": "Predict"
+          }
+        }
+      ]
+    }
+  ]
+}

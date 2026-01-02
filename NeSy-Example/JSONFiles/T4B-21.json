@@ -1,0 +1,168 @@
+{
+  "metaData": {
+    "exportId": "3f51c958",
+    "userId": "user_pnpnxuhk",
+    "exportDate": "2025-11-11T14:16:06.633Z"
+  },
+  "boxologies": [
+    {
+      "id": "1a3c916b-dbd8-44a0-b580-1a22122274f8",
+      "label": "T4B-21",
+      "DesignPattern": [
+        {
+          "id": "group_1761733102023",
+          "label": "1d Compute Information Measures",
+          "input": [
+            {
+              "id": "node_1761732706375_n3",
+              "name": "Data",
+              "label": "Data Fuzzy Equivalence Relations\n"
+            },
+            {
+              "id": "node_1762870321313",
+              "name": "Data",
+              "label": "Data Lower + Upper Approximation"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_1761732722378_n3",
+              "name": "Data",
+              "label": "Data Fuzzy Information Measures"
+            }
+          ],
+          "process": {
+            "id": "node_1761732722376_n2",
+            "name": "embed",
+            "label": "Embed"
+          }
+        },
+        {
+          "id": "group_1761733181334",
+          "label": "1d Calculate Fuzzy Gain Ratio",
+          "input": [
+            {
+              "id": "node_1761732722378_n3",
+              "name": "Data",
+              "label": "Data Fuzzy Information Measures"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_1761732739922_n3",
+              "name": "Data",
+              "label": "Data Fuzzy Gain Ratios"
+            }
+          ],
+          "process": {
+            "id": "node_1761732739922_n2",
+            "name": "embed",
+            "label": "Embed"
+          }
+        },
+        {
+          "id": "group_1761733275540",
+          "label": "1d Rank Attributes",
+          "input": [
+            {
+              "id": "node_1761732739922_n3",
+              "name": "Data",
+              "label": "Data Fuzzy Gain Ratios"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_1761733205926_n3",
+              "name": "Data",
+              "label": "Selected Attributes"
+            }
+          ],
+          "process": {
+            "id": "node_1761733205925_n2",
+            "name": "embed",
+            "label": "Embed"
+          }
+        },
+        {
+          "id": "group_1761733392476",
+          "label": "1a Train Classification Model",
+          "input": [
+            {
+              "id": "node_1761733205926_n3",
+              "name": "Data",
+              "label": "Selected Attributes"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_1761732795217_n3",
+              "name": "SemanticModel",
+              "label": "Semantic Model"
+            }
+          ],
+          "process": {
+            "id": "node_1761732795215_n2",
+            "name": "Train",
+            "label": "Train"
+          }
+        },
+        {
+          "id": "group_1761733421477",
+          "label": "Subgraph-2a Classify Tumor",
+          "input": [
+            {
+              "id": "node_1761732820236_n1",
+              "name": "Data",
+              "label": "Numeric Gene Expression Levels"
+            },
+            {
+              "id": "node_1761732795217_n3",
+              "name": "SemanticModel",
+              "label": "Semantic Model"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_1761732820239_n4",
+              "name": "Label",
+              "label": "Label Tumor Class"
+            }
+          ],
+          "process": {
+            "id": "node_1761732820238_n3",
+            "name": "Deduce",
+            "label": "Deduce"
+          }
+        },
+        {
+          "id": "group_1762870416990",
+          "label": "1d Construct Fuzzy Rough Set",
+          "input": [
+            {
+              "id": "node_1761732706360_n1",
+              "name": "Number",
+              "label": "Numeric Gene Expression Levels"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_1761732706375_n3",
+              "name": "Data",
+              "label": "Data Fuzzy Equivalence Relations\n"
+            },
+            {
+              "id": "node_1762870321313",
+              "name": "Data",
+              "label": "Data Lower + Upper Approximation"
+            }
+          ],
+          "process": {
+            "id": "node_1761732706374_n2",
+            "name": "embed",
+            "label": "Embed Fuzzy Rough Set"
+          }
+        }
+      ]
+    }
+  ]
+}

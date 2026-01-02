@@ -1,0 +1,24 @@
+digraph G {
+    
+
+    subgraph cluster_Elementary_1a {
+    
+    //System design
+    label = "1a" color="black" fillcolor="#c9c5c5" style="filled, dotted"
+    
+    
+    {   
+        //define elements
+        Data [ id= "Data" ,color= green ,fillcolor= white ,style=filled ,shape=box ,class = "instance"]
+        ML_Training [ id= "ML_Training" ,color=blue2 fillcolor=white style=filled shape=Mrecord]
+        ML_model [ id= "ML_model" ,color= blue fillcolor=white style=filled shape=hexagon]}
+        
+    }
+    
+    //design pattern
+    rankdir="LR" Data-> ML_Training-> ML_model
+   
+}
+
+    
+    

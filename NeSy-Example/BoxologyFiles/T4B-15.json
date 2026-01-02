@@ -1,0 +1,31 @@
+{ "class": "GraphLinksModel",
+  "ModelData": {"boxologyId":"ca0b10c7-d6b0-43df-b24c-014190c11041","boxologyLabel":"T4B-15"},
+  "nodeDataArray": [
+{"key":"node_1761672159278_n1","name":"Data","label":"Raw Measurements","shape":"Rectangle","color":"#b7eaffff","stroke":"#1E5F8B","loc":"117.7 52.775999999999996","type":"Data","width":171,"height":60,"group":"group_1761672417565"},
+{"key":"node_1761672159291_n2","name":"Transform","label":"Transform","shape":"RoundedRectangle","color":"#fbf2a2ff","stroke":"#B8A600","loc":"117.7 191.776","type":"Transform","parameter1":45,"group":"group_1761672417565"},
+{"key":"node_1761672159294_n3","name":"Data","label":"Extracted Features","shape":"Rectangle","color":"#b7eaffff","stroke":"#1E5F8B","loc":"117.7 311.776","type":"Data","width":143,"height":60,"group":"group_1761672417565"},
+{"key":"node_1761672179401_n2","name":"Train","label":"Train","shape":"RoundedRectangle","color":"#FFA07A","stroke":"#CD5C5C","loc":"117.7 500","type":"Train","parameter1":45,"group":"group_1761672454772"},
+{"key":"node_1761672179401_n3","name":"Model","label":"Dynamic Boosting Model","shape":"Hexagon","color":"#f4ccf4ff","stroke":"#8B4F8B","loc":"117.7 617.1638504279955","type":"Model","width":192,"height":60,"group":"group_1761672454772"},
+{"key":"node_1761672199645_n1","name":"Data","label":"Measurements","shape":"Rectangle","color":"#b7eaffff","stroke":"#1E5F8B","loc":"382.5 492.776","type":"Data","group":"group_1761672474916"},
+{"key":"node_1761672199648_n3","name":"Deduce","label":"Deduce","shape":"RoundedRectangle","color":"#ff81f7ff","stroke":"#4c003bff","loc":"382.5 612.7760000000001","type":"Deduce","parameter1":45,"group":"group_1761672474916"},
+{"key":"node_1761672199649_n4","name":"Symbol","label":"Health Score and Epilepsy Prediction","shape":"Rectangle","color":"#ccffccff","stroke":"#218721ff","loc":"403.264 912.776","type":"Symbol","width":240,"height":60,"group":"group_1762951220865"},
+{"key":"node_1761672230428","name":"Deduce","label":"Deduce","shape":"RoundedRectangle","color":"#ff81f7ff","stroke":"#4c003bff","loc":"403.264 1032.7759999999998","type":"Deduce","parameter1":45,"group":"group_1762951220865"},
+{"key":"node_1761672235394","name":"Symbol","label":"Diagnosis and Treatment","shape":"Rectangle","color":"#ccffccff","stroke":"#218721ff","loc":"623.264 1032.7759999999998","type":"Symbol","group":"group_1762951220865","width":176,"height":60},
+{"key":"group_1761672417565","isGroup":true,"category":"ClusterGroup","label":"1d Feature Extraction"},
+{"key":"group_1761672454772","isGroup":true,"category":"ClusterGroup","label":"1a Ensemble Machine Learning Model Train"},
+{"key":"group_1761672474916","isGroup":true,"category":"ClusterGroup","label":"2a Health Score Prediction"},
+{"key":"node_1762951184283","name":"Model","label":"Fuzzy Rules","shape":"Hexagon","color":"#f4ccf4ff","stroke":"#8B4F8B","loc":"202.50005777245187 1028.8020118147322","type":"Model","parameter1":1,"group":"group_1762951220865"},
+{"key":"group_1762951220865","isGroup":true,"category":"ClusterGroup","label":"2a Fuzzy Logic Inference"}
+],
+  "linkDataArray": [
+{"key":"link_1761672159295_n1_n2","from":"node_1761672159278_n1","to":"node_1761672159291_n2"},
+{"key":"link_1761672159297_n2_n3","from":"node_1761672159291_n2","to":"node_1761672159294_n3"},
+{"key":"link_1761672179402_n1_n2","from":"node_1761672159294_n3","to":"node_1761672179401_n2"},
+{"key":"link_1761672179403_n2_n3","from":"node_1761672179401_n2","to":"node_1761672179401_n3"},
+{"key":"link_1761672199650_n1_n3","from":"node_1761672199645_n1","to":"node_1761672199648_n3"},
+{"key":"link_1761672199651_n2_n3","from":"node_1761672179401_n3","to":"node_1761672199648_n3"},
+{"key":"link_1761672199652_n3_n4","from":"node_1761672199648_n3","to":"node_1761672199649_n4"},
+{"from":"node_1761672199649_n4","to":"node_1761672230428"},
+{"from":"node_1761672230428","to":"node_1761672235394"},
+{"from":"node_1762951184283","to":"node_1761672230428"}
+]}

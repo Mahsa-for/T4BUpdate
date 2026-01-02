@@ -1,0 +1,117 @@
+{
+  "metaData": {
+    "exportId": "f0941582",
+    "userId": "user_pnpnxuhk",
+    "exportDate": "2025-11-12T12:51:58.319Z"
+  },
+  "boxologies": [
+    {
+      "id": "574767f3-dfd0-494f-a487-3ffe4fde50a3",
+      "label": "T4B-27",
+      "DesignPattern": [
+        {
+          "id": "group_1761737449372",
+          "label": "1d Preliminary Data Processing",
+          "input": [
+            {
+              "id": "node_1761737365345_n1",
+              "name": "Data",
+              "label": "Raw Patient Data"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_1761737365353_n3",
+              "name": "Data",
+              "label": "Structured and Pre-processed"
+            }
+          ],
+          "process": {
+            "id": "node_1761737365352_n2",
+            "name": "transform",
+            "label": "Embed"
+          }
+        },
+        {
+          "id": "group_1761737592314",
+          "label": "1c Fuzzy Partition Method + MLE Clustering",
+          "input": [
+            {
+              "id": "node_1761737460735",
+              "name": "Data",
+              "label": "Optimal no of Clusters"
+            },
+            {
+              "id": "node_1761737365353_n3",
+              "name": "Data",
+              "label": "Structured and Pre-processed"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_1761737466787_n3",
+              "name": "StatisticModel",
+              "label": "Statistical Fuzzy PArtition Matrix"
+            }
+          ],
+          "process": {
+            "id": "node_1761737466785_n2",
+            "name": "Train",
+            "label": "Train"
+          }
+        },
+        {
+          "id": "group_1761737699852",
+          "label": "2a Diagnosis Prediction",
+          "input": [
+            {
+              "id": "node_1761737556981_n1",
+              "name": "Data",
+              "label": "Patient Data"
+            },
+            {
+              "id": "node_1761737466787_n3",
+              "name": "StatisticModel",
+              "label": "Statistical Fuzzy PArtition Matrix"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_1761737556986_n4",
+              "name": "Symbol",
+              "label": "Diagnosis"
+            }
+          ],
+          "process": {
+            "id": "node_1761737556985_n3",
+            "name": "Deduce",
+            "label": "Deduce"
+          }
+        },
+        {
+          "id": "group_1762951871265",
+          "label": "2a Estimating the Optimal Number of Clusters",
+          "input": [
+            {
+              "id": "node_1761737365353_n3",
+              "name": "Data",
+              "label": "Structured and Pre-processed"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_1761737460735",
+              "name": "Data",
+              "label": "Optimal no of Clusters"
+            }
+          ],
+          "process": {
+            "id": "node_1762951842326",
+            "name": "transform",
+            "label": "Transform"
+          }
+        }
+      ]
+    }
+  ]
+}

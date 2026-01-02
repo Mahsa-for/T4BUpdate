@@ -1,0 +1,150 @@
+{
+  "metaData": {
+    "exportId": "a7d05c5d",
+    "userId": "user_pnpnxuhk",
+    "exportDate": "2025-11-20T13:53:21.991Z"
+  },
+  "boxologies": [
+    {
+      "id": "ba5e1885-a80a-45f7-bd1e-94770370be9d",
+      "label": "Diagram",
+      "DesignPattern": [
+        {
+          "id": "group_1763646358384",
+          "label": "1c Construction of the Initial FCM",
+          "input": [
+            {
+              "id": "node_17635498603131",
+              "name": "Human",
+              "label": "Expert"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_17635498603303",
+              "name": "Symbol",
+              "label": "Preliminary FCM"
+            }
+          ],
+          "process": {
+            "id": "node_17635498603292",
+            "name": "Engineer",
+            "label": "Engineer"
+          }
+        },
+        {
+          "id": "group_1763646483243",
+          "label": "1d Integration of Fuzzy Rules",
+          "input": [
+            {
+              "id": "node_17635498603303",
+              "name": "Symbol",
+              "label": "Preliminary FCM"
+            },
+            {
+              "id": "node_1763549875015",
+              "name": "Symbol",
+              "label": "Additional Existing Knowledge"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_17635498696533",
+              "name": "Symbol",
+              "label": "Enhanced FCM"
+            }
+          ],
+          "process": {
+            "id": "node_17635498696522",
+            "name": "transform",
+            "label": "Transform"
+          }
+        },
+        {
+          "id": "group_1763646543975",
+          "label": "1a System Train and Calibration",
+          "input": [
+            {
+              "id": "node_17635498696533",
+              "name": "Symbol",
+              "label": "Enhanced FCM"
+            },
+            {
+              "id": "node_1763549908231",
+              "name": "Data",
+              "label": "Previous Cases"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_17635498959383",
+              "name": "Model",
+              "label": "FCM-DDS"
+            }
+          ],
+          "process": {
+            "id": "node_17635498959372",
+            "name": "Train",
+            "label": "Train"
+          }
+        },
+        {
+          "id": "group_1763646680469",
+          "label": "2a Implementation and Real-Time Decision Support",
+          "input": [
+            {
+              "id": "node_17635499535051",
+              "name": "Data",
+              "label": "Real-Time Patient Data"
+            },
+            {
+              "id": "node_17635498959383",
+              "name": "Model",
+              "label": "FCM-DDS"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_17635499535074",
+              "name": "Symbol",
+              "label": "DS Output"
+            }
+          ],
+          "process": {
+            "id": "node_17635499535063",
+            "name": "Deduce",
+            "label": "Deduce"
+          }
+        },
+        {
+          "id": "group_1763646762680",
+          "label": "2a Feedback Loop and Continuous Improvement",
+          "input": [
+            {
+              "id": "node_17635499751801",
+              "name": "actor",
+              "label": "Professionals"
+            },
+            {
+              "id": "node_17635499535074",
+              "name": "Symbol",
+              "label": "DS Output"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_17635499751823",
+              "name": "Symbol",
+              "label": "Updated DS Outputs"
+            }
+          ],
+          "process": {
+            "id": "node_17635499751822",
+            "name": "Engineer",
+            "label": "Engineer"
+          }
+        }
+      ]
+    }
+  ]
+}

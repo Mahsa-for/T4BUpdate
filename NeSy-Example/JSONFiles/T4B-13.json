@@ -1,0 +1,168 @@
+{
+  "metaData": {
+    "exportId": "975bd172",
+    "userId": "user_pnpnxuhk",
+    "exportDate": "2025-11-12T12:32:20.924Z"
+  },
+  "boxologies": [
+    {
+      "id": "28374746-5811-441c-a4f1-bb0cf91ad51b",
+      "label": "T4B-13",
+      "DesignPattern": [
+        {
+          "id": "group_1761670019553",
+          "label": "2a Create Vectorized Representation",
+          "input": [
+            {
+              "id": "node_1761669500986_n1",
+              "name": "Data",
+              "label": "Annotated Dataset"
+            },
+            {
+              "id": "node_1761669500988_n2",
+              "name": "StatisticModel",
+              "label": "Statistic Word2Vec"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_1761669500988_n4",
+              "name": "Symbol",
+              "label": "Vectorized Representation"
+            }
+          ],
+          "process": {
+            "id": "node_1761669500988_n3",
+            "name": "Deduce",
+            "label": "Deduce"
+          }
+        },
+        {
+          "id": "group_1761670042698",
+          "label": "1a Model Train",
+          "input": [
+            {
+              "id": "node_1761669500988_n4",
+              "name": "Symbol",
+              "label": "Vectorized Representation"
+            },
+            {
+              "id": "node_1761669500986_n1",
+              "name": "Data",
+              "label": "Annotated Dataset"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_1761669536902_n3",
+              "name": "SemanticModel",
+              "label": "Semantic NLP Model"
+            }
+          ],
+          "process": {
+            "id": "node_1761669536902_n2",
+            "name": "Train",
+            "label": "Train"
+          }
+        },
+        {
+          "id": "group_1761670357204",
+          "label": "2a Output NLP Model",
+          "input": [
+            {
+              "id": "node_1761669536902_n3",
+              "name": "SemanticModel",
+              "label": "Semantic NLP Model"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_1761670180709",
+              "name": "Symbol",
+              "label": "Semantically Classified Data"
+            }
+          ],
+          "process": {
+            "id": "node_1761670174272",
+            "name": "Deduce",
+            "label": "Deduce"
+          }
+        },
+        {
+          "id": "group_1761670417547",
+          "label": "1c Create NLP Fuzzy",
+          "input": [
+            {
+              "id": "node_1761669566195_n4",
+              "name": "Rules",
+              "label": "Fuzzy Rules"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_1761669624638_n3",
+              "name": "Model",
+              "label": "Hybrid NLP Fuzzy"
+            }
+          ],
+          "process": {
+            "id": "node_1761669624637_n2",
+            "name": "Train",
+            "label": "Train"
+          }
+        },
+        {
+          "id": "group_1761670432141",
+          "label": "2a Recommendation",
+          "input": [
+            {
+              "id": "node_1761669646154_n1",
+              "name": "Data",
+              "label": "Input Query"
+            },
+            {
+              "id": "node_1761669624638_n3",
+              "name": "Model",
+              "label": "Hybrid NLP Fuzzy"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_1761669646158_n4",
+              "name": "Symbol",
+              "label": "Recommenation"
+            }
+          ],
+          "process": {
+            "id": "node_1761669646157_n3",
+            "name": "Deduce",
+            "label": "Deduce"
+          }
+        },
+        {
+          "id": "group_1762950703725",
+          "label": "2a Fuzzy Classification",
+          "input": [
+            {
+              "id": "node_1761670180709",
+              "name": "Symbol",
+              "label": "Semantically Classified Data"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_1761669566195_n4",
+              "name": "Rules",
+              "label": "Fuzzy Rules"
+            }
+          ],
+          "process": {
+            "id": "node_1762950680186",
+            "name": "transform",
+            "label": "Transform"
+          }
+        }
+      ]
+    }
+  ]
+}

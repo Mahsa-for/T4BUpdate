@@ -1,0 +1,158 @@
+{
+  "metaData": {
+    "exportId": "69a5890c",
+    "userId": "user_wkgt4g8b",
+    "exportDate": "2025-11-24T11:34:40.710Z"
+  },
+  "boxologies": [
+    {
+      "id": "c61c74ee-ecfb-486e-a3a5-36e6222cdfd4",
+      "label": "T4B-65",
+      "DesignPattern": [
+        {
+          "id": "group_1763983721249",
+          "label": "1d Pre-processing",
+          "input": [
+            {
+              "id": "node_17639834661221",
+              "name": "Image",
+              "label": "Image Raw FISH Image"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_17639834661263",
+              "name": "Image",
+              "label": "Image Pre-processed Image"
+            }
+          ],
+          "process": {
+            "id": "node_17639834661252",
+            "name": "transform",
+            "label": "Transform"
+          }
+        },
+        {
+          "id": "group_1763983788155",
+          "label": "1d Feature Extraction",
+          "input": [
+            {
+              "id": "node_17639834661263",
+              "name": "Image",
+              "label": "Image Pre-processed Image"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_17639834696323",
+              "name": "Data",
+              "label": "Numeric Extracted Quantitative Features"
+            }
+          ],
+          "process": {
+            "id": "node_17639834696312",
+            "name": "transform",
+            "label": "Transform"
+          }
+        },
+        {
+          "id": "group_1763983841218",
+          "label": "1d Feature Representation",
+          "input": [
+            {
+              "id": "node_17639834696323",
+              "name": "Data",
+              "label": "Numeric Extracted Quantitative Features"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_17639834745493",
+              "name": "Data",
+              "label": "Numeric Normalized Features"
+            }
+          ],
+          "process": {
+            "id": "node_17639834745482",
+            "name": "transform",
+            "label": "Transform"
+          }
+        },
+        {
+          "id": "group_1763983915457",
+          "label": "1a Model Train",
+          "input": [
+            {
+              "id": "node_17639834745493",
+              "name": "Data",
+              "label": "Numeric Normalized Features"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_17639835413703",
+              "name": "HybridModel",
+              "label": "Hybrid Fuzzy ARTMAP"
+            }
+          ],
+          "process": {
+            "id": "node_17639835413692",
+            "name": "Train",
+            "label": "Train"
+          }
+        },
+        {
+          "id": "group_1763983962963",
+          "label": "2a Classify",
+          "input": [
+            {
+              "id": "node_17639835627781",
+              "name": "Data",
+              "label": "Numeric Patient Image Vectors"
+            },
+            {
+              "id": "node_17639835413703",
+              "name": "HybridModel",
+              "label": "Hybrid Fuzzy ARTMAP"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_17639835627834",
+              "name": "Symbol",
+              "label": "Raw Classification Results"
+            }
+          ],
+          "process": {
+            "id": "node_17639835627823",
+            "name": "Deduce",
+            "label": "Deduce"
+          }
+        },
+        {
+          "id": "group_1763984027110",
+          "label": "1d Transform Results",
+          "input": [
+            {
+              "id": "node_17639835627834",
+              "name": "Symbol",
+              "label": "Raw Classification Results"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_17639835805623",
+              "name": "Symbol",
+              "label": "Interpretable Diagnostic Result"
+            }
+          ],
+          "process": {
+            "id": "node_17639835805612",
+            "name": "transform",
+            "label": "Transform"
+          }
+        }
+      ]
+    }
+  ]
+}

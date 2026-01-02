@@ -1,0 +1,24 @@
+digraph G {
+    
+
+    subgraph cluster_Elementary_1c {
+    
+    //System design
+    label = "1c" color="black" fillcolor="#c9c5c5" style="filled, dotted"
+    
+    
+    {   
+        //define elements
+        Actor [ id= "Actor" ,color=black ,fillcolor= white , style=filled , shape=triangle , class = "instance"]
+        
+        Knowledge_Engineering [ id= "Knowledge_Engineering" ,color=blue4 fillcolor=white style=filled shape=Mrecord]
+        
+        Symbolic_model [ id= "Symbolic" ,color= purple fillcolor=white style=filled shape=hexagon]
+        }
+        
+    }
+    
+    //design pattern
+    rankdir="LR" Actor-> Knowledge_Engineering-> Symbolic_model
+   
+}

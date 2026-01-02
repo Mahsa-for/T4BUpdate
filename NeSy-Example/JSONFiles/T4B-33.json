@@ -1,0 +1,237 @@
+{
+  "metaData": {
+    "exportId": "d8ec50ca",
+    "userId": "user_pnpnxuhk",
+    "exportDate": "2025-11-11T15:03:33.593Z"
+  },
+  "boxologies": [
+    {
+      "id": "23df386e-cfa2-42d7-8097-42292c26e631",
+      "label": "Diagram",
+      "DesignPattern": [
+        {
+          "id": "group_1762872487748",
+          "label": "1d Complation of Characteristics and Other Information of Interest and Expert Interpretation",
+          "input": [
+            {
+              "id": "node_17628723854391",
+              "name": "actor",
+              "label": "Experts"
+            },
+            {
+              "id": "node_1762872389948",
+              "name": "Data",
+              "label": "Raw Patient Data"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_17628723854543",
+              "name": "Data",
+              "label": "Structured Data"
+            }
+          ],
+          "process": {
+            "id": "node_17628723854532",
+            "name": "Engineer",
+            "label": "Engineer"
+          }
+        },
+        {
+          "id": "group_1762872503458",
+          "label": "2a Risk Assesment",
+          "input": [
+            {
+              "id": "node_17628723854543",
+              "name": "Data",
+              "label": "Structured Data"
+            },
+            {
+              "id": "node_17628724081362",
+              "name": "SemanticModel",
+              "label": "Cascaded Expert Systems"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_17628724081394",
+              "name": "Symbol",
+              "label": "Risk Assessment"
+            }
+          ],
+          "process": {
+            "id": "node_17628724081373",
+            "name": "Deduce",
+            "label": "Deduce"
+          }
+        },
+        {
+          "id": "group_1762872750963",
+          "label": "1c Fuzzy Rules Creation",
+          "input": [
+            {
+              "id": "node_17628725267801",
+              "name": "actor",
+              "label": "Domain Experts"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_17628725267833",
+              "name": "Symbol",
+              "label": "Fuzzy Rules"
+            }
+          ],
+          "process": {
+            "id": "node_17628725267822",
+            "name": "Engineer",
+            "label": "Engineer"
+          }
+        },
+        {
+          "id": "group_1762872858452",
+          "label": "1c Individual System Creation",
+          "input": [
+            {
+              "id": "node_17628725267833",
+              "name": "Symbol",
+              "label": "Fuzzy Rules"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_17628725394363",
+              "name": "SemanticModel",
+              "label": "Individual Expert System"
+            }
+          ],
+          "process": {
+            "id": "node_17628725394352",
+            "name": "Train",
+            "label": "Train"
+          }
+        },
+        {
+          "id": "group_1762872986440",
+          "label": "1d Cascade Individual System",
+          "input": [
+            {
+              "id": "node_17628725394363",
+              "name": "SemanticModel",
+              "label": "Individual Expert System"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_17628724081362",
+              "name": "SemanticModel",
+              "label": "Cascaded Expert Systems"
+            }
+          ],
+          "process": {
+            "id": "node_1762872621532",
+            "name": "transform",
+            "label": "Transform"
+          }
+        },
+        {
+          "id": "group_1762873140824",
+          "label": "1d Structure Dataset",
+          "input": [
+            {
+              "id": "node_17628724081394",
+              "name": "Symbol",
+              "label": "Risk Assessment"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_17628726683653",
+              "name": "Dataset",
+              "label": "Balanced Dataset"
+            }
+          ],
+          "process": {
+            "id": "node_17628726683652",
+            "name": "transform",
+            "label": "Transform"
+          }
+        },
+        {
+          "id": "group_1762873258446",
+          "label": "1d Latent Factors",
+          "input": [
+            {
+              "id": "node_17628726683653",
+              "name": "Dataset",
+              "label": "Balanced Dataset"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_1762873234471",
+              "name": "Data",
+              "label": "Latent Factors"
+            }
+          ],
+          "process": {
+            "id": "node_1762873213451",
+            "name": "transform",
+            "label": "Transform"
+          }
+        },
+        {
+          "id": "group_1762873302589",
+          "label": "1a Train Model",
+          "input": [
+            {
+              "id": "node_1762873234471",
+              "name": "Data",
+              "label": "Latent Factors"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_17628726902623",
+              "name": "Model",
+              "label": "ML Model"
+            }
+          ],
+          "process": {
+            "id": "node_17628726902612",
+            "name": "Train",
+            "label": "Train"
+          }
+        },
+        {
+          "id": "group_1762873353404",
+          "label": "2a Risk Assessment",
+          "input": [
+            {
+              "id": "node_17628727146671",
+              "name": "Data",
+              "label": "Patient Data"
+            },
+            {
+              "id": "node_17628726902623",
+              "name": "Model",
+              "label": "ML Model"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_17628727146704",
+              "name": "Symbol",
+              "label": "Risk Assessment"
+            }
+          ],
+          "process": {
+            "id": "node_17628727146693",
+            "name": "Deduce",
+            "label": "Deduce"
+          }
+        }
+      ]
+    }
+  ]
+}

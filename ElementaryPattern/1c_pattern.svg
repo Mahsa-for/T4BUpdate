@@ -1,0 +1,41 @@
+<svg width="722" height="752" viewBox="0 0 541.5 564" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="translate(79.94500732421875, 342)">
+<title style="">G</title>
+<polygon fill="white" stroke="none" points="-4,4 -4,-111 573.93,-111 573.93,4 -4,4"/>
+<g id="clust1" class="cluster">
+<title style="">cluster_Elementary_1c</title>
+<polygon fill="#c9c5c5" stroke="black" stroke-dasharray="1,5" points="8,-8 8,-99 561.93,-99 561.93,-8 8,-8"/>
+<text text-anchor="middle" x="284.97" y="-82.4" font-family="Times,serif" font-size="14.00" style="">1c</text>
+</g>
+<!-- Actor -->
+<g id="Actor" class="node instance">
+<title style="">Actor</title>
+<polygon fill="white" stroke="black" points="82.05,-65.8 16,-28.6 148.1,-28.6 82.05,-65.8"/>
+<text text-anchor="middle" x="82.05" y="-36.8" font-family="Times,serif" font-size="14.00" style="">Actor</text>
+</g>
+<!-- Knowledge_Engineering -->
+<g id="Knowledge_Engineering" class="node">
+<title style="">Knowledge_Engineering</title>
+<path fill="white" stroke="#00008b" d="M196.1,-23C196.1,-23 328.05,-23 328.05,-23 334.05,-23 340.05,-29 340.05,-35 340.05,-35 340.05,-47 340.05,-47 340.05,-53 334.05,-59 328.05,-59 328.05,-59 196.1,-59 196.1,-59 190.1,-59 184.1,-53 184.1,-47 184.1,-47 184.1,-35 184.1,-35 184.1,-29 190.1,-23 196.1,-23" style=""/>
+<text text-anchor="middle" x="262.08" y="-36.9" font-family="Times,serif" font-size="14.00" style="">Knowledge_Engineering</text>
+</g>
+<!-- Actor&#45;&gt;Knowledge_Engineering -->
+<g id="edge1" class="edge">
+<title style="">Actor-&gt;Knowledge_Engineering</title>
+<path fill="none" stroke="black" d="M127.05,-41C140.81,-41 156.51,-41 172.2,-41" style=""/>
+<polygon fill="black" stroke="black" points="172.09,-44.5 182.09,-41 172.09,-37.5 172.09,-44.5"/>
+</g>
+<!-- Symbolic_model -->
+<g id="Symbolic" class="node">
+<title style="">Symbolic_model</title>
+<polygon fill="white" stroke="purple" points="553.93,-41 509.46,-59 420.52,-59 376.05,-41 420.52,-23 509.46,-23 553.93,-41"/>
+<text text-anchor="middle" x="464.99" y="-36.8" font-family="Times,serif" font-size="14.00" style="">Symbolic_model</text>
+</g>
+<!-- Knowledge_Engineering&#45;&gt;Symbolic_model -->
+<g id="edge2" class="edge">
+<title style="">Knowledge_Engineering-&gt;Symbolic_model</title>
+<path fill="none" stroke="black" d="M340.47,-41C348.04,-41 355.8,-41 363.57,-41" style=""/>
+<polygon fill="black" stroke="black" points="363.4,-44.5 373.4,-41 363.4,-37.5 363.4,-44.5"/>
+</g>
+</g>
+</svg>

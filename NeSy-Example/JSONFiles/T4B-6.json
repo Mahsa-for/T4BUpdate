@@ -1,0 +1,196 @@
+{
+  "metaData": {
+    "exportId": "67beb606",
+    "userId": "user_wkgt4g8b",
+    "exportDate": "2025-11-28T14:15:07.366Z"
+  },
+  "boxologies": [
+    {
+      "id": "fbc28a73-fc3a-46b3-9ae9-c71d55218937",
+      "label": "T4B-6",
+      "DesignPattern": [
+        {
+          "id": "group_1761661031579",
+          "label": "1d Pre-Processing",
+          "input": [
+            {
+              "id": "node_1761660493060",
+              "name": "Data",
+              "label": "Raw Next Generation Genomic Data"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_1761660493093",
+              "name": "Data",
+              "label": "Cleaned Data"
+            }
+          ],
+          "process": {
+            "id": "node_1761660493090",
+            "name": "transform",
+            "label": "Transform"
+          }
+        },
+        {
+          "id": "group_1761661044215",
+          "label": "1a DL-Train",
+          "input": [
+            {
+              "id": "node_1761660493093",
+              "name": "Data",
+              "label": "Cleaned Data"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_1761660504292",
+              "name": "Model",
+              "label": "ML Abstracted Weights"
+            }
+          ],
+          "process": {
+            "id": "node_1761660504289",
+            "name": "Train",
+            "label": "Train"
+          }
+        },
+        {
+          "id": "group_1761661114015",
+          "label": "2a Cox Proportional Hazards (CoxPH) Model Application",
+          "input": [
+            {
+              "id": "node_1761660493093",
+              "name": "Data",
+              "label": "Cleaned Data"
+            },
+            {
+              "id": "node_1761660553106",
+              "name": "StatisticModel",
+              "label": "Statistical CoxPH"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_1761660535452",
+              "name": "Number",
+              "label": "Numeric HR Values"
+            }
+          ],
+          "process": {
+            "id": "node_1761660553107",
+            "name": "Deduce",
+            "label": "Deduce"
+          }
+        },
+        {
+          "id": "group_1761661151480",
+          "label": "1a Risk Score Development",
+          "input": [
+            {
+              "id": "node_1761660535452",
+              "name": "Number",
+              "label": "Numeric HR Values"
+            },
+            {
+              "id": "node_1761660504292",
+              "name": "Model",
+              "label": "ML Abstracted Weights"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_131762445405533",
+              "name": "Model",
+              "label": "ML DL-based"
+            }
+          ],
+          "process": {
+            "id": "node_1761660535453",
+            "name": "Train",
+            "label": "Train"
+          }
+        },
+        {
+          "id": "group_1761661177479",
+          "label": "1c Fuzzy Rules",
+          "input": [
+            {
+              "id": "node_1761660858903",
+              "name": "Human",
+              "label": "Experts"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_1761660858906",
+              "name": "SemanticModel",
+              "label": "Semantic Fuzzy Rules"
+            }
+          ],
+          "process": {
+            "id": "node_1761660858905",
+            "name": "Engineer",
+            "label": "Engineer"
+          }
+        },
+        {
+          "id": "group_1761661203502",
+          "label": "2a Fuzzy Logic Integration",
+          "input": [
+            {
+              "id": "node_131762445405533",
+              "name": "Model",
+              "label": "ML DL-based"
+            },
+            {
+              "id": "node_1761660858906",
+              "name": "SemanticModel",
+              "label": "Semantic Fuzzy Rules"
+            },
+            {
+              "id": "node_181762445405533",
+              "name": "Data",
+              "label": "Patient's Genomic Data"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_191762445405533",
+              "name": "Data",
+              "label": "Risk-scores"
+            }
+          ],
+          "process": {
+            "id": "node_1761660897949",
+            "name": "Deduce",
+            "label": "Deduce"
+          }
+        },
+        {
+          "id": "group_1761661935151",
+          "label": "1d Reporting and Interpretation",
+          "input": [
+            {
+              "id": "node_191762445405533",
+              "name": "Data",
+              "label": "Risk-scores"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_1761661884602",
+              "name": "Symbol",
+              "label": "Clinical Implications"
+            }
+          ],
+          "process": {
+            "id": "node_1761660980807",
+            "name": "transform",
+            "label": "Transform"
+          }
+        }
+      ]
+    }
+  ]
+}

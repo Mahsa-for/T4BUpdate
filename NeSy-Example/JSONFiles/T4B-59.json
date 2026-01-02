@@ -1,0 +1,145 @@
+{
+  "metaData": {
+    "exportId": "0cd45e6a",
+    "userId": "user_wkgt4g8b",
+    "exportDate": "2025-11-24T10:26:56.118Z"
+  },
+  "boxologies": [
+    {
+      "id": "aaa9fa64-8124-481c-be65-3280fccaa29b",
+      "label": "T4B-59",
+      "DesignPattern": [
+        {
+          "id": "group_1763979707690",
+          "label": "1d Normalization",
+          "input": [
+            {
+              "id": "node_17639793725991",
+              "name": "Image",
+              "label": "Primarily Ventilation-Perfusion \nScans and Chest X-rays"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_17639793726043",
+              "name": "Number",
+              "label": "Numeric Structured Input Vector"
+            }
+          ],
+          "process": {
+            "id": "node_17639793726032",
+            "name": "transform",
+            "label": "Transform"
+          }
+        },
+        {
+          "id": "group_1763979722126",
+          "label": "1c Rule Creation",
+          "input": [
+            {
+              "id": "node_17639794046441",
+              "name": "Human",
+              "label": "Radiologists"
+            },
+            {
+              "id": "node_1763979417912",
+              "name": "Symbol",
+              "label": "PIOPED Diagnostic Rules"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_17639794046453",
+              "name": "Symbol",
+              "label": "Diagnostic Rules"
+            }
+          ],
+          "process": {
+            "id": "node_17639794046452",
+            "name": "Engineer",
+            "label": "Engineer"
+          }
+        },
+        {
+          "id": "group_1763979741729",
+          "label": "1d Rule-based Preprocessing",
+          "input": [
+            {
+              "id": "node_17639793726043",
+              "name": "Number",
+              "label": "Numeric Structured Input Vector"
+            },
+            {
+              "id": "node_17639794046453",
+              "name": "Symbol",
+              "label": "Diagnostic Rules"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_17639793761873",
+              "name": "Data",
+              "label": "Numeric Modified Input Vector"
+            }
+          ],
+          "process": {
+            "id": "node_17639793761862",
+            "name": "transform",
+            "label": "Transform"
+          }
+        },
+        {
+          "id": "group_1763979781451",
+          "label": "1a Model Train",
+          "input": [
+            {
+              "id": "node_17639793761873",
+              "name": "Data",
+              "label": "Numeric Modified Input Vector"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_17639793846703",
+              "name": "HybridModel",
+              "label": "Hybrid MLP"
+            }
+          ],
+          "process": {
+            "id": "node_17639793846692",
+            "name": "Train",
+            "label": "Train"
+          }
+        },
+        {
+          "id": "group_1763979903087",
+          "label": "2a Prediction Making",
+          "input": [
+            {
+              "id": "node_17639794404691",
+              "name": "Number",
+              "label": "Numeric Patient Modified\n Input Vector From Image"
+            },
+            {
+              "id": "node_17639793846703",
+              "name": "HybridModel",
+              "label": "Hybrid MLP"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_17639794404714",
+              "name": "Symbol",
+              "label": "Pulmonary Embolism Probability"
+            }
+          ],
+          "process": {
+            "id": "node_17639794404713",
+            "name": "Deduce",
+            "label": "Deduce"
+          }
+        }
+      ]
+    }
+  ]
+}

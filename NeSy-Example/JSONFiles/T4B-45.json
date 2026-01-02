@@ -1,0 +1,196 @@
+{
+  "metaData": {
+    "exportId": "eb5fda70",
+    "userId": "user_pnpnxuhk",
+    "exportDate": "2025-11-12T14:57:28.508Z"
+  },
+  "boxologies": [
+    {
+      "id": "d7398d94-3bdb-4c29-b57c-bcf1f27f54f8",
+      "label": "Diagram",
+      "DesignPattern": [
+        {
+          "id": "group_1762958770541",
+          "label": "1d Pre-processing",
+          "input": [
+            {
+              "id": "node_17629585283281",
+              "name": "Data",
+              "label": "Raw EDIC Data"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_17629585283503",
+              "name": "Data",
+              "label": "Cleaned Data"
+            }
+          ],
+          "process": {
+            "id": "node_17629585283502",
+            "name": "transform",
+            "label": "Transform"
+          }
+        },
+        {
+          "id": "group_1762958812366",
+          "label": "2a Feature Ranking",
+          "input": [
+            {
+              "id": "node_17629585283503",
+              "name": "Data",
+              "label": "Cleaned Data"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_17629585579923",
+              "name": "Symbol",
+              "label": "Ranked MNSI Parameters"
+            }
+          ],
+          "process": {
+            "id": "node_17629585579912",
+            "name": "transform",
+            "label": "Transfomr"
+          }
+        },
+        {
+          "id": "group_1762958862639",
+          "label": "1a Model Development with ANFIS",
+          "input": [
+            {
+              "id": "node_17629585283503",
+              "name": "Data",
+              "label": "Cleaned Data"
+            },
+            {
+              "id": "node_17629585579923",
+              "name": "Symbol",
+              "label": "Ranked MNSI Parameters"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_1762958580739",
+              "name": "Model",
+              "label": "Hybrid ANFIS Model"
+            }
+          ],
+          "process": {
+            "id": "node_1762958571710",
+            "name": "Train",
+            "label": "Train"
+          }
+        },
+        {
+          "id": "group_1762958913642",
+          "label": "1d EMG Signals Pre-processing",
+          "input": [
+            {
+              "id": "node_17629586050711",
+              "name": "Data",
+              "label": "Data EMG Signals"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_17629586050753",
+              "name": "Data",
+              "label": "Selected Data"
+            }
+          ],
+          "process": {
+            "id": "node_17629586050742",
+            "name": "transform",
+            "label": "Transform"
+          }
+        },
+        {
+          "id": "group_1762959041580",
+          "label": "1a EMG Signal Analysis for DSPN Severity Classification",
+          "input": [
+            {
+              "id": "node_1762958580739",
+              "name": "Model",
+              "label": "Hybrid ANFIS Model"
+            },
+            {
+              "id": "node_17629586050753",
+              "name": "Data",
+              "label": "Selected Data"
+            },
+            {
+              "id": "node_17629586658783",
+              "name": "Symbol",
+              "label": "DSPN Severity Progess"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_1762958693151",
+              "name": "Model",
+              "label": "Hybrid ANFIS Model"
+            }
+          ],
+          "process": {
+            "id": "node_1762958654069",
+            "name": "Train",
+            "label": "Train"
+          }
+        },
+        {
+          "id": "group_1762959138298",
+          "label": "2a Longitudinal Analysis of DSPN Progression",
+          "input": [
+            {
+              "id": "node_17629586658761",
+              "name": "Data",
+              "label": "Other EDIC Data"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_17629586658783",
+              "name": "Symbol",
+              "label": "DSPN Severity Progess"
+            }
+          ],
+          "process": {
+            "id": "node_17629586658772",
+            "name": "transform",
+            "label": "Transform"
+          }
+        },
+        {
+          "id": "group_1762959182518",
+          "label": "2a Prediction",
+          "input": [
+            {
+              "id": "node_17629587090611",
+              "name": "Data",
+              "label": "Patient Data"
+            },
+            {
+              "id": "node_1762958693151",
+              "name": "Model",
+              "label": "Hybrid ANFIS Model"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_17629587090644",
+              "name": "Symbol",
+              "label": "Severity and Treatment Plan"
+            }
+          ],
+          "process": {
+            "id": "node_17629587090633",
+            "name": "Deduce",
+            "label": "Deduce"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,158 @@
+{
+  "metaData": {
+    "exportId": "a31af0f7",
+    "userId": "user_pnpnxuhk",
+    "exportDate": "2025-11-17T10:30:05.631Z"
+  },
+  "boxologies": [
+    {
+      "id": "fb907e0a-fb02-4977-b3e0-aebfd7059c95",
+      "label": "Diagram",
+      "DesignPattern": [
+        {
+          "id": "group_1763374828197",
+          "label": "1d Preprocessing",
+          "input": [
+            {
+              "id": "node_17633746443201",
+              "name": "Image",
+              "label": "Image Raw Lung CT Images"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_17633746443283",
+              "name": "Image",
+              "label": "Images JPEG Images"
+            }
+          ],
+          "process": {
+            "id": "node_17633746443272",
+            "name": "transform",
+            "label": "Transform"
+          }
+        },
+        {
+          "id": "group_1763374850256",
+          "label": "1d Greyscale Conversion",
+          "input": [
+            {
+              "id": "node_17633746443283",
+              "name": "Image",
+              "label": "Images JPEG Images"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_17633746479213",
+              "name": "Image",
+              "label": "Images Greyscale + Normalized Images"
+            }
+          ],
+          "process": {
+            "id": "node_17633746479202",
+            "name": "embed",
+            "label": "Embed"
+          }
+        },
+        {
+          "id": "group_1763374891234",
+          "label": "1d Image Segmentation",
+          "input": [
+            {
+              "id": "node_17633746479213",
+              "name": "Image",
+              "label": "Images Greyscale + Normalized Images"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_17633746526543",
+              "name": "Data",
+              "label": "Images Contrast-Enhanced Images"
+            }
+          ],
+          "process": {
+            "id": "node_17633746526532",
+            "name": "transform",
+            "label": "Transform"
+          }
+        },
+        {
+          "id": "group_1763375147805",
+          "label": "1d Feature Extraction",
+          "input": [
+            {
+              "id": "node_17633746526543",
+              "name": "Data",
+              "label": "Images Contrast-Enhanced Images"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_17633746624893",
+              "name": "Image",
+              "label": "Images Extracted Features"
+            }
+          ],
+          "process": {
+            "id": "node_17633746624892",
+            "name": "transform",
+            "label": "Transform"
+          }
+        },
+        {
+          "id": "group_1763375170031",
+          "label": "1a Nero-Fuzzy Train",
+          "input": [
+            {
+              "id": "node_17633746624893",
+              "name": "Image",
+              "label": "Images Extracted Features"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_17633749950543",
+              "name": "Model",
+              "label": "Hybrid Neuro-Fuzzy logic"
+            }
+          ],
+          "process": {
+            "id": "node_17633749950532",
+            "name": "Train",
+            "label": "Train"
+          }
+        },
+        {
+          "id": "group_1763375227674",
+          "label": "2a Classification (Neuro-Fuzzy Logic)",
+          "input": [
+            {
+              "id": "node_17633750375621",
+              "name": "Image",
+              "label": "Images Patient Lung CT Images"
+            },
+            {
+              "id": "node_17633749950543",
+              "name": "Model",
+              "label": "Hybrid Neuro-Fuzzy logic"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_17633750375634",
+              "name": "Symbol",
+              "label": "Report w/ Visual Aids"
+            }
+          ],
+          "process": {
+            "id": "node_17633750375633",
+            "name": "Deduce",
+            "label": "Deduce"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,135 @@
+{
+  "metaData": {
+    "exportId": "affd3415",
+    "userId": "user_pnpnxuhk",
+    "exportDate": "2025-11-11T14:41:04.291Z"
+  },
+  "boxologies": [
+    {
+      "id": "b1c8092f-ca92-46bb-8d3a-060555584417",
+      "label": "T4B-30",
+      "DesignPattern": [
+        {
+          "id": "group_1761746623109",
+          "label": "ad Fuzzification",
+          "input": [
+            {
+              "id": "node_1761746468674_n1",
+              "name": "Image",
+              "label": "BUS Image"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_1761746468685_n3",
+              "name": "Image",
+              "label": "Fuzzy Image"
+            }
+          ],
+          "process": {
+            "id": "node_1761746468685_n2",
+            "name": "transform",
+            "label": "Transform"
+          }
+        },
+        {
+          "id": "group_1761746642195",
+          "label": "1d Intensification",
+          "input": [
+            {
+              "id": "node_1761746468685_n3",
+              "name": "Image",
+              "label": "Fuzzy Image"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_1761746483175_n3",
+              "name": "Data",
+              "label": "Enhanced Image"
+            }
+          ],
+          "process": {
+            "id": "node_1761746483174_n2",
+            "name": "transform",
+            "label": "Transform"
+          }
+        },
+        {
+          "id": "group_1761746778442",
+          "label": "1d Defuzzification",
+          "input": [
+            {
+              "id": "node_1761746483175_n3",
+              "name": "Data",
+              "label": "Enhanced Image"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_1761746486274_n3",
+              "name": "Image",
+              "label": "Defuzzified Image"
+            }
+          ],
+          "process": {
+            "id": "node_1761746486273_n2",
+            "name": "transform",
+            "label": "Transform"
+          }
+        },
+        {
+          "id": "group_1761746792499",
+          "label": "1a CNN Train",
+          "input": [
+            {
+              "id": "node_1761746486274_n3",
+              "name": "Image",
+              "label": "Defuzzified Image"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_1761746519606_n3",
+              "name": "StatisticModel",
+              "label": "CNN"
+            }
+          ],
+          "process": {
+            "id": "node_1761746519605_n2",
+            "name": "Train",
+            "label": "Train"
+          }
+        },
+        {
+          "id": "group_1761746911545",
+          "label": "2a Segmentation",
+          "input": [
+            {
+              "id": "node_1761746527547_n1",
+              "name": "Image",
+              "label": "Patient BUS Image"
+            },
+            {
+              "id": "node_1761746519606_n3",
+              "name": "StatisticModel",
+              "label": "CNN"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_1761746527548_n4",
+              "name": "Symbol",
+              "label": "Segmented Images with Labels"
+            }
+          ],
+          "process": {
+            "id": "node_1761746527548_n3",
+            "name": "Deduce",
+            "label": "Deduce"
+          }
+        }
+      ]
+    }
+  ]
+}

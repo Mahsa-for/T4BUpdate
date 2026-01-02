@@ -1,0 +1,140 @@
+{
+  "metaData": {
+    "exportId": "10263aa5",
+    "userId": "user_pnpnxuhk",
+    "exportDate": "2025-11-12T13:37:25.741Z"
+  },
+  "boxologies": [
+    {
+      "id": "b474665e-8247-4255-ab02-bf078cc0fabf",
+      "label": "Diagram",
+      "DesignPattern": [
+        {
+          "id": "group_1762954273251",
+          "label": "1d Data Collection and Pre-Processing",
+          "input": [
+            {
+              "id": "node_17629541343791",
+              "name": "Data",
+              "label": "Raw Patient Data"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_17629541343933",
+              "name": "Data",
+              "label": "Normilized Data"
+            }
+          ],
+          "process": {
+            "id": "node_17629541343912",
+            "name": "transform",
+            "label": "Transform"
+          }
+        },
+        {
+          "id": "group_1762954316008",
+          "label": "1d Fuzzification",
+          "input": [
+            {
+              "id": "node_17629541343933",
+              "name": "Data",
+              "label": "Normilized Data"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_17629541375543",
+              "name": "Data",
+              "label": "Fuzzy Values for Input Variables"
+            }
+          ],
+          "process": {
+            "id": "node_17629541375532",
+            "name": "transform",
+            "label": "Transform"
+          }
+        },
+        {
+          "id": "group_1762954350918",
+          "label": "1c System Creation",
+          "input": [
+            {
+              "id": "node_17629541375543",
+              "name": "Data",
+              "label": "Fuzzy Values for Input Variables"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_17629541578833",
+              "name": "Model",
+              "label": "Hybrid ANFIS"
+            }
+          ],
+          "process": {
+            "id": "node_17629541578822",
+            "name": "Train",
+            "label": "Train"
+          }
+        },
+        {
+          "id": "group_1762954380508",
+          "label": "2a Aggregation",
+          "input": [
+            {
+              "id": "node_17629541743661",
+              "name": "Data",
+              "label": "Patient Data"
+            },
+            {
+              "id": "node_17629541578833",
+              "name": "Model",
+              "label": "Hybrid ANFIS"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_17629541743674",
+              "name": "Symbol",
+              "label": "Signal Crisp Prediction"
+            }
+          ],
+          "process": {
+            "id": "node_17629541743673",
+            "name": "Deduce",
+            "label": "Deduce"
+          }
+        },
+        {
+          "id": "group_1762954496277",
+          "label": "2a Equilibrated Urea Concentration Prediction",
+          "input": [
+            {
+              "id": "node_17629541743674",
+              "name": "Symbol",
+              "label": "Signal Crisp Prediction"
+            },
+            {
+              "id": "node_17629542036162",
+              "name": "Model",
+              "label": "Hybrid Second ANFIS"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_17629542036174",
+              "name": "Symbol",
+              "label": "Effectiveness Dialysis"
+            }
+          ],
+          "process": {
+            "id": "node_17629542036173",
+            "name": "Deduce",
+            "label": "Deduce"
+          }
+        }
+      ]
+    }
+  ]
+}

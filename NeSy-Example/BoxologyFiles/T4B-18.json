@@ -1,0 +1,26 @@
+{ "class": "GraphLinksModel",
+  "ModelData": {"boxologyId":"6e165536-2ea2-40bd-b9a0-81514be6939b","boxologyLabel":"T4B-18"},
+  "nodeDataArray": [
+{"key":"node_1761675425469_n1","name":"Actor","label":"Physicians","shape":"Triangle","color":"#f8ce92ff","stroke":"#000000ff","loc":"69.66699999999999 252.776","type":"Actor","group":"group_1761675561003","width":143,"height":60},
+{"key":"node_1761675425483_n2","name":"Engineer","label":"Engineer","shape":"RoundedRectangle","color":"#f067acff","stroke":"#C1307A","loc":"69.66699999999999 352.776","type":"Engineer","parameter1":45,"group":"group_1761675561003"},
+{"key":"node_1761675425485_n3","name":"Model","label":"Rules-based","shape":"Hexagon","color":"#f4ccf4ff","stroke":"#8B4F8B","loc":"69.66699999999999 469.27016809331815","type":"Model","group":"group_1761675561003"},
+{"key":"node_1761675445233_n1","name":"Data","label":"Current Case","shape":"Rectangle","color":"#b7eaffff","stroke":"#1E5F8B","loc":"260 380","type":"Data","group":"group_1761675655943"},
+{"key":"node_1761675445235_n3","name":"Deduce","label":"Deduce","shape":"RoundedRectangle","color":"#ff81f7ff","stroke":"#4c003bff","loc":"260 469.27016809331815","type":"Deduce","parameter1":45,"group":"group_1761675655943"},
+{"key":"node_1761675445236_n4","name":"Symbol","label":"Final Diagnosis","shape":"Rectangle","color":"#ccffccff","stroke":"#218721ff","loc":"260 580","type":"Symbol","width":115,"height":60,"group":"group_1761675655943"},
+{"key":"node_1761675473478_n1","name":"Data","label":"Previous Cases","shape":"Rectangle","color":"#b7eaffff","stroke":"#1E5F8B","loc":"423.2307447916666 252.776","type":"Data","group":"group_1761675683649"},
+{"key":"node_1761675473480_n2","name":"Train","label":"Train","shape":"RoundedRectangle","color":"#FFA07A","stroke":"#CD5C5C","loc":"421.0383619791666 374.3277008559909","type":"Train","parameter1":45,"group":"group_1761675683649"},
+{"key":"node_1761675473481_n3","name":"Model","label":"Case-Based","shape":"Hexagon","color":"#f4ccf4ff","stroke":"#8B4F8B","loc":"421.0383619791666 469.27016809331815","type":"Model","group":"group_1761675683649"},
+{"key":"group_1761675561003","isGroup":true,"category":"ClusterGroup","label":"1c Rules from experts"},
+{"key":"group_1761675655943","isGroup":true,"category":"ClusterGroup","label":"2a Final Decision"},
+{"key":"group_1761675683649","isGroup":true,"category":"ClusterGroup","label":"1a Train from Previous cases"}
+],
+  "linkDataArray": [
+{"key":"link_1761675425486_n1_n2","from":"node_1761675425469_n1","to":"node_1761675425483_n2"},
+{"key":"link_1761675425488_n2_n3","from":"node_1761675425483_n2","to":"node_1761675425485_n3"},
+{"key":"link_1761675445237_n1_n3","from":"node_1761675445233_n1","to":"node_1761675445235_n3"},
+{"key":"link_1761675445238_n2_n3","from":"node_1761675425485_n3","to":"node_1761675445235_n3"},
+{"key":"link_1761675445238_n3_n4","from":"node_1761675445235_n3","to":"node_1761675445236_n4"},
+{"key":"link_1761675473482_n1_n2","from":"node_1761675473478_n1","to":"node_1761675473480_n2"},
+{"key":"link_1761675473483_n2_n3","from":"node_1761675473480_n2","to":"node_1761675473481_n3"},
+{"from":"node_1761675473481_n3","to":"node_1761675445235_n3"}
+]}

@@ -1,0 +1,112 @@
+{
+  "metaData": {
+    "exportId": "b6a6113a",
+    "userId": "user_wkgt4g8b",
+    "exportDate": "2025-11-24T11:05:12.444Z"
+  },
+  "boxologies": [
+    {
+      "id": "ecefeb65-e342-491a-b88d-ccb608fdb230",
+      "label": "T4B-62",
+      "DesignPattern": [
+        {
+          "id": "group_1763982078489",
+          "label": "1d Pre-processed",
+          "input": [
+            {
+              "id": "node_17639819971131",
+              "name": "Data",
+              "label": "Raw EEG Data"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_17639819971223",
+              "name": "Data",
+              "label": "Preprocessed EEG Data"
+            }
+          ],
+          "process": {
+            "id": "node_17639819971222",
+            "name": "transform",
+            "label": "Transform"
+          }
+        },
+        {
+          "id": "group_1763982113898",
+          "label": "1d Feature Extraction Using DWT",
+          "input": [
+            {
+              "id": "node_17639819971223",
+              "name": "Data",
+              "label": "Preprocessed EEG Data"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_17639820000563",
+              "name": "Data",
+              "label": "Statistical Features"
+            }
+          ],
+          "process": {
+            "id": "node_17639820000562",
+            "name": "transform",
+            "label": "Transform"
+          }
+        },
+        {
+          "id": "group_1763982210549",
+          "label": "1a Train Model",
+          "input": [
+            {
+              "id": "node_17639820000563",
+              "name": "Data",
+              "label": "Statistical Features"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_17639820135783",
+              "name": "HybridModel",
+              "label": "Hybrid ANFIS"
+            }
+          ],
+          "process": {
+            "id": "node_17639820135772",
+            "name": "Train",
+            "label": "Train"
+          }
+        },
+        {
+          "id": "group_1763982239041",
+          "label": "2a Analyzing",
+          "input": [
+            {
+              "id": "node_17639820317221",
+              "name": "Data",
+              "label": "Patient EEG Signals"
+            },
+            {
+              "id": "node_17639820135783",
+              "name": "HybridModel",
+              "label": "Hybrid ANFIS"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_17639820317254",
+              "name": "Symbol",
+              "label": "Detected Epileptic Seizure"
+            }
+          ],
+          "process": {
+            "id": "node_17639820317253",
+            "name": "Deduce",
+            "label": "Deduce"
+          }
+        }
+      ]
+    }
+  ]
+}

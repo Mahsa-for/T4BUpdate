@@ -1,0 +1,140 @@
+{
+  "metaData": {
+    "exportId": "359f47fa",
+    "userId": "user_pnpnxuhk",
+    "exportDate": "2025-11-11T14:39:14.786Z"
+  },
+  "boxologies": [
+    {
+      "id": "e01ba454-2774-4239-a21e-4dd16d0b9f21",
+      "label": "T4B-26",
+      "DesignPattern": [
+        {
+          "id": "group_1761736413006",
+          "label": "1d Data Collection and Preprocessing",
+          "input": [
+            {
+              "id": "node_1761736289380_n1",
+              "name": "Data",
+              "label": "Raw Medical Data"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_1761736289387_n3",
+              "name": "Data",
+              "label": "Categorized and Pre-Processed Data"
+            }
+          ],
+          "process": {
+            "id": "node_1761736289386_n2",
+            "name": "embed",
+            "label": "Embed"
+          }
+        },
+        {
+          "id": "group_1761736521687",
+          "label": "1a BN Model Building",
+          "input": [
+            {
+              "id": "node_1761736342481_n1",
+              "name": "Data",
+              "label": "Refined Features"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_1761736342484_n3",
+              "name": "StatisticModel",
+              "label": "Statistical Bayesian Networks"
+            }
+          ],
+          "process": {
+            "id": "node_1761736342483_n2",
+            "name": "Train",
+            "label": "Train"
+          }
+        },
+        {
+          "id": "group_1761736648628",
+          "label": "2a Integrating BN and CBR for Decision Support",
+          "input": [
+            {
+              "id": "node_1761736465084_n1",
+              "name": "Data",
+              "label": "Previous Cases"
+            },
+            {
+              "id": "node_1761736342484_n3",
+              "name": "StatisticModel",
+              "label": "Statistical Bayesian Networks"
+            },
+            {
+              "id": "node_1761736540306",
+              "name": "Data",
+              "label": "Patient Data"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_1761736465088_n4",
+              "name": "Symbol",
+              "label": "Pain Level"
+            }
+          ],
+          "process": {
+            "id": "node_1761736465087_n3",
+            "name": "Deduce",
+            "label": "Deduce"
+          }
+        },
+        {
+          "id": "group_1762871872314",
+          "label": "2a Data Analysis for Feature Selection",
+          "input": [
+            {
+              "id": "node_1761736289387_n3",
+              "name": "Data",
+              "label": "Categorized and Pre-Processed Data"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_1761736342481_n1",
+              "name": "Data",
+              "label": "Refined Features"
+            }
+          ],
+          "process": {
+            "id": "node_1762871842403",
+            "name": "transform",
+            "label": "Transform"
+          }
+        },
+        {
+          "id": "group_1762871914323",
+          "label": "2a Proving Recommendation to Clinicians",
+          "input": [
+            {
+              "id": "node_1761736465088_n4",
+              "name": "Symbol",
+              "label": "Pain Level"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_1761736587105",
+              "name": "Symbol",
+              "label": "Pain Classification w/Supporting Info"
+            }
+          ],
+          "process": {
+            "id": "node_1762871886865",
+            "name": "transform",
+            "label": "Transform"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,140 @@
+{
+  "metaData": {
+    "exportId": "be1cb5c5",
+    "userId": "user_pnpnxuhk",
+    "exportDate": "2025-11-17T10:42:04.864Z"
+  },
+  "boxologies": [
+    {
+      "id": "c6d46b07-a4ed-4546-b45f-16b2835d159d",
+      "label": "Diagram",
+      "DesignPattern": [
+        {
+          "id": "group_1763375818648",
+          "label": "1d Pre-processed",
+          "input": [
+            {
+              "id": "node_17633755545071",
+              "name": "Data",
+              "label": "Symptom Back Pains"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_17633755545143",
+              "name": "Data",
+              "label": "Structured Data"
+            }
+          ],
+          "process": {
+            "id": "node_17633755545142",
+            "name": "transform",
+            "label": "Transform"
+          }
+        },
+        {
+          "id": "group_1763375902910",
+          "label": "1d Fuzzification",
+          "input": [
+            {
+              "id": "node_17633755675131",
+              "name": "actor",
+              "label": "Physicians"
+            },
+            {
+              "id": "node_17633755545143",
+              "name": "Data",
+              "label": "Structured Data"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_17633755943931",
+              "name": "Data",
+              "label": "Fuzzified Values"
+            }
+          ],
+          "process": {
+            "id": "node_17633755675152",
+            "name": "Engineer",
+            "label": "Engineer"
+          }
+        },
+        {
+          "id": "group_1763375931065",
+          "label": "1a Fuzzy Inference System (FIS)",
+          "input": [
+            {
+              "id": "node_17633755943931",
+              "name": "Data",
+              "label": "Fuzzified Values"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_17633755943953",
+              "name": "Model",
+              "label": "Hybrid FNDSB"
+            }
+          ],
+          "process": {
+            "id": "node_17633755943942",
+            "name": "Train",
+            "label": "Train"
+          }
+        },
+        {
+          "id": "group_1763375966666",
+          "label": "2a Prediction Making",
+          "input": [
+            {
+              "id": "node_17633756097751",
+              "name": "Data",
+              "label": "Patient Symptoms"
+            },
+            {
+              "id": "node_17633755943953",
+              "name": "Model",
+              "label": "Hybrid FNDSB"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_17633756097794",
+              "name": "Symbol",
+              "label": "Condition and Severity"
+            }
+          ],
+          "process": {
+            "id": "node_17633756097783",
+            "name": "Deduce",
+            "label": "Deduce"
+          }
+        },
+        {
+          "id": "group_1763376080305",
+          "label": "1d Presentation of Diagnosis and Advice",
+          "input": [
+            {
+              "id": "node_17633756097794",
+              "name": "Symbol",
+              "label": "Condition and Severity"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_17633756299303",
+              "name": "Symbol",
+              "label": "Diagnosis + Recommended Actions"
+            }
+          ],
+          "process": {
+            "id": "node_17633756299292",
+            "name": "transform",
+            "label": "Transform"
+          }
+        }
+      ]
+    }
+  ]
+}
