@@ -1,0 +1,7 @@
+idx	URI	label	type	weight
+0	http://tool4boxology.org/hasInput	hasInput	hasInput	1.6
+1	http://tool4boxology.org/hasOutput	hasOutput	hasOutput	1.6
+2	http://tool4boxology.org/hasPattern	hasPattern	hasPattern	2.0
+3	http://tool4boxology.org/hasProcess	hasProcess	hasProcess	1.8
+4	http://tool4boxology.org/inputRoleParticipatesInProcess	inputRoleParticipatesInProcess	inputRoleParticipatesInProcess	1.5
+5	http://tool4boxology.org/outputRoleParticipatesInProcess	outputRoleParticipatesInProcess	outputRoleParticipatesInProcess	1.5

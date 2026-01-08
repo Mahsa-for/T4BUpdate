@@ -1,0 +1,72 @@
+# Scientific Glossary - Generated from arXiv Papers
+# Domains: normalization, transformation, machine learning, phycology, machine learning in phycology, clustered data, semantic model, semantic model in phycology, Authentic Diagnosis
+# Total papers: 25
+
+## Domain: normalization
+
+**embed**: However, GRPO faces structural limitations in reasoning-heavy settings: sequence-level advantage normalization introduces systematic length bias, penalties for low-quality trajectories are diluted, and the scalar objective discards rich pairwise p...
+**logic**: Motivated by the querying of feedforward neural networks, we investigate logics for weighted structures
+**train**: We propose an integrated framework that enhances rater training, enforces attention through real-time scoring, and streamlines pairwise comparisons to recover quality scores with fewer comparisons
+**transform**: Finally, we consider transformations of weighted structures by iterated transductions
+
+### Recent papers in normalization:
+1. Recursive querying of neural networks via weighted structures: Expressive querying of machine learning models - viewed as a form of intentional data - enables their verification and interpretation using declarative languages, thereby making learned representations of data more accessible. Motivated by the que...
+2. Local Asymptotic Normality for Mixed Fractional Brownian Motion Under High-Frequency Observation: In this paper we will consider the LAN property for both the Hurst parameter $H>3/4$ and the variance of the fractional Brownian motion plus an independent standard Brownian motion (called mixed fractional Brownian motion) with high-frequency obse...
+
+## Domain: transformation
+
+**conditions**: Starting from Sommerfeld spectral representations, the transmission conditions on the two wedge faces yield a closed spectral functional system for the Sommerfeld transforms $Q(ζ)$ and $S(ζ)$
+**logic**: Automated blood morphology analysis can support hematological diagnostics in low- and middle-income countries (LMICs) but remains sensitive to dataset shifts from staining variability, imaging differences, and rare morphologies
+**sets**: The application of machine learning on healthcare data is often hindered by the lack of standardized and semantically explicit representation, leading to limited interoperability and reproducibility across datasets and experiments
+**train**: We demonstrate the approach on a synthetic clinical dataset that describes patient care pathways for ruptured intracranial aneurysms and validate the resulting graph using SHACL constraints
+**transform**: Additionally, we implemented meds2rdf, a Python conversion library that transforms MEDS events into RDF graphs, ensuring conformance with the ontology
+
+### Recent papers in transformation:
+1. Clinical Data Goes MEDS? Let's OWL make sense of it: The application of machine learning on healthcare data is often hindered by the lack of standardized and semantically explicit representation, leading to limited interoperability and reproducibility across datasets and experiments. The Medical Eve...
+2. Diffraction by a Right-Angle Dielectric Wedge: Closed-Form Solution for $ν=\sqrt{2}$: We consider the two-dimensional time-harmonic transmission problem for an impedance-matched ($ρ=1$) right-angle dielectric wedge at refractive index ratio $ν=sqrt(2)$, in the integrable lemniscatic configuration $(θ_w, ν, ρ)=(π/4, \sqrt(2), 1)$. S...
+
+## Domain: machine learning
+
+**embed**: In contrast to ENN architectures developed for molecular systems -- where continuous Euclidean symmetries dominate -- our approach aims to embed the discrete point-group and internal symmetries intrinsic to lattice models directly into the neural-...
+**knowledge**: The core idea of FALCON is to leverage the feature-aware hierarchical token sequences generation and knowledge distillation into OSFL
+**logic**: Automated blood morphology analysis can support hematological diagnostics in low- and middle-income countries (LMICs) but remains sensitive to dataset shifts from staining variability, imaging differences, and rare morphologies
+**modeling**: Finally, the server incorporates knowledge distillation into global training to reduce reliance on precise distribution modeling
+**sets**: The application of machine learning on healthcare data is often hindered by the lack of standardized and semantically explicit representation, leading to limited interoperability and reproducibility across datasets and experiments
+**train**: We demonstrate the approach on a synthetic clinical dataset that describes patient care pathways for ruptured intracranial aneurysms and validate the resulting graph using SHACL constraints
+**transform**: Additionally, we implemented meds2rdf, a Python conversion library that transforms MEDS events into RDF graphs, ensuring conformance with the ontology
+
+### Recent papers in machine learning:
+1. Clinical Data Goes MEDS? Let's OWL make sense of it: The application of machine learning on healthcare data is often hindered by the lack of standardized and semantically explicit representation, leading to limited interoperability and reproducibility across datasets and experiments. The Medical Eve...
+2. MORPHFED: Federated Learning for Cross-institutional Blood Morphology Analysis: Automated blood morphology analysis can support hematological diagnostics in low- and middle-income countries (LMICs) but remains sensitive to dataset shifts from staining variability, imaging differences, and rare morphologies. Building centraliz...
+
+## Domain: clustered data
+
+**clustered**: Clustered and longitudinal data are pervasive in scientific studies, from prenatal health programs to clinical trials and public health surveillance
+**clustering**: We introduce a novel, efficient framework for clustering data on high-dimensional, non-Euclidean manifolds that overcomes the computational challenges associated with standard intrinsic methods
+**embed**: The key innovation is the use of the $p$-Fréchet map $F^p : \mathcal{M} \to \mathbb{R}^\ell$ -- defined on a generic metric space $\mathcal{M}$ -- which embeds the manifold data into a lower-dimensional Euclidean space $\mathbb{R}^\ell$ using a se...
+**k-means**: Once embedded, we can efficiently and accurately apply standard Euclidean clustering techniques such as k-means
+**modeling**: Through applications to modern prenatal care, a longitudinal toenail infection trial, and clustered health count data, we show that GCR not only achieves superior predictive performance over standard methods, but also reveals family-, community-, ...
+**sets**: Critically, we prove that the EmbedOR distance metric extends consistency results for tSNE to a much broader class of datasets
+**transform**: By applying a generalized $z$-transformation, GCR guarantees valid correlation matrices, accommodates unbalanced cluster sizes, and flexibly incorporates covariates such as time, space, or group membership into the dependence structure
+
+### Recent papers in clustered data:
+1. Fast $k$-means clustering in Riemannian manifolds via Fréchet maps: Applications to large-dimensional SPD matrices: We introduce a novel, efficient framework for clustering data on high-dimensional, non-Euclidean manifolds that overcomes the computational challenges associated with standard intrinsic methods. The key innovation is the use of the $p$-Fréchet map...
+2. EmbedOR: Provable Cluster-Preserving Visualizations with Curvature-Based Stochastic Neighbor Embeddings: Stochastic Neighbor Embedding (SNE) algorithms like UMAP and tSNE often produce visualizations that do not preserve the geometry of noisy and high dimensional data. In particular, they can spuriously separate connected components of the underlying...
+
+## Domain: semantic model
+
+**clustering**: Multi-view clustering (MVC) aims to uncover the latent structure of multi-view data by learning view-common and view-specific information
+**conditions**: Extensive simulations demonstrate that LLM4XCE significantly outperforms existing state-of-the-art methods under hybrid-field conditions, achieving superior estimation accuracy and generalization performance
+**embed**: Specifically, our method exploits a view-specific hyperbolic encoder for each view to embed features into the Lorentz manifold for hierarchical semantic modeling
+**fuzzy**: Argumentation frameworks ($AF$s) have been extensively developed, but existing higher-order bipolar $AF$s suffer from critical limitations: attackers and supporters are restricted to arguments, multi-valued and fuzzy semantics lack unified general...
+**fuzzy logic**: Furthermore, we develop a normal encoding methodology to translate $HAFS$s into propositional logic systems ($\mathcal{PLS}$s): $HAFS$s under complete labelling semantics are encoded into Łukasiewicz's three-valued propositional logic ($\mathcal{P...
+**knowledge**: To address this, we introduce ChipMind, a novel knowledge graph-augmented reasoning framework specifically designed for lengthy IC specifications
+**logic**: Argumentation frameworks ($AF$s) have been extensively developed, but existing higher-order bipolar $AF$s suffer from critical limitations: attackers and supporters are restricted to arguments, multi-valued and fuzzy semantics lack unified general...
+**modeling**: Specifically, our method exploits a view-specific hyperbolic encoder for each view to embed features into the Lorentz manifold for hierarchical semantic modeling
+**sets**: Extensive experiments on multiple benchmarking datasets show that our method can achieve SOTA clustering performance
+**train**: The limitations of this work are primarily related to dataset diversity and computational constraints
+**transform**: Additionally, we investigate the relationships between 3-valued complete semantics and fuzzy equational semantics, showing that models of fuzzy encoded semantics can be transformed into complete semantics models via ternarization, and vice versa f...
+
+### Recent papers in semantic model:
+1. Wasserstein-Aligned Hyperbolic Multi-View Clustering: Multi-view clustering (MVC) aims to uncover the latent structure of multi-view data by learning view-common and view-specific information. Although recent studies have explored hyperbolic representations for better tackling the representation gap ...
+2. Encoding higher-order argumentation frameworks with supports to propositional logic systems: Argumentation frameworks ($AF$s) have been extensively developed, but existing higher-order bipolar $AF$s suffer from critical limitations: attackers and supporters are restricted to arguments, multi-valued and fuzzy semantics lack unified general...

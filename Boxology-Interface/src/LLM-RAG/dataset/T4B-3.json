@@ -1,0 +1,178 @@
+{
+  "metaData": {
+    "exportId": "7ad45803",
+    "userId": "user_pnpnxuhk",
+    "exportDate": "2025-11-11T10:41:53.292Z"
+  },
+  "boxologies": [
+    {
+      "id": "ee778684-c7f4-4454-9ccb-d3732837769a",
+      "label": "T4B-3",
+      "DesignPattern": [
+        {
+          "id": "group_1761647354851",
+          "label": "1d Pre-Process",
+          "input": [
+            {
+              "id": "node_1761646540551_n1",
+              "name": "Number",
+              "label": "Numeric Raw Physiological Data"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_1761646540568_n3",
+              "name": "Number",
+              "label": "Numeric Cleaned Physiological Data"
+            }
+          ],
+          "process": {
+            "id": "node_1761646540566_n2",
+            "name": "Normalize",
+            "label": "Transform"
+          }
+        },
+        {
+          "id": "group_1761647412609",
+          "label": "1d Fuzzy c-means clustering (FCM) and fuzzy k-means clustering (FKM)",
+          "input": [
+            {
+              "id": "node_1761646540568_n3",
+              "name": "Number",
+              "label": "Numeric Cleaned Physiological Data"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_1761646552486_n3",
+              "name": "Number",
+              "label": "Numeric Clustered Physiological Data"
+            }
+          ],
+          "process": {
+            "id": "node_1761646552484_n2",
+            "name": "embed",
+            "label": "Embed"
+          }
+        },
+        {
+          "id": "group_1761647723657",
+          "label": "1d Self-Organizing Fuzzy Logic Modeling",
+          "input": [
+            {
+              "id": "node_1761646552486_n3",
+              "name": "Number",
+              "label": "Numeric Clustered Physiological Data"
+            },
+            {
+              "id": "node_1761646573606_n3",
+              "name": "SemanticModel",
+              "label": "Semantic Fuzzy Rules"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_1761646869919",
+              "name": "Data",
+              "label": "Physiological conditions"
+            }
+          ],
+          "process": {
+            "id": "node_1761646756723",
+            "name": "embed",
+            "label": "Embed"
+          }
+        },
+        {
+          "id": "group_1761647944861",
+          "label": "2a Modeling",
+          "input": [
+            {
+              "id": "node_1761646896599_n1",
+              "name": "Data",
+              "label": "Authentic Diagnosis Database"
+            },
+            {
+              "id": "node_1761646869919",
+              "name": "Data",
+              "label": "Physiological conditions"
+            },
+            {
+              "id": "node_1761647053286",
+              "name": "Data",
+              "label": "Historical Data Sets"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_1761646896601_n3",
+              "name": "SemanticModel",
+              "label": "Semantic Decision Support"
+            }
+          ],
+          "process": {
+            "id": "node_1761646896600_n2",
+            "name": "Train",
+            "label": "Train"
+          }
+        },
+        {
+          "id": "group_1761647976382",
+          "label": "2b Check if Early Alert",
+          "input": [
+            {
+              "id": "node_1761646938176_n1",
+              "name": "Number",
+              "label": "Numeric Raw Physiological Data"
+            },
+            {
+              "id": "node_1761646896601_n3",
+              "name": "SemanticModel",
+              "label": "Semantic Decision Support"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_1761646938180_n4",
+              "name": "Symbol",
+              "label": "Early Alert"
+            }
+          ],
+          "process": {
+            "id": "node_1761646938179_n3",
+            "name": "Deduce",
+            "label": "Deduce"
+          }
+        },
+        {
+          "id": "group_1762857681485",
+          "label": "1c Generate Fuzzy Rules",
+          "input": [
+            {
+              "id": "node_1762857624189",
+              "name": "Rules",
+              "label": "Guidlines"
+            },
+            {
+              "id": "node_1762857610473",
+              "name": "Symbol",
+              "label": "Knowledge"
+            }
+          ],
+          "output": [
+            {
+              "id": "node_1761646573606_n3",
+              "name": "SemanticModel",
+              "label": "Semantic Fuzzy Rules"
+            }
+          ],
+          "process": {
+            "id": "node_1761646573605_n2",
+            "name": "Train",
+            "label": "Train"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,13 +1,26 @@
 FROM python:3.11-slim
 
-ENV PYTHONUNBUFFERED=1
 WORKDIR /app
 
-# Install dependencies (add pandas and rdflib if needed)
-RUN pip install --no-cache-dir fastapi uvicorn sparqlwrapper pandas rdflib
+# Install system dependencies
+RUN apt-get update && apt-get install -y \
+    gcc \
+    g++ \
+    && rm -rf /var/lib/apt/lists/*
 
-# Copy entire project so src/ is available
+# Copy requirements and install Python dependencies
+COPY Boxology-Interface/src/LLM-RAG/requirements.txt ./
+RUN pip install --no-cache-dir -r requirements.txt
+
+# Copy application code
 COPY . .
 
+# Set environment variables
+ENV PYTHONUNBUFFERED=1
+ENV PYTHONPATH=/app
+
+# Expose port
 EXPOSE 8000
-CMD ["uvicorn", "backend.main:app", "--host", "0.0.0.0", "--port", "8000", "--reload"]
+
+# Run uvicorn
+CMD ["python", "-m", "uvicorn", "backend.main:app", "--host", "0.0.0.0", "--port", "8000", "--reload"]

@@ -1,0 +1,8 @@
+0	http://tool4boxology.org/hasInput	hasInput
+1	http://tool4boxology.org/hasOutput	hasOutput
+2	http://tool4boxology.org/hasPattern	hasPattern
+3	http://tool4boxology.org/hasProcess	hasProcess
+4	http://tool4boxology.org/inputRoleParticipatesInProcess	inputRoleParticipatesInProcess
+5	http://tool4boxology.org/outputRoleParticipatesInProcess	outputRoleParticipatesInProcess
+6	http://www.w3.org/1999/02/22-rdf-syntax-ns#type	type
+7	http://www.w3.org/2000/01/rdf-schema#label	label

@@ -1,0 +1,1644 @@
+0	1 Fuzzy Rough Set Application	1 Fuzzy Rough Set Application
+1	1a ANFIS Method	1a ANFIS Method
+2	1a ANFIS Model Training	1a ANFIS Model Training
+3	1a BN Model Building	1a BN Model Building
+4	1a CNN Training	1a CNN Training
+5	1a Classifier Update	1a Classifier Update
+6	1a Create Fuzzy Rules	1a Create Fuzzy Rules
+7	1a DL-training	1a DL-training
+8	1a Data Preparation and Splitting	1a Data Preparation and Splitting
+9	1a Development	1a Development
+10	1a Development of the Rough-Fuzzy Classifier	1a Development of the Rough-Fuzzy Classifier
+11	1a EMG Signal Analysis for DSPN Severity Classification	1a EMG Signal Analysis for DSPN Severity Classification
+12	1a Ensemble Machine Learning Model Training	1a Ensemble Machine Learning Model Training
+13	1a Fuzzy Decision Tree (FDT) Construction	1a Fuzzy Decision Tree (FDT) Construction
+14	1a Fuzzy Inference System (FIS)	1a Fuzzy Inference System (FIS)
+15	1a Fuzzy Model Formation	1a Fuzzy Model Formation
+16	1a Fuzzy Rules	1a Fuzzy Rules
+17	1a Generation and Extraction of Decision	1a Generation and Extraction of Decision
+18	1a Genetic Algorithm Optimization	1a Genetic Algorithm Optimization
+19	1a Integrating Differential Evolution for Personalization	1a Integrating Differential Evolution for Personalization
+20	1a Learning Process	1a Learning Process
+21	1a Model Development with ANFIS	1a Model Development with ANFIS
+22	1a Model Training	1a Model Training
+23	1a Nero-Fuzzy Training	1a Nero-Fuzzy Training
+24	1a Neural Network Model Construction	1a Neural Network Model Construction
+25	1a Risk Score Development	1a Risk Score Development
+26	1a Rule Generation	1a Rule Generation
+27	1a Semi-supervised Learning	1a Semi-supervised Learning
+28	1a Supervised Learning to Tune Rule Parameters	1a Supervised Learning to Tune Rule Parameters
+29	1a System Modeling Using AR	1a System Modeling Using AR
+30	1a System Modeling Using NFIS	1a System Modeling Using NFIS
+31	1a TSK Fuzzy System Integration and Training	1a TSK Fuzzy System Integration and Training
+32	1a Train ANN	1a Train ANN
+33	1a Train Classification Model	1a Train Classification Model
+34	1a Train ML	1a Train ML
+35	1a Train ML Model1	1a Train ML Model1
+36	1a Train ML Model2	1a Train ML Model2
+37	1a Train Model	1a Train Model
+38	1a Train WNN	1a Train WNN
+39	1a Train from Previous cases	1a Train from Previous cases
+40	1a Train the ANFIS Model	1a Train the ANFIS Model
+41	1a Traininf the Models	1a Traininf the Models
+42	1a Unsupervised LEarning by Adaptive Vector Quantization (AVQ) Clustering	1a Unsupervised LEarning by Adaptive Vector Quantization (AVQ) Clustering
+43	1a Unsupervised LEarning by Fuzzy C-Means (FCM) Clustering	1a Unsupervised LEarning by Fuzzy C-Means (FCM) Clustering
+44	1b Submodel Construction	1b Submodel Construction
+45	1c Adapting Symbolic Fusion for Sleep Staging	1c Adapting Symbolic Fusion for Sleep Staging
+46	1c Create NLP Fuzzy	1c Create NLP Fuzzy
+47	1c Expert Knowledge	1c Expert Knowledge
+48	1c FIS Creation	1c FIS Creation
+49	1c Fuzzy Partition Method + MLE Clustering	1c Fuzzy Partition Method + MLE Clustering
+50	1c Fuzzy Rules	1c Fuzzy Rules
+51	1c Fuzzy Rules Creation	1c Fuzzy Rules Creation
+52	1c Fuzzy-Rules Creation	1c Fuzzy-Rules Creation
+53	1c Generate Fuzzy Parameters	1c Generate Fuzzy Parameters
+54	1c Generate Fuzzy Rules	1c Generate Fuzzy Rules
+55	1c Generate the Equivalent ANFIS Architecture	1c Generate the Equivalent ANFIS Architecture
+56	1c Individual System Creation	1c Individual System Creation
+57	1c Integration	1c Integration
+58	1c Knowledge Engineering	1c Knowledge Engineering
+59	1c Rules from experts	1c Rules from experts
+60	1c System Creation	1c System Creation
+61	1d Annotate Data	1d Annotate Data
+62	1d Annotation	1d Annotation
+63	1d Calculate Fuzzy Gain Ratio	1d Calculate Fuzzy Gain Ratio
+64	1d Calculation of Fractal Dimensions	1d Calculation of Fractal Dimensions
+65	1d Cascade Individual System	1d Cascade Individual System
+66	1d Classification	1d Classification
+67	1d Complation of Characteristics and Other Information of Interest and Expert Interpretation	1d Complation of Characteristics and Other Information of Interest and Expert Interpretation
+68	1d Computation of the Probablity of Each Class	1d Computation of the Probablity of Each Class
+69	1d Compute Information Measures	1d Compute Information Measures
+70	1d Construct Fuzzy Rough Set	1d Construct Fuzzy Rough Set
+71	1d Cross-Correlation	1d Cross-Correlation
+72	1d Data Collection	1d Data Collection
+73	1d Data Collection and Pre-Processing	1d Data Collection and Pre-Processing
+74	1d Data Collection and Preparation	1d Data Collection and Preparation
+75	1d Data Collection and Preprocessing	1d Data Collection and Preprocessing
+76	1d Data Pre-processing	1d Data Pre-processing
+77	1d Data Preparation	1d Data Preparation
+78	1d Data Preparation and Splitting	1d Data Preparation and Splitting
+79	1d Data Preprocessing	1d Data Preprocessing
+80	1d Data Processing	1d Data Processing
+81	1d Data Transformation	1d Data Transformation
+82	1d Defuzzification	1d Defuzzification
+83	1d Defuzzification Final Decision	1d Defuzzification Final Decision
+84	1d Diagnosis and Recommendation	1d Diagnosis and Recommendation
+85	1d Division of Follow-up Time into Intervals	1d Division of Follow-up Time into Intervals
+86	1d EMG Signals Pre-processing	1d EMG Signals Pre-processing
+87	1d Extract Relevant Information	1d Extract Relevant Information
+88	1d Factorization Machines	1d Factorization Machines
+89	1d Feature Extraction	1d Feature Extraction
+90	1d Feature Extraction via Wavelet Transformation	1d Feature Extraction via Wavelet Transformation
+91	1d Feature Selection with CCSO	1d Feature Selection with CCSO
+92	1d Fuzzification	1d Fuzzification
+93	1d Fuzzification of Clinical Variables	1d Fuzzification of Clinical Variables
+94	1d Fuzzy Analytic Hierarchy	1d Fuzzy Analytic Hierarchy
+95	1d Fuzzy Logic Analysis	1d Fuzzy Logic Analysis
+96	1d Fuzzy Partitioning with FCM	1d Fuzzy Partitioning with FCM
+97	1d Fuzzy Rules without Weights	1d Fuzzy Rules without Weights
+98	1d Fuzzy c-means clustering (FCM) and fuzzy k-means clustering (FKM)	1d Fuzzy c-means clustering (FCM) and fuzzy k-means clustering (FKM)
+99	1d Gene Selection UsingModified AHP	1d Gene Selection UsingModified AHP
+100	1d Greyscale Conversion	1d Greyscale Conversion
+101	1d Image Preprocessing	1d Image Preprocessing
+102	1d Image Segmentation	1d Image Segmentation
+103	1d Initialization	1d Initialization
+104	1d Intensification	1d Intensification
+105	1d Interpret Results with SOFLP	1d Interpret Results with SOFLP
+106	1d Latent Factors	1d Latent Factors
+107	1d Locally Weighted FM	1d Locally Weighted FM
+108	1d Medical Database Selection	1d Medical Database Selection
+109	1d Personal Epoch Selection and Scoring	1d Personal Epoch Selection and Scoring
+110	1d Pre-Process	1d Pre-Process
+111	1d Pre-Process Data	1d Pre-Process Data
+112	1d Pre-Processing	1d Pre-Processing
+113	1d Pre-process	1d Pre-process
+114	1d Pre-processed	1d Pre-processed
+115	1d Pre-processing	1d Pre-processing
+116	1d Prediction of Correctness of Each Rule	1d Prediction of Correctness of Each Rule
+117	1d Preliminary Data Processing	1d Preliminary Data Processing
+118	1d Preprocessing	1d Preprocessing
+119	1d Preprocessing and Feature Selection	1d Preprocessing and Feature Selection
+120	1d Preprocessing with Stepwise Regression Analysis (SRA)	1d Preprocessing with Stepwise Regression Analysis (SRA)
+121	1d Presentation of Diagnosis and Advice	1d Presentation of Diagnosis and Advice
+122	1d Pseudo-outcome Extimation	1d Pseudo-outcome Extimation
+123	1d Pseudo-outcome Re-estimation	1d Pseudo-outcome Re-estimation
+124	1d Rank Attributes	1d Rank Attributes
+125	1d Reporting and Interpretation	1d Reporting and Interpretation
+126	1d Rule Generation	1d Rule Generation
+127	1d SMOTE	1d SMOTE
+128	1d Segmentation Refinement	1d Segmentation Refinement
+129	1d Segmentation w/ Morphological Operations	 Morphological Operations
+130	1d Selection of a Set of Best Decision Rules	1d Selection of a Set of Best Decision Rules
+131	1d Self-Organizing Fuzzy Logic Modeling	1d Self-Organizing Fuzzy Logic Modeling
+132	1d Signal Analysis and Band Decomposition	1d Signal Analysis and Band Decomposition
+133	1d Similarity Assesment	1d Similarity Assesment
+134	1d Structure Dataset	1d Structure Dataset
+135	1d Structure Medical Knowledge	1d Structure Medical Knowledge
+136	1d Tokenize	1d Tokenize
+137	1d Transform Data is Fuzzy	1d Transform Data is Fuzzy
+138	1d Transform to Feature Vectors	1d Transform to Feature Vectors
+139	2a Aggregation	2a Aggregation
+140	2a Annotation	2a Annotation
+141	2a Attribute Reduction Using Rough Set Theory	2a Attribute Reduction Using Rough Set Theory
+142	2a Automated Sleep Staging	2a Automated Sleep Staging
+143	2a CBR Process	2a CBR Process
+144	2a Case-Base Clustering	2a Case-Base Clustering
+145	2a Classification	2a Classification
+146	2a Classification (Neuro-Fuzzy Logic)	2a Classification (Neuro-Fuzzy Logic)
+147	2a Classification with ANFIS	2a Classification with ANFIS
+148	2a Clinical Application	2a Clinical Application
+149	2a Cox Proportional Hazards (CoxPH) Model Application	2a Cox Proportional Hazards (CoxPH) Model Application
+150	2a Create Vectorized Representation	2a Create Vectorized Representation
+151	2a Data Analysis for Feature Selection	2a Data Analysis for Feature Selection
+152	2a Decision Making	2a Decision Making
+153	2a Decision Support Generation	2a Decision Support Generation
+154	2a Decision support for therapy Planning	2a Decision support for therapy Planning
+155	2a Defining Input Variables	2a Defining Input Variables
+156	2a Determine Status	2a Determine Status
+157	2a Diagnosis Prediction	2a Diagnosis Prediction
+158	2a Dual-Tree Complex Wavelet Transform (DTCWT)	2a Dual-Tree Complex Wavelet Transform (DTCWT)
+159	2a Effect Estimation	2a Effect Estimation
+160	2a Equilibrated Urea Concentration Prediction	2a Equilibrated Urea Concentration Prediction
+161	2a Estimating the Optimal Number of Clusters	2a Estimating the Optimal Number of Clusters
+162	2a Expert Labeling	2a Expert Labeling
+163	2a FIS 1	2a FIS 1
+164	2a FIS 2	2a FIS 2
+165	2a Feature Extraction Using GLCM	2a Feature Extraction Using GLCM
+166	2a Feature Ranking	2a Feature Ranking
+167	2a Feature Recution Using PCA	2a Feature Recution Using PCA
+168	2a Feature Selection and Reduction	2a Feature Selection and Reduction
+169	2a Final Decision	2a Final Decision
+170	2a Final Layer FIS	2a Final Layer FIS
+171	2a Finding Weigted Fuzzy Rules	2a Finding Weigted Fuzzy Rules
+172	2a First Automation	2a First Automation
+173	2a First Layer FIS	2a First Layer FIS
+174	2a Forecasting Using Fuzzy Logic	2a Forecasting Using Fuzzy Logic
+175	2a Fuzzy Classification	2a Fuzzy Classification
+176	2a Fuzzy Finite State Machine Learning	2a Fuzzy Finite State Machine Learning
+177	2a Fuzzy Inference	2a Fuzzy Inference
+178	2a Fuzzy Logic Inference	2a Fuzzy Logic Inference
+179	2a Fuzzy Logic Integration	2a Fuzzy Logic Integration
+180	2a Fuzzy Logic-based Edge Detection	2a Fuzzy Logic-based Edge Detection
+181	2a Fuzzy MRF Model Application	2a Fuzzy MRF Model Application
+182	2a Fuzzy Model Setup	2a Fuzzy Model Setup
+183	2a Fuzzy Rule Optimization using Genetic Algorithms (GA)	2a Fuzzy Rule Optimization using Genetic Algorithms (GA)
+184	2a Fuzzy Rules Construction	2a Fuzzy Rules Construction
+185	2a Health Score Prediction	2a Health Score Prediction
+186	2a Integrating BN and CBR for Decision Support	2a Integrating BN and CBR for Decision Support
+187	2a Integrating ML Predictions with Fuzzy Inference System (FIS)	2a Integrating ML Predictions with Fuzzy Inference System (FIS)
+188	2a Integration and System Deployment	2a Integration and System Deployment
+189	2a Iterative Selection	2a Iterative Selection
+190	2a Longitudinal Analysis of DSPN Progression	2a Longitudinal Analysis of DSPN Progression
+191	2a Medical Diagnosis	2a Medical Diagnosis
+192	2a Mining and Selection of Suitable Attributes	2a Mining and Selection of Suitable Attributes
+193	2a Model Application	2a Model Application
+194	2a Modeling	2a Modeling
+195	2a Output	2a Output
+196	2a Output NLP Model	2a Output NLP Model
+197	2a PICA	2a PICA
+198	2a Pairwise Comparison	2a Pairwise Comparison
+199	2a Possible Diagnosis (per case)	2a Possible Diagnosis (per case)
+200	2a Predicting	2a Predicting
+201	2a Prediction	2a Prediction
+202	2a Prediction Making	2a Prediction Making
+203	2a Preliminary Diagnosis	2a Preliminary Diagnosis
+204	2a Proving Recommendation to Clinicians	2a Proving Recommendation to Clinicians
+205	2a Recommendation	2a Recommendation
+206	2a Risk Assesment	2a Risk Assesment
+207	2a Risk Assessment	2a Risk Assessment
+208	2a Rule Selection	2a Rule Selection
+209	2a Rule-Based Processing	2a Rule-Based Processing
+210	2a Second Automation	2a Second Automation
+211	2a Second Layer FIS	2a Second Layer FIS
+212	2a Segmentation	2a Segmentation
+213	2a Selection of Pronostic Factors with Decision Trees	2a Selection of Pronostic Factors with Decision Trees
+214	2a U-NET CNN Classification	2a U-NET CNN Classification
+215	2a Use the ANFIS Model for Prediction	2a Use the ANFIS Model for Prediction
+216	2b Check if Early Alert	2b Check if Early Alert
+217	2b Predict	2b Predict
+218	2c Create Rule-Based Model	2c Create Rule-Based Model
+219	2d Multi-classification for Pain levels	2d Multi-classification for Pain levels
+220	2d Prediction Generation	2d Prediction Generation
+221	ANFIS	ANFIS
+222	ANFIS Fine-tuning	ANFIS Fine-tuning
+223	ANFIS Hybrid Model	ANFIS Hybrid Model
+224	AR	AR
+225	Actor	Actor
+226	Actor Physicians	Actor Physicians
+227	Actor Radiologist	Actor Radiologist
+228	Annotated Dataset	Annotated Dataset
+229	Authentic Diagnosis Database	Authentic Diagnosis Database
+230	BUS Image	BUS Image
+231	Balanced Dataset	Balanced Dataset
+232	Brain MRI Images	Brain MRI Images
+233	CCSO-SOFLP	CCSO-SOFLP
+234	CNN	CNN
+235	COVID-19 Prediction	COVID-19 Prediction
+236	CT Scan	CT Scan
+237	Cancer Type	Cancer Type
+238	Candidate Rules	Candidate Rules
+239	Cardiovascular prediction	Cardiovascular prediction
+240	Cardiovasculer Risk Level	Cardiovasculer Risk Level
+241	Cascaded Expert Systems	Cascaded Expert Systems
+242	Case-Based	Case-Based
+243	Categorized and Pre-Processed Data	Categorized and Pre-Processed Data
+244	Certainity	Certainity
+245	Classification Model	Classification Model
+246	Classified Sample	Classified Sample
+247	Cleaned Data	Cleaned Data
+248	Cleaned Physiological Signals	Cleaned Physiological Signals
+249	Cleaned and Normalized	Cleaned and Normalized
+250	Cleaned and Normalized Data	Cleaned and Normalized Data
+251	Cleaned and Pre-processed Data	Cleaned and Pre-processed Data
+252	Cleaned w/ Resistance and Reactance param	 Resistance and Reactance param
+253	Clinical Data	Clinical Data
+254	Clinical Dataset	Clinical Dataset
+255	Clinical Diagnosis	Clinical Diagnosis
+256	Clinical Guidlines for Sleep Staging	Clinical Guidlines for Sleep Staging
+257	Clinical Implications	Clinical Implications
+258	Clinicians	Clinicians
+259	Clusters of Cases	Clusters of Cases
+260	Condition	Condition
+261	Condition and Severity	Condition and Severity
+262	Crisp Risk Level	Crisp Risk Level
+263	Current Case	Current Case
+264	DSPN Severity Progess	DSPN Severity Progess
+265	Data EMG Signals	Data EMG Signals
+266	Data Fuzzy Equivalence Relations	Data Fuzzy Equivalence Relations
+267	Data Fuzzy Gain Ratios	Data Fuzzy Gain Ratios
+268	Data Fuzzy Information Measures	Data Fuzzy Information Measures
+269	Data Lower + Upper Approximation	Data Lower + Upper Approximation
+270	Data Raw Patient	Data Raw Patient
+271	Data Unages fMRI Images	Data Unages fMRI Images
+272	Dataset w/ Glycaemia Classified	 Glycaemia Classified
+273	Dataset w/ Reduced Features	 Reduced Features
+274	Deduce	Deduce
+275	Defuzzified Image	Defuzzified Image
+276	Degree of Correlation	Degree of Correlation
+277	Diagnosis	Diagnosis
+278	Diagnosis + Explenation	Diagnosis + Explenation
+279	Diagnosis + Recommended Actions	Diagnosis + Recommended Actions
+280	Diagnosis Parameters	Diagnosis Parameters
+281	Diagnosis Report	Diagnosis Report
+282	Diagnosis Severity	Diagnosis Severity
+283	Diagnosis and Treatment	Diagnosis and Treatment
+284	Diagnostic Report	Diagnostic Report
+285	Diagram	Diagram
+286	Direct Patient Interventions	Direct Patient Interventions
+287	Discovery Data	Discovery Data
+288	Domain Experts	Domain Experts
+289	Dynamic Boosting Model	Dynamic Boosting Model
+290	EHRs	EHRs
+291	Early Alert	Early Alert
+292	Edge-detected Images	Edge-detected Images
+293	Effectiveness Dialysis	Effectiveness Dialysis
+294	Embed	Embed
+295	Embed Fuzzy Logic Analysis	Embed Fuzzy Logic Analysis
+296	Embed Fuzzy Rough Set	Embed Fuzzy Rough Set
+297	Embed Wavelet Transformation	Embed Wavelet Transformation
+298	Embedding	Embedding
+299	Endocrinologist	Endocrinologist
+300	Engineer	Engineer
+301	Engineered Model Patterns	Engineered Model Patterns
+302	Engineering	Engineering
+303	Enhanced Image	Enhanced Image
+304	Experiences \nCardiac Clinicians	Experiences \nCardiac Clinicians
+305	Expert	Expert
+306	Experts	Experts
+307	Extracted Features	Extracted Features
+308	FIS 1	FIS 1
+309	FIS 2	FIS 2
+310	Feature Vector	Feature Vector
+311	Features	Features
+312	Features for Each Condition	Features for Each Condition
+313	Final Diagnosis	Final Diagnosis
+314	Final Diagnosis CBR	Final Diagnosis CBR
+315	Forecasted Trends	Forecasted Trends
+316	Fractal Dimensions	Fractal Dimensions
+317	Fuzzified Data	Fuzzified Data
+318	Fuzzified Value	Fuzzified Value
+319	Fuzzified Values	Fuzzified Values
+320	Fuzzy Diagnosis	Fuzzy Diagnosis
+321	Fuzzy Image	Fuzzy Image
+322	Fuzzy Logic Model	Fuzzy Logic Model
+323	Fuzzy Parameters	Fuzzy Parameters
+324	Fuzzy Risk Level	Fuzzy Risk Level
+325	Fuzzy Rough Set Application	Fuzzy Rough Set Application
+326	Fuzzy Rules	Fuzzy Rules
+327	Fuzzy Values	Fuzzy Values
+328	Fuzzy Values Clinical Variables	Fuzzy Values Clinical Variables
+329	Fuzzy Values for Input Variables	Fuzzy Values for Input Variables
+330	GLCM	GLCM
+331	Gene Expression Data	Gene Expression Data
+332	Generate model base on treatment and variables	Generate model base on treatment and variables
+333	Guidelines	Guidelines
+334	Guidlines	Guidlines
+335	Health Score and Epilepsy Prediction	Health Score and Epilepsy Prediction
+336	Healthcare Provider Interventions	Healthcare Provider Interventions
+337	Heart Failure Risk	Heart Failure Risk
+338	Historical Data Sets	Historical Data Sets
+339	Hospital Readmission	Hospital Readmission
+340	Hybrid ANFIS	Hybrid ANFIS
+341	Hybrid ANFIS Framework	Hybrid ANFIS Framework
+342	Hybrid ANFIS Model	Hybrid ANFIS Model
+343	Hybrid DS Tool	Hybrid DS Tool
+344	Hybrid FNDSB	Hybrid FNDSB
+345	Hybrid Fuzzy Decision Tree	Hybrid Fuzzy Decision Tree
+346	Hybrid Fuzzy MRF Model	Hybrid Fuzzy MRF Model
+347	Hybrid GSAM system	Hybrid GSAM system
+348	Hybrid IT2FLS	Hybrid IT2FLS
+349	Hybrid ML Model	Hybrid ML Model
+350	Hybrid NLP Fuzzy	Hybrid NLP Fuzzy
+351	Hybrid NN Model	Hybrid NN Model
+352	Hybrid Neuro-Fuzzy Classifier	Hybrid Neuro-Fuzzy Classifier
+353	Hybrid Neuro-Fuzzy logic	Hybrid Neuro-Fuzzy logic
+354	Hybrid Optimized Set	Hybrid Optimized Set
+355	Hybrid Second ANFIS	Hybrid Second ANFIS
+356	Hybrid TSK Fuzzy System	Hybrid TSK Fuzzy System
+357	Hypnogram	Hypnogram
+358	Image Adjusted Images	Image Adjusted Images
+359	Image Brain MRI Images	Image Brain MRI Images
+360	Image Contrast Enhanced Images	Image Contrast Enhanced Images
+361	Image Decomposed sub-band images	Image Decomposed sub-band images
+362	Image Extracted Features	Image Extracted Features
+363	Image Initial Segmentation Estimates	Image Initial Segmentation Estimates
+364	Image Normalize fMRI Scans	Image Normalize fMRI Scans
+365	Image Patient Brain MRI	Image Patient Brain MRI
+366	Image Preprocessed Data	Image Preprocessed Data
+367	Image Processed Image	Image Processed Image
+368	Image Raw CT Images	Image Raw CT Images
+369	Image Raw Lung CT Images	Image Raw Lung CT Images
+370	Image Raw Multidimensional 13C MRI Data	Image Raw Multidimensional 13C MRI Data
+371	Image Raw fMRI Scans	Image Raw fMRI Scans
+372	Image Segmented Lung Regions	Image Segmented Lung Regions
+373	Images Contrast-Enhanced Images	Images Contrast-Enhanced Images
+374	Images Extracted Features	Images Extracted Features
+375	Images Greyscale + Normalized Images	Images Greyscale + Normalized Images
+376	Images JPEG Images	Images JPEG Images
+377	Images Patient CT	Images Patient CT
+378	Images Patient Lung CT Images	Images Patient Lung CT Images
+379	Importance Score	Importance Score
+380	Individual Expert System	Individual Expert System
+381	Individual Pseudo Outcomes	Individual Pseudo Outcomes
+382	Inference Data	Inference Data
+383	Input Query	Input Query
+384	Intermediate Fuzzy Values (Y1)	Intermediate Fuzzy Values (Y1)
+385	Intermediate Fuzzy Values (Y2)	Intermediate Fuzzy Values (Y2)
+386	Knowledge	Knowledge
+387	Knowledge Integration	Knowledge Integration
+388	Label Tumor Class	Label Tumor Class
+389	Labeled Data	Labeled Data
+390	Labels	Labels
+391	Latent Factors	Latent Factors
+392	Likelihood KOA	Likelihood KOA
+393	MEdical Report	MEdical Report
+394	ML Abstracted Weights	ML Abstracted Weights
+395	ML DL-based	ML DL-based
+396	ML model	ML model
+397	Measurements	Measurements
+398	Medical Professional	Medical Professional
+399	Most Uncertain Data	Most Uncertain Data
+400	NFIS	NFIS
+401	Normalized Data	Normalized Data
+402	Normalized Gene\nExpression Data	Normalized Gene\nExpression Data
+403	Normilized Data	Normilized Data
+404	Numeric Balanced Set	Numeric Balanced Set
+405	Numeric Blood Glucose Measurement	Numeric Blood Glucose Measurement
+406	Numeric Blood Glucose Ranges	Numeric Blood Glucose Ranges
+407	Numeric Cleaned Physiological Data	Numeric Cleaned Physiological Data
+408	Numeric Clustered Physiological Data	Numeric Clustered Physiological Data
+409	Numeric Features Pain Levels	Numeric Features Pain Levels
+410	Numeric Features of Brain Activity Patterns	Numeric Features of Brain Activity Patterns
+411	Numeric Fuzzy Numbers	Numeric Fuzzy Numbers
+412	Numeric Gene Expression Levels	Numeric Gene Expression Levels
+413	Numeric HR Values	Numeric HR Values
+414	Numeric Ketones Urine	Numeric Ketones Urine
+415	Numeric Ketonuria Status	Numeric Ketonuria Status
+416	Numeric Local and Global Weights	Numeric Local and Global Weights
+417	Numeric Patient\\'s Metabolic Condition	Numeric Patient\\'s Metabolic Condition
+418	Numeric Raw Physiological Data	Numeric Raw Physiological Data
+419	Numeric Refined Set of Features	Numeric Refined Set of Features
+420	Numeric Wavelet Features	Numeric Wavelet Features
+421	Numerical Feature Vectors	Numerical Feature Vectors
+422	Numerical Features	Numerical Features
+423	Observational Data	Observational Data
+424	Optimal no of Clusters	Optimal no of Clusters
+425	Optimized Fuzzy Rules	Optimized Fuzzy Rules
+426	Osteoarthritis Data	Osteoarthritis Data
+427	Other EDIC Data	Other EDIC Data
+428	Overall Importance	Overall Importance
+429	Pain Classification w/Supporting Info	Supporting Info
+430	Pain Level	Pain Level
+431	Pain Levels	Pain Levels
+432	Partially Scored Hypnogram	Partially Scored Hypnogram
+433	Partitioned Subsets	Partitioned Subsets
+434	Patient BUS Image	Patient BUS Image
+435	Patient Chest MRI Images	Patient Chest MRI Images
+436	Patient Clinical and Pathalogical Data	Patient Clinical and Pathalogical Data
+437	Patient Data	Patient Data
+438	Patient Database	Patient Database
+439	Patient Mammographic	Patient Mammographic
+440	Patient Records	Patient Records
+441	Patient Symptoms	Patient Symptoms
+442	Patient\\'s Genomic Data	Patient\\'s Genomic Data
+443	Personalized Threshold	Personalized Threshold
+444	Physician	Physician
+445	Physicians	Physicians
+446	Physiological Data	Physiological Data
+447	Physiological Signals	Physiological Signals
+448	Physiological conditions	Physiological conditions
+449	Possible Diagnosis with Likelihood	Possible Diagnosis with Likelihood
+450	Potential Decsion Rules	Potential Decsion Rules
+451	Pre-processed Data	Pre-processed Data
+452	Predict	Predict
+453	Predicted Infraction Volume Growth	Predicted Infraction Volume Growth
+454	Predicted Rule Accuracy	Predicted Rule Accuracy
+455	Prediction Model	Prediction Model
+456	Prepared Dataser	Prepared Dataser
+457	Prepared Time Series Data	Prepared Time Series Data
+458	Preprocessed Data	Preprocessed Data
+459	Previos Cases	Previos Cases
+460	Previous Cases	Previous Cases
+461	Probablity Score	Probablity Score
+462	Processed and Normalized	Processed and Normalized
+463	Progonostic Factors per Time	Progonostic Factors per Time
+464	Ranked Informative Genes	Ranked Informative Genes
+465	Ranked List of Tratments	Ranked List of Tratments
+466	Ranked MNSI Parameters	Ranked MNSI Parameters
+467	Raw Breast Cancer + Heart Disease Datset	Raw Breast Cancer + Heart Disease Datset
+468	Raw Chest MRI Image	Raw Chest MRI Image
+469	Raw Clinical and Pathalogical Data	Raw Clinical and Pathalogical Data
+470	Raw EDIC Data	Raw EDIC Data
+471	Raw Gene Expression	Raw Gene Expression
+472	Raw Mammographic	Raw Mammographic
+473	Raw Measurements	Raw Measurements
+474	Raw Medical Data	Raw Medical Data
+475	Raw Medical Databases	Raw Medical Databases
+476	Raw Microarray Gen\n Expression Datasets	Raw Microarray Gen\n Expression Datasets
+477	Raw Next Generation Genomic Data	Raw Next Generation Genomic Data
+478	Raw Patient Data	Raw Patient Data
+479	Raw UCI Data	Raw UCI Data
+480	Re-estimated Pseudo Outcomes	Re-estimated Pseudo Outcomes
+481	Recommenation	Recommenation
+482	Recommendation	Recommendation
+483	Recommendations	Recommendations
+484	Reduced Dataset	Reduced Dataset
+485	Reduced Dataset w/ Principle Components	 Principle Components
+486	Reduced Datasets	Reduced Datasets
+487	Refined Features	Refined Features
+488	Refined Segmentation	Refined Segmentation
+489	Relapse and Factors	Relapse and Factors
+490	Relevant Clinical Variables	Relevant Clinical Variables
+491	Report w/ Visual Aids	 Visual Aids
+492	Resampled Signals	Resampled Signals
+493	Risk Assessment	Risk Assessment
+494	Risk Levels	Risk Levels
+495	Risk and Likelihood COVID-19	Risk and Likelihood COVID-19
+496	Risk-scores	Risk-scores
+497	Rough Fuzzy Classifier	Rough Fuzzy Classifier
+498	Rough-Fuzzy Classifier	Rough-Fuzzy Classifier
+499	Rules-based	Rules-based
+500	Segmentation Maps	Segmentation Maps
+501	Segmented EEG Signals	Segmented EEG Signals
+502	Segmented Images with Labels	Segmented Images with Labels
+503	Segregated and Classified Images	Segregated and Classified Images
+504	Seizure Instance	Seizure Instance
+505	Selected Attributes	Selected Attributes
+506	Selected Data	Selected Data
+507	Semantic Decision Support	Semantic Decision Support
+508	Semantic FCM	Semantic FCM
+509	Semantic FFSMs	Semantic FFSMs
+510	Semantic FIS	Semantic FIS
+511	Semantic First Automation	Semantic First Automation
+512	Semantic Fuzzy Rules	Semantic Fuzzy Rules
+513	Semantic Fuzzy Rules with weights	Semantic Fuzzy Rules with weights
+514	Semantic Model	Semantic Model
+515	Semantic NLP Model	Semantic NLP Model
+516	Semantic Risk	Semantic Risk
+517	Semantic Rule-Based	Semantic Rule-Based
+518	Semantic Rules	Semantic Rules
+519	Semantic Second Automation	Semantic Second Automation
+520	Semantic Support Vector Machine	Semantic Support Vector Machine
+521	Semantically Classified Data	Semantically Classified Data
+522	Seprated Signal Components	Seprated Signal Components
+523	Severity and Treatment Plan	Severity and Treatment Plan
+524	Signal Crisp Prediction	Signal Crisp Prediction
+525	Silico Data	Silico Data
+526	Similarity Score	Similarity Score
+527	Sleep Events Parameters	Sleep Events Parameters
+528	Standardized Images	Standardized Images
+529	Static ANN	Static ANN
+530	Static Decision Tree	Static Decision Tree
+531	Static Diagnostic Rules	Static Diagnostic Rules
+532	Static Selected Rules DT	Static Selected Rules DT
+533	Statistic ML Model	Statistic ML Model
+534	Statistic Word2Vec	Statistic Word2Vec
+535	Statistical Addition model-based	Statistical Addition model-based
+536	Statistical Bayesian Networks	Statistical Bayesian Networks
+537	Statistical CoxPH	Statistical CoxPH
+538	Statistical CoxPH HR-based	Statistical CoxPH HR-based
+539	Statistical DHCN	Statistical DHCN
+540	Statistical Fuzzy PArtition Matrix	Statistical Fuzzy PArtition Matrix
+541	Statistical IL Algorithms	Statistical IL Algorithms
+542	Statistical IVGR2	Statistical IVGR2
+543	Statistical Multiplication model-based	Statistical Multiplication model-based
+544	Structured Data	Structured Data
+545	Structured Datasets	Structured Datasets
+546	Structured and Pre-processed	Structured and Pre-processed
+547	Structured and Relevant Data	Structured and Relevant Data
+548	Subgraph-2a Classify Tumor	Subgraph-2a Classify Tumor
+549	Surgery Prediction	Surgery Prediction
+550	Symbolic Fusion Framework	Symbolic Fusion Framework
+551	Symptom Back Pains	Symptom Back Pains
+552	Symptoms	Symptoms
+553	T4B-1	T4B-1
+554	T4B-11	T4B-11
+555	T4B-12	T4B-12
+556	T4B-13	T4B-13
+557	T4B-14	T4B-14
+558	T4B-15	T4B-15
+559	T4B-18	T4B-18
+560	T4B-2	T4B-2
+561	T4B-20	T4B-20
+562	T4B-21	T4B-21
+563	T4B-22	T4B-22
+564	T4B-24	T4B-24
+565	T4B-26	T4B-26
+566	T4B-27	T4B-27
+567	T4B-29	T4B-29
+568	T4B-3	T4B-3
+569	T4B-30	T4B-30
+570	T4B-31	T4B-31
+571	T4B-34	T4B-34
+572	T4B-35	T4B-35
+573	T4B-36	T4B-36
+574	T4B-38	T4B-38
+575	T4B-4	T4B-4
+576	T4B-6	T4B-6
+577	T4B-9	T4B-9
+578	Text Feature Vectors Symptoms	Text Feature Vectors Symptoms
+579	Text Fuzzy Rules	Text Fuzzy Rules
+580	Text Medical Knowledge	Text Medical Knowledge
+581	Text Possible Diagnosis ranked by Likelihood	Text Possible Diagnosis ranked by Likelihood
+582	Text Structures Representation	Text Structures Representation
+583	Text Symptoms	Text Symptoms
+584	Text Symptoms Cleaned	Text Symptoms Cleaned
+585	Text Tokens	Text Tokens
+586	Time Segmented Data	Time Segmented Data
+587	Time Series Data COVID-19	Time Series Data COVID-19
+588	Time-series EEG Data	Time-series EEG Data
+589	Time-series Extracted Features	Time-series Extracted Features
+590	Time-series Labeled + Unlabeled Data	Time-series Labeled + Unlabeled Data
+591	Time-series Raw EEG Signals	Time-series Raw EEG Signals
+592	Train	Train
+593	Training	Training
+594	Transfomr	Transfomr
+595	Transform	Transform
+596	Transformed Data	Transformed Data
+597	Treatment Effects	Treatment Effects
+598	Treatment Model	Treatment Model
+599	Type-2 Fuzzy Rules	Type-2 Fuzzy Rules
+600	U-NET CNN	U-NET CNN
+601	Unlabeled Data	Unlabeled Data
+602	Various Clinical Prediction	Various Clinical Prediction
+603	Vectorized Representation	Vectorized Representation
+604	Vital Signs Data	Vital Signs Data
+605	Vivo Data	Vivo Data
+606	Volume Growth Rate	Volume Growth Rate
+607	WFM Model	WFM Model
+608	WNN	WNN
+609	Weighted Fuzzy Rules	Weighted Fuzzy Rules
+610	Weighted Training Instances	Weighted Training Instances
+611	ad Fuzzification	ad Fuzzification
+612	http://tool4boxology.org/Boxology	Boxology
+613	http://tool4boxology.org/Boxology/04d2ac19-c674-4452-accd-1228462bc17c	04d2ac19-c674-4452-accd-1228462bc17c
+614	http://tool4boxology.org/Boxology/0555f48f-2793-4cd2-9e25-e3e9d5ebf1d3	0555f48f-2793-4cd2-9e25-e3e9d5ebf1d3
+615	http://tool4boxology.org/Boxology/06c6f4cd-8fdf-44f6-a2e2-53c0c7543d42	06c6f4cd-8fdf-44f6-a2e2-53c0c7543d42
+616	http://tool4boxology.org/Boxology/0d5e2c84-6e94-4381-8a41-9bf4398479b0	0d5e2c84-6e94-4381-8a41-9bf4398479b0
+617	http://tool4boxology.org/Boxology/1a3c916b-dbd8-44a0-b580-1a22122274f8	1a3c916b-dbd8-44a0-b580-1a22122274f8
+618	http://tool4boxology.org/Boxology/1d4a7392-de91-4e67-9115-0d6b7fa3ed30	1d4a7392-de91-4e67-9115-0d6b7fa3ed30
+619	http://tool4boxology.org/Boxology/1eff2e08-0f6f-4ec7-854c-bd17d37e88fb	1eff2e08-0f6f-4ec7-854c-bd17d37e88fb
+620	http://tool4boxology.org/Boxology/20a2622b-2a19-424b-a29d-6b5960f77d56	20a2622b-2a19-424b-a29d-6b5960f77d56
+621	http://tool4boxology.org/Boxology/21947fa1-8f9b-466b-9656-7f90ce622b6b	21947fa1-8f9b-466b-9656-7f90ce622b6b
+622	http://tool4boxology.org/Boxology/23df386e-cfa2-42d7-8097-42292c26e631	23df386e-cfa2-42d7-8097-42292c26e631
+623	http://tool4boxology.org/Boxology/25041b90-4507-43a0-88d4-74a774b2132d	25041b90-4507-43a0-88d4-74a774b2132d
+624	http://tool4boxology.org/Boxology/28374746-5811-441c-a4f1-bb0cf91ad51b	28374746-5811-441c-a4f1-bb0cf91ad51b
+625	http://tool4boxology.org/Boxology/2b74bdf9-69d4-4a99-ad0f-b5af1c694703	2b74bdf9-69d4-4a99-ad0f-b5af1c694703
+626	http://tool4boxology.org/Boxology/3270be6f-f68c-4bc6-ba35-2b298c4820a7	3270be6f-f68c-4bc6-ba35-2b298c4820a7
+627	http://tool4boxology.org/Boxology/4733ca51-5796-4034-a705-c23c0445ba97	4733ca51-5796-4034-a705-c23c0445ba97
+628	http://tool4boxology.org/Boxology/574767f3-dfd0-494f-a487-3ffe4fde50a3	574767f3-dfd0-494f-a487-3ffe4fde50a3
+629	http://tool4boxology.org/Boxology/62802e3a-d480-4225-a039-4e86babab88e	62802e3a-d480-4225-a039-4e86babab88e
+630	http://tool4boxology.org/Boxology/68823803-1654-47b0-a159-863f2094b70e	68823803-1654-47b0-a159-863f2094b70e
+631	http://tool4boxology.org/Boxology/6e165536-2ea2-40bd-b9a0-81514be6939b	6e165536-2ea2-40bd-b9a0-81514be6939b
+632	http://tool4boxology.org/Boxology/725c5eb6-a622-4dbd-be1a-0c80d11a9647	725c5eb6-a622-4dbd-be1a-0c80d11a9647
+633	http://tool4boxology.org/Boxology/831d3d7e-19cd-4916-ae83-161b2a97d68f	831d3d7e-19cd-4916-ae83-161b2a97d68f
+634	http://tool4boxology.org/Boxology/8a3cfb97-5ab4-4417-947b-01890c2a6872	8a3cfb97-5ab4-4417-947b-01890c2a6872
+635	http://tool4boxology.org/Boxology/8a80b7e2-954a-4e23-ba27-b45449d2fd95	8a80b7e2-954a-4e23-ba27-b45449d2fd95
+636	http://tool4boxology.org/Boxology/90d0ba01-b974-4a4c-8723-8aa0e0dbf459	90d0ba01-b974-4a4c-8723-8aa0e0dbf459
+637	http://tool4boxology.org/Boxology/99cf33f1-b9cb-461f-b84f-0d6d899a0633	99cf33f1-b9cb-461f-b84f-0d6d899a0633
+638	http://tool4boxology.org/Boxology/a19c7136-4977-4278-b547-ab5982f20e84	a19c7136-4977-4278-b547-ab5982f20e84
+639	http://tool4boxology.org/Boxology/a2cae88b-15a9-4614-b267-239755e91a81	a2cae88b-15a9-4614-b267-239755e91a81
+640	http://tool4boxology.org/Boxology/a8d9f1c7-7e43-4d6d-8c99-9fe9e7fb6916	a8d9f1c7-7e43-4d6d-8c99-9fe9e7fb6916
+641	http://tool4boxology.org/Boxology/ab3e220c-fdb5-4a56-9ee6-24ae2933745f	ab3e220c-fdb5-4a56-9ee6-24ae2933745f
+642	http://tool4boxology.org/Boxology/b1c8092f-ca92-46bb-8d3a-060555584417	b1c8092f-ca92-46bb-8d3a-060555584417
+643	http://tool4boxology.org/Boxology/b474665e-8247-4255-ab02-bf078cc0fabf	b474665e-8247-4255-ab02-bf078cc0fabf
+644	http://tool4boxology.org/Boxology/b76e4c17-74e3-4723-93e5-2064b67f1897	b76e4c17-74e3-4723-93e5-2064b67f1897
+645	http://tool4boxology.org/Boxology/b8053717-e768-49e2-94cc-1c166c7f7979	b8053717-e768-49e2-94cc-1c166c7f7979
+646	http://tool4boxology.org/Boxology/c1f301d0-c83e-4f1b-83e7-9d06e8116d37	c1f301d0-c83e-4f1b-83e7-9d06e8116d37
+647	http://tool4boxology.org/Boxology/c6d46b07-a4ed-4546-b45f-16b2835d159d	c6d46b07-a4ed-4546-b45f-16b2835d159d
+648	http://tool4boxology.org/Boxology/ca0b10c7-d6b0-43df-b24c-014190c11041	ca0b10c7-d6b0-43df-b24c-014190c11041
+649	http://tool4boxology.org/Boxology/cb497c1c-11cc-41b9-8b3b-edc23125170b	cb497c1c-11cc-41b9-8b3b-edc23125170b
+650	http://tool4boxology.org/Boxology/d5c0676d-c248-49df-8c96-cb3590883df1	d5c0676d-c248-49df-8c96-cb3590883df1
+651	http://tool4boxology.org/Boxology/d7398d94-3bdb-4c29-b57c-bcf1f27f54f8	d7398d94-3bdb-4c29-b57c-bcf1f27f54f8
+652	http://tool4boxology.org/Boxology/dc0e83f0-6d79-4173-9877-5a20a38d5198	dc0e83f0-6d79-4173-9877-5a20a38d5198
+653	http://tool4boxology.org/Boxology/e01ba454-2774-4239-a21e-4dd16d0b9f21	e01ba454-2774-4239-a21e-4dd16d0b9f21
+654	http://tool4boxology.org/Boxology/e357f0b8-dbec-4952-a9eb-da7de219da53	e357f0b8-dbec-4952-a9eb-da7de219da53
+655	http://tool4boxology.org/Boxology/e4dbd398-643d-443e-a401-af7750067cdb	e4dbd398-643d-443e-a401-af7750067cdb
+656	http://tool4boxology.org/Boxology/ee778684-c7f4-4454-9ccb-d3732837769a	ee778684-c7f4-4454-9ccb-d3732837769a
+657	http://tool4boxology.org/Boxology/f5c75aea-c773-4dd9-ad83-cf17e6fdb32d	f5c75aea-c773-4dd9-ad83-cf17e6fdb32d
+658	http://tool4boxology.org/Boxology/f8ef8753-2498-4932-8697-7a1df8989b85	f8ef8753-2498-4932-8697-7a1df8989b85
+659	http://tool4boxology.org/Boxology/fb907e0a-fb02-4977-b3e0-aebfd7059c95	fb907e0a-fb02-4977-b3e0-aebfd7059c95
+660	http://tool4boxology.org/Boxology/fbc28a73-fc3a-46b3-9ae9-c71d55218937	fbc28a73-fc3a-46b3-9ae9-c71d55218937
+661	http://tool4boxology.org/Component	Component
+662	http://tool4boxology.org/Component/node_111762445405533	node_111762445405533
+663	http://tool4boxology.org/Component/node_121762445405533	node_121762445405533
+664	http://tool4boxology.org/Component/node_131762445405533	node_131762445405533
+665	http://tool4boxology.org/Component/node_151762445165352	node_151762445165352
+666	http://tool4boxology.org/Component/node_161762445165352	node_161762445165352
+667	http://tool4boxology.org/Component/node_161762953424807	node_161762953424807
+668	http://tool4boxology.org/Component/node_171762953424807	node_171762953424807
+669	http://tool4boxology.org/Component/node_1761577797210	node_1761577797210
+670	http://tool4boxology.org/Component/node_1761577839141	node_1761577839141
+671	http://tool4boxology.org/Component/node_1761577848218	node_1761577848218
+672	http://tool4boxology.org/Component/node_1761577932578	node_1761577932578
+673	http://tool4boxology.org/Component/node_1761577938926	node_1761577938926
+674	http://tool4boxology.org/Component/node_1761578018325	node_1761578018325
+675	http://tool4boxology.org/Component/node_1761578024234	node_1761578024234
+676	http://tool4boxology.org/Component/node_1761578295027	node_1761578295027
+677	http://tool4boxology.org/Component/node_1761578300915	node_1761578300915
+678	http://tool4boxology.org/Component/node_1761578523147	node_1761578523147
+679	http://tool4boxology.org/Component/node_1761578527556	node_1761578527556
+680	http://tool4boxology.org/Component/node_1761578688300	node_1761578688300
+681	http://tool4boxology.org/Component/node_1761578712780	node_1761578712780
+682	http://tool4boxology.org/Component/node_1761578740121	node_1761578740121
+683	http://tool4boxology.org/Component/node_1761578823589	node_1761578823589
+684	http://tool4boxology.org/Component/node_1761578891105	node_1761578891105
+685	http://tool4boxology.org/Component/node_1761578995769	node_1761578995769
+686	http://tool4boxology.org/Component/node_1761579893067	node_1761579893067
+687	http://tool4boxology.org/Component/node_1761643999207_n1	node_1761643999207_n1
+688	http://tool4boxology.org/Component/node_1761643999213_n2	node_1761643999213_n2
+689	http://tool4boxology.org/Component/node_1761643999214_n3	node_1761643999214_n3
+690	http://tool4boxology.org/Component/node_1761644012719_n2	node_1761644012719_n2
+691	http://tool4boxology.org/Component/node_1761644012720_n3	node_1761644012720_n3
+692	http://tool4boxology.org/Component/node_1761644028503_n2	node_1761644028503_n2
+693	http://tool4boxology.org/Component/node_1761644028505_n3	node_1761644028505_n3
+694	http://tool4boxology.org/Component/node_1761644034124_n2	node_1761644034124_n2
+695	http://tool4boxology.org/Component/node_1761644034125_n3	node_1761644034125_n3
+696	http://tool4boxology.org/Component/node_1761644526050	node_1761644526050
+697	http://tool4boxology.org/Component/node_1761644533452	node_1761644533452
+698	http://tool4boxology.org/Component/node_1761644760937	node_1761644760937
+699	http://tool4boxology.org/Component/node_1761644772461	node_1761644772461
+700	http://tool4boxology.org/Component/node_1761644799434_n3	node_1761644799434_n3
+701	http://tool4boxology.org/Component/node_1761644965182	node_1761644965182
+702	http://tool4boxology.org/Component/node_1761644974765	node_1761644974765
+703	http://tool4boxology.org/Component/node_1761646540551_n1	node_1761646540551_n1
+704	http://tool4boxology.org/Component/node_1761646540566_n2	node_1761646540566_n2
+705	http://tool4boxology.org/Component/node_1761646540568_n3	node_1761646540568_n3
+706	http://tool4boxology.org/Component/node_1761646552484_n2	node_1761646552484_n2
+707	http://tool4boxology.org/Component/node_1761646552486_n3	node_1761646552486_n3
+708	http://tool4boxology.org/Component/node_1761646573605_n2	node_1761646573605_n2
+709	http://tool4boxology.org/Component/node_1761646573606_n3	node_1761646573606_n3
+710	http://tool4boxology.org/Component/node_1761646756723	node_1761646756723
+711	http://tool4boxology.org/Component/node_1761646869919	node_1761646869919
+712	http://tool4boxology.org/Component/node_1761646896599_n1	node_1761646896599_n1
+713	http://tool4boxology.org/Component/node_1761646896600_n2	node_1761646896600_n2
+714	http://tool4boxology.org/Component/node_1761646896601_n3	node_1761646896601_n3
+715	http://tool4boxology.org/Component/node_1761646938176_n1	node_1761646938176_n1
+716	http://tool4boxology.org/Component/node_1761646938179_n3	node_1761646938179_n3
+717	http://tool4boxology.org/Component/node_1761646938180_n4	node_1761646938180_n4
+718	http://tool4boxology.org/Component/node_1761647053286	node_1761647053286
+719	http://tool4boxology.org/Component/node_1761650204185_n1	node_1761650204185_n1
+720	http://tool4boxology.org/Component/node_1761650204198_n2	node_1761650204198_n2
+721	http://tool4boxology.org/Component/node_1761650204200_n3	node_1761650204200_n3
+722	http://tool4boxology.org/Component/node_1761650214647_n2	node_1761650214647_n2
+723	http://tool4boxology.org/Component/node_1761650214648_n3	node_1761650214648_n3
+724	http://tool4boxology.org/Component/node_1761650445836_n1	node_1761650445836_n1
+725	http://tool4boxology.org/Component/node_1761650445839_n2	node_1761650445839_n2
+726	http://tool4boxology.org/Component/node_1761650445840_n3	node_1761650445840_n3
+727	http://tool4boxology.org/Component/node_1761650543075_n1	node_1761650543075_n1
+728	http://tool4boxology.org/Component/node_1761650543077_n3	node_1761650543077_n3
+729	http://tool4boxology.org/Component/node_1761660493060	node_1761660493060
+730	http://tool4boxology.org/Component/node_1761660493090	node_1761660493090
+731	http://tool4boxology.org/Component/node_1761660493093	node_1761660493093
+732	http://tool4boxology.org/Component/node_1761660504289	node_1761660504289
+733	http://tool4boxology.org/Component/node_1761660504292	node_1761660504292
+734	http://tool4boxology.org/Component/node_1761660535452	node_1761660535452
+735	http://tool4boxology.org/Component/node_1761660535453	node_1761660535453
+736	http://tool4boxology.org/Component/node_1761660535454	node_1761660535454
+737	http://tool4boxology.org/Component/node_1761660553106	node_1761660553106
+738	http://tool4boxology.org/Component/node_1761660553107	node_1761660553107
+739	http://tool4boxology.org/Component/node_1761660858903	node_1761660858903
+740	http://tool4boxology.org/Component/node_1761660858905	node_1761660858905
+741	http://tool4boxology.org/Component/node_1761660858906	node_1761660858906
+742	http://tool4boxology.org/Component/node_1761660897949	node_1761660897949
+743	http://tool4boxology.org/Component/node_1761660980807	node_1761660980807
+744	http://tool4boxology.org/Component/node_1761661884602	node_1761661884602
+745	http://tool4boxology.org/Component/node_1761664834793_n1	node_1761664834793_n1
+746	http://tool4boxology.org/Component/node_1761664834796_n2	node_1761664834796_n2
+747	http://tool4boxology.org/Component/node_1761664834798_n3	node_1761664834798_n3
+748	http://tool4boxology.org/Component/node_1761664840707_n2	node_1761664840707_n2
+749	http://tool4boxology.org/Component/node_1761664840708_n3	node_1761664840708_n3
+750	http://tool4boxology.org/Component/node_1761664847554_n2	node_1761664847554_n2
+751	http://tool4boxology.org/Component/node_1761664847555_n3	node_1761664847555_n3
+752	http://tool4boxology.org/Component/node_1761664967878	node_1761664967878
+753	http://tool4boxology.org/Component/node_1761664975912	node_1761664975912
+754	http://tool4boxology.org/Component/node_1761665743115_n1	node_1761665743115_n1
+755	http://tool4boxology.org/Component/node_1761665743127_n2	node_1761665743127_n2
+756	http://tool4boxology.org/Component/node_1761665743129_n3	node_1761665743129_n3
+757	http://tool4boxology.org/Component/node_1761665751448_n2	node_1761665751448_n2
+758	http://tool4boxology.org/Component/node_1761665751448_n3	node_1761665751448_n3
+759	http://tool4boxology.org/Component/node_1761665777510_n1	node_1761665777510_n1
+760	http://tool4boxology.org/Component/node_1761665777512_n2	node_1761665777512_n2
+761	http://tool4boxology.org/Component/node_1761665777513_n3	node_1761665777513_n3
+762	http://tool4boxology.org/Component/node_1761665796364_n3	node_1761665796364_n3
+763	http://tool4boxology.org/Component/node_1761665796364_n4	node_1761665796364_n4
+764	http://tool4boxology.org/Component/node_1761665832017	node_1761665832017
+765	http://tool4boxology.org/Component/node_1761665839166	node_1761665839166
+766	http://tool4boxology.org/Component/node_1761668342358_n1	node_1761668342358_n1
+767	http://tool4boxology.org/Component/node_1761668342364_n2	node_1761668342364_n2
+768	http://tool4boxology.org/Component/node_1761668342364_n3	node_1761668342364_n3
+769	http://tool4boxology.org/Component/node_1761668358768_n2	node_1761668358768_n2
+770	http://tool4boxology.org/Component/node_1761668358769_n3	node_1761668358769_n3
+771	http://tool4boxology.org/Component/node_1761668458461	node_1761668458461
+772	http://tool4boxology.org/Component/node_1761668482275_n2	node_1761668482275_n2
+773	http://tool4boxology.org/Component/node_1761668482277_n3	node_1761668482277_n3
+774	http://tool4boxology.org/Component/node_1761668629904_n2	node_1761668629904_n2
+775	http://tool4boxology.org/Component/node_1761668629905_n3	node_1761668629905_n3
+776	http://tool4boxology.org/Component/node_1761668629906_n4	node_1761668629906_n4
+777	http://tool4boxology.org/Component/node_1761669500986_n1	node_1761669500986_n1
+778	http://tool4boxology.org/Component/node_1761669500988_n2	node_1761669500988_n2
+779	http://tool4boxology.org/Component/node_1761669500988_n3	node_1761669500988_n3
+780	http://tool4boxology.org/Component/node_1761669500988_n4	node_1761669500988_n4
+781	http://tool4boxology.org/Component/node_1761669536902_n2	node_1761669536902_n2
+782	http://tool4boxology.org/Component/node_1761669536902_n3	node_1761669536902_n3
+783	http://tool4boxology.org/Component/node_1761669566195_n4	node_1761669566195_n4
+784	http://tool4boxology.org/Component/node_1761669624637_n2	node_1761669624637_n2
+785	http://tool4boxology.org/Component/node_1761669624638_n3	node_1761669624638_n3
+786	http://tool4boxology.org/Component/node_1761669646154_n1	node_1761669646154_n1
+787	http://tool4boxology.org/Component/node_1761669646157_n3	node_1761669646157_n3
+788	http://tool4boxology.org/Component/node_1761669646158_n4	node_1761669646158_n4
+789	http://tool4boxology.org/Component/node_1761670174272	node_1761670174272
+790	http://tool4boxology.org/Component/node_1761670180709	node_1761670180709
+791	http://tool4boxology.org/Component/node_1761670868470_n1	node_1761670868470_n1
+792	http://tool4boxology.org/Component/node_1761670868477_n2	node_1761670868477_n2
+793	http://tool4boxology.org/Component/node_1761670868478_n3	node_1761670868478_n3
+794	http://tool4boxology.org/Component/node_1761670883939_n2	node_1761670883939_n2
+795	http://tool4boxology.org/Component/node_1761670883940_n3	node_1761670883940_n3
+796	http://tool4boxology.org/Component/node_1761671040432_n2	node_1761671040432_n2
+797	http://tool4boxology.org/Component/node_1761671040433_n3	node_1761671040433_n3
+798	http://tool4boxology.org/Component/node_1761671172255_n2	node_1761671172255_n2
+799	http://tool4boxology.org/Component/node_1761671172255_n3	node_1761671172255_n3
+800	http://tool4boxology.org/Component/node_1761671229261	node_1761671229261
+801	http://tool4boxology.org/Component/node_1761671244394	node_1761671244394
+802	http://tool4boxology.org/Component/node_1761671255454	node_1761671255454
+803	http://tool4boxology.org/Component/node_1761671351404_n1	node_1761671351404_n1
+804	http://tool4boxology.org/Component/node_1761671351407_n3	node_1761671351407_n3
+805	http://tool4boxology.org/Component/node_1761671351407_n4	node_1761671351407_n4
+806	http://tool4boxology.org/Component/node_1761672159278_n1	node_1761672159278_n1
+807	http://tool4boxology.org/Component/node_1761672159291_n2	node_1761672159291_n2
+808	http://tool4boxology.org/Component/node_1761672159294_n3	node_1761672159294_n3
+809	http://tool4boxology.org/Component/node_1761672179401_n2	node_1761672179401_n2
+810	http://tool4boxology.org/Component/node_1761672179401_n3	node_1761672179401_n3
+811	http://tool4boxology.org/Component/node_1761672199645_n1	node_1761672199645_n1
+812	http://tool4boxology.org/Component/node_1761672199648_n3	node_1761672199648_n3
+813	http://tool4boxology.org/Component/node_1761672199649_n4	node_1761672199649_n4
+814	http://tool4boxology.org/Component/node_1761672230428	node_1761672230428
+815	http://tool4boxology.org/Component/node_1761672235394	node_1761672235394
+816	http://tool4boxology.org/Component/node_1761675425469_n1	node_1761675425469_n1
+817	http://tool4boxology.org/Component/node_1761675425483_n2	node_1761675425483_n2
+818	http://tool4boxology.org/Component/node_1761675425485_n3	node_1761675425485_n3
+819	http://tool4boxology.org/Component/node_1761675445233_n1	node_1761675445233_n1
+820	http://tool4boxology.org/Component/node_1761675445235_n3	node_1761675445235_n3
+821	http://tool4boxology.org/Component/node_1761675445236_n4	node_1761675445236_n4
+822	http://tool4boxology.org/Component/node_1761675473478_n1	node_1761675473478_n1
+823	http://tool4boxology.org/Component/node_1761675473480_n2	node_1761675473480_n2
+824	http://tool4boxology.org/Component/node_1761675473481_n3	node_1761675473481_n3
+825	http://tool4boxology.org/Component/node_1761731895312_n1	node_1761731895312_n1
+826	http://tool4boxology.org/Component/node_1761731895328_n2	node_1761731895328_n2
+827	http://tool4boxology.org/Component/node_1761731895330_n3	node_1761731895330_n3
+828	http://tool4boxology.org/Component/node_1761731904616_n2	node_1761731904616_n2
+829	http://tool4boxology.org/Component/node_1761731904617_n3	node_1761731904617_n3
+830	http://tool4boxology.org/Component/node_1761731925440_n2	node_1761731925440_n2
+831	http://tool4boxology.org/Component/node_1761731925441_n3	node_1761731925441_n3
+832	http://tool4boxology.org/Component/node_1761731973506_n1	node_1761731973506_n1
+833	http://tool4boxology.org/Component/node_1761731973507_n3	node_1761731973507_n3
+834	http://tool4boxology.org/Component/node_1761731973507_n4	node_1761731973507_n4
+835	http://tool4boxology.org/Component/node_1761732706360_n1	node_1761732706360_n1
+836	http://tool4boxology.org/Component/node_1761732706374_n2	node_1761732706374_n2
+837	http://tool4boxology.org/Component/node_1761732706375_n3	node_1761732706375_n3
+838	http://tool4boxology.org/Component/node_1761732722376_n2	node_1761732722376_n2
+839	http://tool4boxology.org/Component/node_1761732722378_n3	node_1761732722378_n3
+840	http://tool4boxology.org/Component/node_1761732739922_n2	node_1761732739922_n2
+841	http://tool4boxology.org/Component/node_1761732739922_n3	node_1761732739922_n3
+842	http://tool4boxology.org/Component/node_1761732795215_n2	node_1761732795215_n2
+843	http://tool4boxology.org/Component/node_1761732795217_n3	node_1761732795217_n3
+844	http://tool4boxology.org/Component/node_1761732820236_n1	node_1761732820236_n1
+845	http://tool4boxology.org/Component/node_1761732820238_n3	node_1761732820238_n3
+846	http://tool4boxology.org/Component/node_1761732820239_n4	node_1761732820239_n4
+847	http://tool4boxology.org/Component/node_1761733205925_n2	node_1761733205925_n2
+848	http://tool4boxology.org/Component/node_1761733205926_n3	node_1761733205926_n3
+849	http://tool4boxology.org/Component/node_1761733743063_n1	node_1761733743063_n1
+850	http://tool4boxology.org/Component/node_1761733743078_n2	node_1761733743078_n2
+851	http://tool4boxology.org/Component/node_1761733743081_n3	node_1761733743081_n3
+852	http://tool4boxology.org/Component/node_1761733757124_n1	node_1761733757124_n1
+853	http://tool4boxology.org/Component/node_1761733757126_n2	node_1761733757126_n2
+854	http://tool4boxology.org/Component/node_1761733757128_n3	node_1761733757128_n3
+855	http://tool4boxology.org/Component/node_1761733789338_n2	node_1761733789338_n2
+856	http://tool4boxology.org/Component/node_1761733789338_n3	node_1761733789338_n3
+857	http://tool4boxology.org/Component/node_1761733829507_n2	node_1761733829507_n2
+858	http://tool4boxology.org/Component/node_1761733829508_n3	node_1761733829508_n3
+859	http://tool4boxology.org/Component/node_1761733852234	node_1761733852234
+860	http://tool4boxology.org/Component/node_1761733859582	node_1761733859582
+861	http://tool4boxology.org/Component/node_1761734709290_n1	node_1761734709290_n1
+862	http://tool4boxology.org/Component/node_1761734709294_n2	node_1761734709294_n2
+863	http://tool4boxology.org/Component/node_1761734719676	node_1761734719676
+864	http://tool4boxology.org/Component/node_1761734730306_n1	node_1761734730306_n1
+865	http://tool4boxology.org/Component/node_1761734730307_n2	node_1761734730307_n2
+866	http://tool4boxology.org/Component/node_1761734730308_n3	node_1761734730308_n3
+867	http://tool4boxology.org/Component/node_1761734751182_n3	node_1761734751182_n3
+868	http://tool4boxology.org/Component/node_1761734751183_n4	node_1761734751183_n4
+869	http://tool4boxology.org/Component/node_1761734786321	node_1761734786321
+870	http://tool4boxology.org/Component/node_1761734793109	node_1761734793109
+871	http://tool4boxology.org/Component/node_1761734831094	node_1761734831094
+872	http://tool4boxology.org/Component/node_1761734835981	node_1761734835981
+873	http://tool4boxology.org/Component/node_1761734847281	node_1761734847281
+874	http://tool4boxology.org/Component/node_1761734853872	node_1761734853872
+875	http://tool4boxology.org/Component/node_1761736289380_n1	node_1761736289380_n1
+876	http://tool4boxology.org/Component/node_1761736289386_n2	node_1761736289386_n2
+877	http://tool4boxology.org/Component/node_1761736289387_n3	node_1761736289387_n3
+878	http://tool4boxology.org/Component/node_1761736342481_n1	node_1761736342481_n1
+879	http://tool4boxology.org/Component/node_1761736342483_n2	node_1761736342483_n2
+880	http://tool4boxology.org/Component/node_1761736342484_n3	node_1761736342484_n3
+881	http://tool4boxology.org/Component/node_1761736465084_n1	node_1761736465084_n1
+882	http://tool4boxology.org/Component/node_1761736465087_n3	node_1761736465087_n3
+883	http://tool4boxology.org/Component/node_1761736465088_n4	node_1761736465088_n4
+884	http://tool4boxology.org/Component/node_1761736540306	node_1761736540306
+885	http://tool4boxology.org/Component/node_1761736587105	node_1761736587105
+886	http://tool4boxology.org/Component/node_1761737365345_n1	node_1761737365345_n1
+887	http://tool4boxology.org/Component/node_1761737365352_n2	node_1761737365352_n2
+888	http://tool4boxology.org/Component/node_1761737365353_n3	node_1761737365353_n3
+889	http://tool4boxology.org/Component/node_1761737460735	node_1761737460735
+890	http://tool4boxology.org/Component/node_1761737466785_n2	node_1761737466785_n2
+891	http://tool4boxology.org/Component/node_1761737466787_n3	node_1761737466787_n3
+892	http://tool4boxology.org/Component/node_1761737556981_n1	node_1761737556981_n1
+893	http://tool4boxology.org/Component/node_1761737556985_n3	node_1761737556985_n3
+894	http://tool4boxology.org/Component/node_1761737556986_n4	node_1761737556986_n4
+895	http://tool4boxology.org/Component/node_1761738720397_n1	node_1761738720397_n1
+896	http://tool4boxology.org/Component/node_1761738720403_n2	node_1761738720403_n2
+897	http://tool4boxology.org/Component/node_1761738720404_n3	node_1761738720404_n3
+898	http://tool4boxology.org/Component/node_1761738723867_n2	node_1761738723867_n2
+899	http://tool4boxology.org/Component/node_1761738723869_n3	node_1761738723869_n3
+900	http://tool4boxology.org/Component/node_1761738738324_n1	node_1761738738324_n1
+901	http://tool4boxology.org/Component/node_1761738738325_n2	node_1761738738325_n2
+902	http://tool4boxology.org/Component/node_1761738762151	node_1761738762151
+903	http://tool4boxology.org/Component/node_1761738765612	node_1761738765612
+904	http://tool4boxology.org/Component/node_1761738780267_n2	node_1761738780267_n2
+905	http://tool4boxology.org/Component/node_1761738780268_n3	node_1761738780268_n3
+906	http://tool4boxology.org/Component/node_1761739194335	node_1761739194335
+907	http://tool4boxology.org/Component/node_1761739204025	node_1761739204025
+908	http://tool4boxology.org/Component/node_1761739309605	node_1761739309605
+909	http://tool4boxology.org/Component/node_1761739407992_n1	node_1761739407992_n1
+910	http://tool4boxology.org/Component/node_1761739407994_n2	node_1761739407994_n2
+911	http://tool4boxology.org/Component/node_1761739407995_n3	node_1761739407995_n3
+912	http://tool4boxology.org/Component/node_1761739492119	node_1761739492119
+913	http://tool4boxology.org/Component/node_1761739538012	node_1761739538012
+914	http://tool4boxology.org/Component/node_1761746468674_n1	node_1761746468674_n1
+915	http://tool4boxology.org/Component/node_1761746468685_n2	node_1761746468685_n2
+916	http://tool4boxology.org/Component/node_1761746468685_n3	node_1761746468685_n3
+917	http://tool4boxology.org/Component/node_1761746483174_n2	node_1761746483174_n2
+918	http://tool4boxology.org/Component/node_1761746483175_n3	node_1761746483175_n3
+919	http://tool4boxology.org/Component/node_1761746486273_n2	node_1761746486273_n2
+920	http://tool4boxology.org/Component/node_1761746486274_n3	node_1761746486274_n3
+921	http://tool4boxology.org/Component/node_1761746519605_n2	node_1761746519605_n2
+922	http://tool4boxology.org/Component/node_1761746519606_n3	node_1761746519606_n3
+923	http://tool4boxology.org/Component/node_1761746527547_n1	node_1761746527547_n1
+924	http://tool4boxology.org/Component/node_1761746527548_n3	node_1761746527548_n3
+925	http://tool4boxology.org/Component/node_1761746527548_n4	node_1761746527548_n4
+926	http://tool4boxology.org/Component/node_1761747214823_n1	node_1761747214823_n1
+927	http://tool4boxology.org/Component/node_1761747214831_n2	node_1761747214831_n2
+928	http://tool4boxology.org/Component/node_1761747214832_n3	node_1761747214832_n3
+929	http://tool4boxology.org/Component/node_1761747247578_n1	node_1761747247578_n1
+930	http://tool4boxology.org/Component/node_1761747247578_n2	node_1761747247578_n2
+931	http://tool4boxology.org/Component/node_1761747278732	node_1761747278732
+932	http://tool4boxology.org/Component/node_1761747295436	node_1761747295436
+933	http://tool4boxology.org/Component/node_1761747303687	node_1761747303687
+934	http://tool4boxology.org/Component/node_1761747354149_n2	node_1761747354149_n2
+935	http://tool4boxology.org/Component/node_1761747354150_n3	node_1761747354150_n3
+936	http://tool4boxology.org/Component/node_1761747601259_n1	node_1761747601259_n1
+937	http://tool4boxology.org/Component/node_1761747601263_n2	node_1761747601263_n2
+938	http://tool4boxology.org/Component/node_1761747601264_n3	node_1761747601264_n3
+939	http://tool4boxology.org/Component/node_1761747703701_n1	node_1761747703701_n1
+940	http://tool4boxology.org/Component/node_1761747703704_n3	node_1761747703704_n3
+941	http://tool4boxology.org/Component/node_1761747703705_n4	node_1761747703705_n4
+942	http://tool4boxology.org/Component/node_1761749001259_n1	node_1761749001259_n1
+943	http://tool4boxology.org/Component/node_1761749001291_n2	node_1761749001291_n2
+944	http://tool4boxology.org/Component/node_1761749010894	node_1761749010894
+945	http://tool4boxology.org/Component/node_1761749022037_n1	node_1761749022037_n1
+946	http://tool4boxology.org/Component/node_1761749022041_n2	node_1761749022041_n2
+947	http://tool4boxology.org/Component/node_1761749022042_n3	node_1761749022042_n3
+948	http://tool4boxology.org/Component/node_1761749041442	node_1761749041442
+949	http://tool4boxology.org/Component/node_1761749060353_n1	node_1761749060353_n1
+950	http://tool4boxology.org/Component/node_1761749060355_n2	node_1761749060355_n2
+951	http://tool4boxology.org/Component/node_1761749060356_n3	node_1761749060356_n3
+952	http://tool4boxology.org/Component/node_1761749079811	node_1761749079811
+953	http://tool4boxology.org/Component/node_1761749087919	node_1761749087919
+954	http://tool4boxology.org/Component/node_1761749729207_n1	node_1761749729207_n1
+955	http://tool4boxology.org/Component/node_1761749729213_n2	node_1761749729213_n2
+956	http://tool4boxology.org/Component/node_1761749729214_n3	node_1761749729214_n3
+957	http://tool4boxology.org/Component/node_1761749750668_n2	node_1761749750668_n2
+958	http://tool4boxology.org/Component/node_1761749750669_n3	node_1761749750669_n3
+959	http://tool4boxology.org/Component/node_1761749782699_n1	node_1761749782699_n1
+960	http://tool4boxology.org/Component/node_1761749782700_n2	node_1761749782700_n2
+961	http://tool4boxology.org/Component/node_1761749782701_n3	node_1761749782701_n3
+962	http://tool4boxology.org/Component/node_1761749815205_n1	node_1761749815205_n1
+963	http://tool4boxology.org/Component/node_1761749815207_n3	node_1761749815207_n3
+964	http://tool4boxology.org/Component/node_1761749815208_n4	node_1761749815208_n4
+965	http://tool4boxology.org/Component/node_1761750844951_n1	node_1761750844951_n1
+966	http://tool4boxology.org/Component/node_1761750844954_n2	node_1761750844954_n2
+967	http://tool4boxology.org/Component/node_1761750844954_n3	node_1761750844954_n3
+968	http://tool4boxology.org/Component/node_1761750883293_n1	node_1761750883293_n1
+969	http://tool4boxology.org/Component/node_1761750928942	node_1761750928942
+970	http://tool4boxology.org/Component/node_1761750938986	node_1761750938986
+971	http://tool4boxology.org/Component/node_1761750948685	node_1761750948685
+972	http://tool4boxology.org/Component/node_1761750952078	node_1761750952078
+973	http://tool4boxology.org/Component/node_1761750971365	node_1761750971365
+974	http://tool4boxology.org/Component/node_1761750983067	node_1761750983067
+975	http://tool4boxology.org/Component/node_1761750999562	node_1761750999562
+976	http://tool4boxology.org/Component/node_1762857610473	node_1762857610473
+977	http://tool4boxology.org/Component/node_1762857624189	node_1762857624189
+978	http://tool4boxology.org/Component/node_1762858585492	node_1762858585492
+979	http://tool4boxology.org/Component/node_1762858589548	node_1762858589548
+980	http://tool4boxology.org/Component/node_1762859492712_n1	node_1762859492712_n1
+981	http://tool4boxology.org/Component/node_1762859492716_n2	node_1762859492716_n2
+982	http://tool4boxology.org/Component/node_1762859492716_n3	node_1762859492716_n3
+983	http://tool4boxology.org/Component/node_1762859634338_n2	node_1762859634338_n2
+984	http://tool4boxology.org/Component/node_1762859634339_n3	node_1762859634339_n3
+985	http://tool4boxology.org/Component/node_1762859727928	node_1762859727928
+986	http://tool4boxology.org/Component/node_1762859792061_n1	node_1762859792061_n1
+987	http://tool4boxology.org/Component/node_1762859792063_n2	node_1762859792063_n2
+988	http://tool4boxology.org/Component/node_1762859792064_n3	node_1762859792064_n3
+989	http://tool4boxology.org/Component/node_1762859819417	node_1762859819417
+990	http://tool4boxology.org/Component/node_1762859832891_n2	node_1762859832891_n2
+991	http://tool4boxology.org/Component/node_1762859832892_n3	node_1762859832892_n3
+992	http://tool4boxology.org/Component/node_1762859861099_n1	node_1762859861099_n1
+993	http://tool4boxology.org/Component/node_1762859861101_n2	node_1762859861101_n2
+994	http://tool4boxology.org/Component/node_1762859861102_n3	node_1762859861102_n3
+995	http://tool4boxology.org/Component/node_1762859868457	node_1762859868457
+996	http://tool4boxology.org/Component/node_1762859872826	node_1762859872826
+997	http://tool4boxology.org/Component/node_1762859875928	node_1762859875928
+998	http://tool4boxology.org/Component/node_1762859914607	node_1762859914607
+999	http://tool4boxology.org/Component/node_17628638858701	node_17628638858701
+1000	http://tool4boxology.org/Component/node_17628638858772	node_17628638858772
+1001	http://tool4boxology.org/Component/node_17628638858783	node_17628638858783
+1002	http://tool4boxology.org/Component/node_1762863975701	node_1762863975701
+1003	http://tool4boxology.org/Component/node_1762863980119	node_1762863980119
+1004	http://tool4boxology.org/Component/node_17628640026713	node_17628640026713
+1005	http://tool4boxology.org/Component/node_17628640026724	node_17628640026724
+1006	http://tool4boxology.org/Component/node_1762864153094	node_1762864153094
+1007	http://tool4boxology.org/Component/node_1762864158264	node_1762864158264
+1008	http://tool4boxology.org/Component/node_17628658504481	node_17628658504481
+1009	http://tool4boxology.org/Component/node_17628658504502	node_17628658504502
+1010	http://tool4boxology.org/Component/node_17628658504513	node_17628658504513
+1011	http://tool4boxology.org/Component/node_17628658960611	node_17628658960611
+1012	http://tool4boxology.org/Component/node_17628658960622	node_17628658960622
+1013	http://tool4boxology.org/Component/node_17628658960633	node_17628658960633
+1014	http://tool4boxology.org/Component/node_1762865912352	node_1762865912352
+1015	http://tool4boxology.org/Component/node_17628660767971	node_17628660767971
+1016	http://tool4boxology.org/Component/node_17628660767983	node_17628660767983
+1017	http://tool4boxology.org/Component/node_17628660767984	node_17628660767984
+1018	http://tool4boxology.org/Component/node_17628660937572	node_17628660937572
+1019	http://tool4boxology.org/Component/node_1762866158737	node_1762866158737
+1020	http://tool4boxology.org/Component/node_1762866172302	node_1762866172302
+1021	http://tool4boxology.org/Component/node_1762866175994	node_1762866175994
+1022	http://tool4boxology.org/Component/node_1762866340264	node_1762866340264
+1023	http://tool4boxology.org/Component/node_1762866808972	node_1762866808972
+1024	http://tool4boxology.org/Component/node_1762867086490	node_1762867086490
+1025	http://tool4boxology.org/Component/node_1762867153580	node_1762867153580
+1026	http://tool4boxology.org/Component/node_1762870321313	node_1762870321313
+1027	http://tool4boxology.org/Component/node_17628708601391	node_17628708601391
+1028	http://tool4boxology.org/Component/node_17628708601402	node_17628708601402
+1029	http://tool4boxology.org/Component/node_17628708601403	node_17628708601403
+1030	http://tool4boxology.org/Component/node_17628708776322	node_17628708776322
+1031	http://tool4boxology.org/Component/node_17628709689171	node_17628709689171
+1032	http://tool4boxology.org/Component/node_17628709689202	node_17628709689202
+1033	http://tool4boxology.org/Component/node_17628710918261	node_17628710918261
+1034	http://tool4boxology.org/Component/node_17628710918262	node_17628710918262
+1035	http://tool4boxology.org/Component/node_17628710918263	node_17628710918263
+1036	http://tool4boxology.org/Component/node_17628711384011	node_17628711384011
+1037	http://tool4boxology.org/Component/node_17628711384023	node_17628711384023
+1038	http://tool4boxology.org/Component/node_17628711384024	node_17628711384024
+1039	http://tool4boxology.org/Component/node_1762871842403	node_1762871842403
+1040	http://tool4boxology.org/Component/node_1762871886865	node_1762871886865
+1041	http://tool4boxology.org/Component/node_1762872188654	node_1762872188654
+1042	http://tool4boxology.org/Component/node_17628723854391	node_17628723854391
+1043	http://tool4boxology.org/Component/node_17628723854532	node_17628723854532
+1044	http://tool4boxology.org/Component/node_17628723854543	node_17628723854543
+1045	http://tool4boxology.org/Component/node_1762872389948	node_1762872389948
+1046	http://tool4boxology.org/Component/node_17628724081362	node_17628724081362
+1047	http://tool4boxology.org/Component/node_17628724081373	node_17628724081373
+1048	http://tool4boxology.org/Component/node_17628724081394	node_17628724081394
+1049	http://tool4boxology.org/Component/node_17628725267801	node_17628725267801
+1050	http://tool4boxology.org/Component/node_17628725267822	node_17628725267822
+1051	http://tool4boxology.org/Component/node_17628725267833	node_17628725267833
+1052	http://tool4boxology.org/Component/node_17628725394352	node_17628725394352
+1053	http://tool4boxology.org/Component/node_17628725394363	node_17628725394363
+1054	http://tool4boxology.org/Component/node_1762872621532	node_1762872621532
+1055	http://tool4boxology.org/Component/node_17628726683652	node_17628726683652
+1056	http://tool4boxology.org/Component/node_17628726683653	node_17628726683653
+1057	http://tool4boxology.org/Component/node_17628726902612	node_17628726902612
+1058	http://tool4boxology.org/Component/node_17628726902623	node_17628726902623
+1059	http://tool4boxology.org/Component/node_17628727146671	node_17628727146671
+1060	http://tool4boxology.org/Component/node_17628727146693	node_17628727146693
+1061	http://tool4boxology.org/Component/node_17628727146704	node_17628727146704
+1062	http://tool4boxology.org/Component/node_1762873213451	node_1762873213451
+1063	http://tool4boxology.org/Component/node_1762873234471	node_1762873234471
+1064	http://tool4boxology.org/Component/node_17628735574151	node_17628735574151
+1065	http://tool4boxology.org/Component/node_17628735574282	node_17628735574282
+1066	http://tool4boxology.org/Component/node_17628735574303	node_17628735574303
+1067	http://tool4boxology.org/Component/node_17628736145202	node_17628736145202
+1068	http://tool4boxology.org/Component/node_17628736145213	node_17628736145213
+1069	http://tool4boxology.org/Component/node_17628736297833	node_17628736297833
+1070	http://tool4boxology.org/Component/node_17628736297844	node_17628736297844
+1071	http://tool4boxology.org/Component/node_17628736972021	node_17628736972021
+1072	http://tool4boxology.org/Component/node_17628736972042	node_17628736972042
+1073	http://tool4boxology.org/Component/node_17628736972053	node_17628736972053
+1074	http://tool4boxology.org/Component/node_17628737504272	node_17628737504272
+1075	http://tool4boxology.org/Component/node_17628737504283	node_17628737504283
+1076	http://tool4boxology.org/Component/node_17628737504294	node_17628737504294
+1077	http://tool4boxology.org/Component/node_17628738521881	node_17628738521881
+1078	http://tool4boxology.org/Component/node_17628738521913	node_17628738521913
+1079	http://tool4boxology.org/Component/node_17628738521914	node_17628738521914
+1080	http://tool4boxology.org/Component/node_1762873884750	node_1762873884750
+1081	http://tool4boxology.org/Component/node_1762874298304	node_1762874298304
+1082	http://tool4boxology.org/Component/node_17628750697801	node_17628750697801
+1083	http://tool4boxology.org/Component/node_17628750697932	node_17628750697932
+1084	http://tool4boxology.org/Component/node_17628750697943	node_17628750697943
+1085	http://tool4boxology.org/Component/node_1762875074960	node_1762875074960
+1086	http://tool4boxology.org/Component/node_17628751151642	node_17628751151642
+1087	http://tool4boxology.org/Component/node_17628751151653	node_17628751151653
+1088	http://tool4boxology.org/Component/node_17628751265902	node_17628751265902
+1089	http://tool4boxology.org/Component/node_17628751265913	node_17628751265913
+1090	http://tool4boxology.org/Component/node_17628751847421	node_17628751847421
+1091	http://tool4boxology.org/Component/node_17628751847423	node_17628751847423
+1092	http://tool4boxology.org/Component/node_17628751847424	node_17628751847424
+1093	http://tool4boxology.org/Component/node_1762875203229	node_1762875203229
+1094	http://tool4boxology.org/Component/node_1762875598080	node_1762875598080
+1095	http://tool4boxology.org/Component/node_1762875715365	node_1762875715365
+1096	http://tool4boxology.org/Component/node_17628761977341	node_17628761977341
+1097	http://tool4boxology.org/Component/node_17628761977482	node_17628761977482
+1098	http://tool4boxology.org/Component/node_17628761977493	node_17628761977493
+1099	http://tool4boxology.org/Component/node_17628762167962	node_17628762167962
+1100	http://tool4boxology.org/Component/node_17628762167983	node_17628762167983
+1101	http://tool4boxology.org/Component/node_17628763103671	node_17628763103671
+1102	http://tool4boxology.org/Component/node_17628763103703	node_17628763103703
+1103	http://tool4boxology.org/Component/node_17628763103714	node_17628763103714
+1104	http://tool4boxology.org/Component/node_17629494178591	node_17629494178591
+1105	http://tool4boxology.org/Component/node_17629494178682	node_17629494178682
+1106	http://tool4boxology.org/Component/node_17629494178693	node_17629494178693
+1107	http://tool4boxology.org/Component/node_17629494178694	node_17629494178694
+1108	http://tool4boxology.org/Component/node_17629496389871	node_17629496389871
+1109	http://tool4boxology.org/Component/node_17629496389882	node_17629496389882
+1110	http://tool4boxology.org/Component/node_17629496389893	node_17629496389893
+1111	http://tool4boxology.org/Component/node_17629497662901	node_17629497662901
+1112	http://tool4boxology.org/Component/node_17629497662912	node_17629497662912
+1113	http://tool4boxology.org/Component/node_17629497662913	node_17629497662913
+1114	http://tool4boxology.org/Component/node_17629498869111	node_17629498869111
+1115	http://tool4boxology.org/Component/node_17629498869122	node_17629498869122
+1116	http://tool4boxology.org/Component/node_1762950680186	node_1762950680186
+1117	http://tool4boxology.org/Component/node_1762950927576	node_1762950927576
+1118	http://tool4boxology.org/Component/node_1762951184283	node_1762951184283
+1119	http://tool4boxology.org/Component/node_1762951842326	node_1762951842326
+1120	http://tool4boxology.org/Component/node_1762952069000	node_1762952069000
+1121	http://tool4boxology.org/Component/node_1762952151744	node_1762952151744
+1122	http://tool4boxology.org/Component/node_1762952156462	node_1762952156462
+1123	http://tool4boxology.org/Component/node_1762952666159	node_1762952666159
+1124	http://tool4boxology.org/Component/node_1762952669318	node_1762952669318
+1125	http://tool4boxology.org/Component/node_1762952715734	node_1762952715734
+1126	http://tool4boxology.org/Component/node_1762953335022	node_1762953335022
+1127	http://tool4boxology.org/Component/node_1762953336405	node_1762953336405
+1128	http://tool4boxology.org/Component/node_17629535820121	node_17629535820121
+1129	http://tool4boxology.org/Component/node_17629535820242	node_17629535820242
+1130	http://tool4boxology.org/Component/node_17629535820263	node_17629535820263
+1131	http://tool4boxology.org/Component/node_1762953667307	node_1762953667307
+1132	http://tool4boxology.org/Component/node_1762953670344	node_1762953670344
+1133	http://tool4boxology.org/Component/node_1762953675354	node_1762953675354
+1134	http://tool4boxology.org/Component/node_1762953726729	node_1762953726729
+1135	http://tool4boxology.org/Component/node_1762953748159	node_1762953748159
+1136	http://tool4boxology.org/Component/node_1762953784942	node_1762953784942
+1137	http://tool4boxology.org/Component/node_1762953802740	node_1762953802740
+1138	http://tool4boxology.org/Component/node_17629541343791	node_17629541343791
+1139	http://tool4boxology.org/Component/node_17629541343912	node_17629541343912
+1140	http://tool4boxology.org/Component/node_17629541343933	node_17629541343933
+1141	http://tool4boxology.org/Component/node_17629541375532	node_17629541375532
+1142	http://tool4boxology.org/Component/node_17629541375543	node_17629541375543
+1143	http://tool4boxology.org/Component/node_17629541578822	node_17629541578822
+1144	http://tool4boxology.org/Component/node_17629541578833	node_17629541578833
+1145	http://tool4boxology.org/Component/node_17629541743661	node_17629541743661
+1146	http://tool4boxology.org/Component/node_17629541743673	node_17629541743673
+1147	http://tool4boxology.org/Component/node_17629541743674	node_17629541743674
+1148	http://tool4boxology.org/Component/node_17629542036162	node_17629542036162
+1149	http://tool4boxology.org/Component/node_17629542036173	node_17629542036173
+1150	http://tool4boxology.org/Component/node_17629542036174	node_17629542036174
+1151	http://tool4boxology.org/Component/node_17629548161271	node_17629548161271
+1152	http://tool4boxology.org/Component/node_17629548161392	node_17629548161392
+1153	http://tool4boxology.org/Component/node_17629548161413	node_17629548161413
+1154	http://tool4boxology.org/Component/node_17629548207452	node_17629548207452
+1155	http://tool4boxology.org/Component/node_17629548207463	node_17629548207463
+1156	http://tool4boxology.org/Component/node_17629548405042	node_17629548405042
+1157	http://tool4boxology.org/Component/node_17629548405053	node_17629548405053
+1158	http://tool4boxology.org/Component/node_17629548583741	node_17629548583741
+1159	http://tool4boxology.org/Component/node_17629548583773	node_17629548583773
+1160	http://tool4boxology.org/Component/node_17629548583784	node_17629548583784
+1161	http://tool4boxology.org/Component/node_17629553580251	node_17629553580251
+1162	http://tool4boxology.org/Component/node_17629553580382	node_17629553580382
+1163	http://tool4boxology.org/Component/node_17629553580393	node_17629553580393
+1164	http://tool4boxology.org/Component/node_17629553783462	node_17629553783462
+1165	http://tool4boxology.org/Component/node_17629553783463	node_17629553783463
+1166	http://tool4boxology.org/Component/node_17629553933731	node_17629553933731
+1167	http://tool4boxology.org/Component/node_17629553933752	node_17629553933752
+1168	http://tool4boxology.org/Component/node_17629553933763	node_17629553933763
+1169	http://tool4boxology.org/Component/node_17629554120551	node_17629554120551
+1170	http://tool4boxology.org/Component/node_17629554120562	node_17629554120562
+1171	http://tool4boxology.org/Component/node_17629554120573	node_17629554120573
+1172	http://tool4boxology.org/Component/node_17629554466213	node_17629554466213
+1173	http://tool4boxology.org/Component/node_17629554466224	node_17629554466224
+1174	http://tool4boxology.org/Component/node_17629554817072	node_17629554817072
+1175	http://tool4boxology.org/Component/node_17629554817083	node_17629554817083
+1176	http://tool4boxology.org/Component/node_1762956622530	node_1762956622530
+1177	http://tool4boxology.org/Component/node_17629569732061	node_17629569732061
+1178	http://tool4boxology.org/Component/node_17629569732142	node_17629569732142
+1179	http://tool4boxology.org/Component/node_17629569732153	node_17629569732153
+1180	http://tool4boxology.org/Component/node_17629569910281	node_17629569910281
+1181	http://tool4boxology.org/Component/node_17629569910323	node_17629569910323
+1182	http://tool4boxology.org/Component/node_1762957002482	node_1762957002482
+1183	http://tool4boxology.org/Component/node_17629570147912	node_17629570147912
+1184	http://tool4boxology.org/Component/node_17629570147933	node_17629570147933
+1185	http://tool4boxology.org/Component/node_17629570301563	node_17629570301563
+1186	http://tool4boxology.org/Component/node_17629570301574	node_17629570301574
+1187	http://tool4boxology.org/Component/node_17629570618111	node_17629570618111
+1188	http://tool4boxology.org/Component/node_17629570618142	node_17629570618142
+1189	http://tool4boxology.org/Component/node_17629570618153	node_17629570618153
+1190	http://tool4boxology.org/Component/node_17629570784842	node_17629570784842
+1191	http://tool4boxology.org/Component/node_17629570784853	node_17629570784853
+1192	http://tool4boxology.org/Component/node_17629571053541	node_17629571053541
+1193	http://tool4boxology.org/Component/node_17629571053573	node_17629571053573
+1194	http://tool4boxology.org/Component/node_17629571053584	node_17629571053584
+1195	http://tool4boxology.org/Component/node_1762957172658	node_1762957172658
+1196	http://tool4boxology.org/Component/node_1762957174670	node_1762957174670
+1197	http://tool4boxology.org/Component/node_17629585283281	node_17629585283281
+1198	http://tool4boxology.org/Component/node_17629585283502	node_17629585283502
+1199	http://tool4boxology.org/Component/node_17629585283503	node_17629585283503
+1200	http://tool4boxology.org/Component/node_17629585579912	node_17629585579912
+1201	http://tool4boxology.org/Component/node_17629585579923	node_17629585579923
+1202	http://tool4boxology.org/Component/node_1762958571710	node_1762958571710
+1203	http://tool4boxology.org/Component/node_1762958580739	node_1762958580739
+1204	http://tool4boxology.org/Component/node_17629586050711	node_17629586050711
+1205	http://tool4boxology.org/Component/node_17629586050742	node_17629586050742
+1206	http://tool4boxology.org/Component/node_17629586050753	node_17629586050753
+1207	http://tool4boxology.org/Component/node_1762958654069	node_1762958654069
+1208	http://tool4boxology.org/Component/node_17629586658761	node_17629586658761
+1209	http://tool4boxology.org/Component/node_17629586658772	node_17629586658772
+1210	http://tool4boxology.org/Component/node_17629586658783	node_17629586658783
+1211	http://tool4boxology.org/Component/node_1762958693151	node_1762958693151
+1212	http://tool4boxology.org/Component/node_17629587090611	node_17629587090611
+1213	http://tool4boxology.org/Component/node_17629587090633	node_17629587090633
+1214	http://tool4boxology.org/Component/node_17629587090644	node_17629587090644
+1215	http://tool4boxology.org/Component/node_17629595498491	node_17629595498491
+1216	http://tool4boxology.org/Component/node_17629595498622	node_17629595498622
+1217	http://tool4boxology.org/Component/node_17629595498653	node_17629595498653
+1218	http://tool4boxology.org/Component/node_17629595556712	node_17629595556712
+1219	http://tool4boxology.org/Component/node_17629595556723	node_17629595556723
+1220	http://tool4boxology.org/Component/node_17629595793932	node_17629595793932
+1221	http://tool4boxology.org/Component/node_17629595793943	node_17629595793943
+1222	http://tool4boxology.org/Component/node_1762959593190	node_1762959593190
+1223	http://tool4boxology.org/Component/node_1762959627663	node_1762959627663
+1224	http://tool4boxology.org/Component/node_1762959641760	node_1762959641760
+1225	http://tool4boxology.org/Component/node_1762959656566	node_1762959656566
+1226	http://tool4boxology.org/Component/node_1762959661894	node_1762959661894
+1227	http://tool4boxology.org/Component/node_1762959664376	node_1762959664376
+1228	http://tool4boxology.org/Component/node_17633738896391	node_17633738896391
+1229	http://tool4boxology.org/Component/node_17633738896632	node_17633738896632
+1230	http://tool4boxology.org/Component/node_17633738896643	node_17633738896643
+1231	http://tool4boxology.org/Component/node_17633738967832	node_17633738967832
+1232	http://tool4boxology.org/Component/node_17633738967843	node_17633738967843
+1233	http://tool4boxology.org/Component/node_17633739136392	node_17633739136392
+1234	http://tool4boxology.org/Component/node_17633739136403	node_17633739136403
+1235	http://tool4boxology.org/Component/node_17633739291192	node_17633739291192
+1236	http://tool4boxology.org/Component/node_17633739291193	node_17633739291193
+1237	http://tool4boxology.org/Component/node_17633739450861	node_17633739450861
+1238	http://tool4boxology.org/Component/node_17633739450903	node_17633739450903
+1239	http://tool4boxology.org/Component/node_17633739450924	node_17633739450924
+1240	http://tool4boxology.org/Component/node_17633746443201	node_17633746443201
+1241	http://tool4boxology.org/Component/node_17633746443272	node_17633746443272
+1242	http://tool4boxology.org/Component/node_17633746443283	node_17633746443283
+1243	http://tool4boxology.org/Component/node_17633746479202	node_17633746479202
+1244	http://tool4boxology.org/Component/node_17633746479213	node_17633746479213
+1245	http://tool4boxology.org/Component/node_17633746526532	node_17633746526532
+1246	http://tool4boxology.org/Component/node_17633746526543	node_17633746526543
+1247	http://tool4boxology.org/Component/node_17633746624892	node_17633746624892
+1248	http://tool4boxology.org/Component/node_17633746624893	node_17633746624893
+1249	http://tool4boxology.org/Component/node_17633749950532	node_17633749950532
+1250	http://tool4boxology.org/Component/node_17633749950543	node_17633749950543
+1251	http://tool4boxology.org/Component/node_17633750375621	node_17633750375621
+1252	http://tool4boxology.org/Component/node_17633750375633	node_17633750375633
+1253	http://tool4boxology.org/Component/node_17633750375634	node_17633750375634
+1254	http://tool4boxology.org/Component/node_17633755545071	node_17633755545071
+1255	http://tool4boxology.org/Component/node_17633755545142	node_17633755545142
+1256	http://tool4boxology.org/Component/node_17633755545143	node_17633755545143
+1257	http://tool4boxology.org/Component/node_17633755675131	node_17633755675131
+1258	http://tool4boxology.org/Component/node_17633755675152	node_17633755675152
+1259	http://tool4boxology.org/Component/node_17633755943931	node_17633755943931
+1260	http://tool4boxology.org/Component/node_17633755943942	node_17633755943942
+1261	http://tool4boxology.org/Component/node_17633755943953	node_17633755943953
+1262	http://tool4boxology.org/Component/node_17633756097751	node_17633756097751
+1263	http://tool4boxology.org/Component/node_17633756097783	node_17633756097783
+1264	http://tool4boxology.org/Component/node_17633756097794	node_17633756097794
+1265	http://tool4boxology.org/Component/node_17633756299292	node_17633756299292
+1266	http://tool4boxology.org/Component/node_17633756299303	node_17633756299303
+1267	http://tool4boxology.org/Component/node_17633763147101	node_17633763147101
+1268	http://tool4boxology.org/Component/node_17633763147152	node_17633763147152
+1269	http://tool4boxology.org/Component/node_17633763147163	node_17633763147163
+1270	http://tool4boxology.org/Component/node_17633763175042	node_17633763175042
+1271	http://tool4boxology.org/Component/node_17633763175053	node_17633763175053
+1272	http://tool4boxology.org/Component/node_17633763275352	node_17633763275352
+1273	http://tool4boxology.org/Component/node_17633763275353	node_17633763275353
+1274	http://tool4boxology.org/Component/node_17633763436162	node_17633763436162
+1275	http://tool4boxology.org/Component/node_17633763436183	node_17633763436183
+1276	http://tool4boxology.org/Component/node_17633766092691	node_17633766092691
+1277	http://tool4boxology.org/Component/node_17633766092702	node_17633766092702
+1278	http://tool4boxology.org/Component/node_17633766092713	node_17633766092713
+1279	http://tool4boxology.org/Component/node_17633766360301	node_17633766360301
+1280	http://tool4boxology.org/Component/node_17633766360332	node_17633766360332
+1281	http://tool4boxology.org/Component/node_17633766360343	node_17633766360343
+1282	http://tool4boxology.org/Component/node_17633772025551	node_17633772025551
+1283	http://tool4boxology.org/Component/node_17633772025702	node_17633772025702
+1284	http://tool4boxology.org/Component/node_17633772025723	node_17633772025723
+1285	http://tool4boxology.org/Component/node_17633772079002	node_17633772079002
+1286	http://tool4boxology.org/Component/node_17633772079023	node_17633772079023
+1287	http://tool4boxology.org/Component/node_17633772264372	node_17633772264372
+1288	http://tool4boxology.org/Component/node_17633772264393	node_17633772264393
+1289	http://tool4boxology.org/Component/node_17633772368522	node_17633772368522
+1290	http://tool4boxology.org/Component/node_17633772368543	node_17633772368543
+1291	http://tool4boxology.org/Component/node_17633772463822	node_17633772463822
+1292	http://tool4boxology.org/Component/node_17633772463833	node_17633772463833
+1293	http://tool4boxology.org/Component/node_17633772810582	node_17633772810582
+1294	http://tool4boxology.org/Component/node_17633772810593	node_17633772810593
+1295	http://tool4boxology.org/Component/node_17633773400782	node_17633773400782
+1296	http://tool4boxology.org/Component/node_17633773400793	node_17633773400793
+1297	http://tool4boxology.org/Component/node_17633773704521	node_17633773704521
+1298	http://tool4boxology.org/Component/node_17633773704533	node_17633773704533
+1299	http://tool4boxology.org/Component/node_17633773704534	node_17633773704534
+1300	http://tool4boxology.org/Component/node_17633785757561	node_17633785757561
+1301	http://tool4boxology.org/Component/node_17633785757622	node_17633785757622
+1302	http://tool4boxology.org/Component/node_17633785757623	node_17633785757623
+1303	http://tool4boxology.org/Component/node_17633785792212	node_17633785792212
+1304	http://tool4boxology.org/Component/node_17633785792223	node_17633785792223
+1305	http://tool4boxology.org/Component/node_17633785905072	node_17633785905072
+1306	http://tool4boxology.org/Component/node_17633786070422	node_17633786070422
+1307	http://tool4boxology.org/Component/node_17633786070433	node_17633786070433
+1308	http://tool4boxology.org/Component/node_1763378743452	node_1763378743452
+1309	http://tool4boxology.org/Component/node_1763378775243	node_1763378775243
+1310	http://tool4boxology.org/Component/node_1763378779002	node_1763378779002
+1311	http://tool4boxology.org/Component/node_1763378834742	node_1763378834742
+1312	http://tool4boxology.org/Component/node_1763378840615	node_1763378840615
+1313	http://tool4boxology.org/Component/node_17633788680911	node_17633788680911
+1314	http://tool4boxology.org/Component/node_17633788680923	node_17633788680923
+1315	http://tool4boxology.org/Component/node_17633788680924	node_17633788680924
+1316	http://tool4boxology.org/Component/node_17633794541331	node_17633794541331
+1317	http://tool4boxology.org/Component/node_17633794541472	node_17633794541472
+1318	http://tool4boxology.org/Component/node_17633794541493	node_17633794541493
+1319	http://tool4boxology.org/Component/node_17633794580482	node_17633794580482
+1320	http://tool4boxology.org/Component/node_17633794580493	node_17633794580493
+1321	http://tool4boxology.org/Component/node_17633794813482	node_17633794813482
+1322	http://tool4boxology.org/Component/node_17633794813483	node_17633794813483
+1323	http://tool4boxology.org/Component/node_17633794851272	node_17633794851272
+1324	http://tool4boxology.org/Component/node_17633794851283	node_17633794851283
+1325	http://tool4boxology.org/Component/node_1763379506096	node_1763379506096
+1326	http://tool4boxology.org/Component/node_1763379543191	node_1763379543191
+1327	http://tool4boxology.org/Component/node_17633795707141	node_17633795707141
+1328	http://tool4boxology.org/Component/node_17633795707173	node_17633795707173
+1329	http://tool4boxology.org/Component/node_17633795707184	node_17633795707184
+1330	http://tool4boxology.org/Component/node_17633853315261	node_17633853315261
+1331	http://tool4boxology.org/Component/node_17633853315292	node_17633853315292
+1332	http://tool4boxology.org/Component/node_17633853315303	node_17633853315303
+1333	http://tool4boxology.org/Component/node_17633853334302	node_17633853334302
+1334	http://tool4boxology.org/Component/node_17633853334303	node_17633853334303
+1335	http://tool4boxology.org/Component/node_17633853408562	node_17633853408562
+1336	http://tool4boxology.org/Component/node_17633853408563	node_17633853408563
+1337	http://tool4boxology.org/Component/node_1763385358206	node_1763385358206
+1338	http://tool4boxology.org/Component/node_1763385366626	node_1763385366626
+1339	http://tool4boxology.org/Component/node_1763385369146	node_1763385369146
+1340	http://tool4boxology.org/Component/node_1763385377717	node_1763385377717
+1341	http://tool4boxology.org/Component/node_17633853944881	node_17633853944881
+1342	http://tool4boxology.org/Component/node_17633853944893	node_17633853944893
+1343	http://tool4boxology.org/Component/node_17633853944894	node_17633853944894
+1344	http://tool4boxology.org/Component/node_181762445405533	node_181762445405533
+1345	http://tool4boxology.org/Component/node_191762445405533	node_191762445405533
+1346	http://tool4boxology.org/Component/node_241762952935606	node_241762952935606
+1347	http://tool4boxology.org/Dataset	Dataset
+1348	http://tool4boxology.org/DesignPattern	DesignPattern
+1349	http://tool4boxology.org/DesignPattern/group_1761577919168	group_1761577919168
+1350	http://tool4boxology.org/DesignPattern/group_1761577992184	group_1761577992184
+1351	http://tool4boxology.org/DesignPattern/group_1761578140314	group_1761578140314
+1352	http://tool4boxology.org/DesignPattern/group_1761578439989	group_1761578439989
+1353	http://tool4boxology.org/DesignPattern/group_1761578620707	group_1761578620707
+1354	http://tool4boxology.org/DesignPattern/group_1761578885454	group_1761578885454
+1355	http://tool4boxology.org/DesignPattern/group_1761579945199	group_1761579945199
+1356	http://tool4boxology.org/DesignPattern/group_1761643679506	group_1761643679506
+1357	http://tool4boxology.org/DesignPattern/group_1761644432770	group_1761644432770
+1358	http://tool4boxology.org/DesignPattern/group_1761644452143	group_1761644452143
+1359	http://tool4boxology.org/DesignPattern/group_1761644485067	group_1761644485067
+1360	http://tool4boxology.org/DesignPattern/group_1761644507019	group_1761644507019
+1361	http://tool4boxology.org/DesignPattern/group_1761644734742	group_1761644734742
+1362	http://tool4boxology.org/DesignPattern/group_1761645086169	group_1761645086169
+1363	http://tool4boxology.org/DesignPattern/group_1761645119598	group_1761645119598
+1364	http://tool4boxology.org/DesignPattern/group_1761647354851	group_1761647354851
+1365	http://tool4boxology.org/DesignPattern/group_1761647412609	group_1761647412609
+1366	http://tool4boxology.org/DesignPattern/group_1761647723657	group_1761647723657
+1367	http://tool4boxology.org/DesignPattern/group_1761647944861	group_1761647944861
+1368	http://tool4boxology.org/DesignPattern/group_1761647976382	group_1761647976382
+1369	http://tool4boxology.org/DesignPattern/group_1761651139216	group_1761651139216
+1370	http://tool4boxology.org/DesignPattern/group_1761651158016	group_1761651158016
+1371	http://tool4boxology.org/DesignPattern/group_1761651197868	group_1761651197868
+1372	http://tool4boxology.org/DesignPattern/group_1761661031579	group_1761661031579
+1373	http://tool4boxology.org/DesignPattern/group_1761661044215	group_1761661044215
+1374	http://tool4boxology.org/DesignPattern/group_1761661114015	group_1761661114015
+1375	http://tool4boxology.org/DesignPattern/group_1761661151480	group_1761661151480
+1376	http://tool4boxology.org/DesignPattern/group_1761661177479	group_1761661177479
+1377	http://tool4boxology.org/DesignPattern/group_1761661203502	group_1761661203502
+1378	http://tool4boxology.org/DesignPattern/group_1761661935151	group_1761661935151
+1379	http://tool4boxology.org/DesignPattern/group_1761665021326	group_1761665021326
+1380	http://tool4boxology.org/DesignPattern/group_1761665048711	group_1761665048711
+1381	http://tool4boxology.org/DesignPattern/group_1761665116254	group_1761665116254
+1382	http://tool4boxology.org/DesignPattern/group_1761665147057	group_1761665147057
+1383	http://tool4boxology.org/DesignPattern/group_1761665932859	group_1761665932859
+1384	http://tool4boxology.org/DesignPattern/group_1761665946224	group_1761665946224
+1385	http://tool4boxology.org/DesignPattern/group_1761666024462	group_1761666024462
+1386	http://tool4boxology.org/DesignPattern/group_1761666295586	group_1761666295586
+1387	http://tool4boxology.org/DesignPattern/group_1761669026935	group_1761669026935
+1388	http://tool4boxology.org/DesignPattern/group_1761669084832	group_1761669084832
+1389	http://tool4boxology.org/DesignPattern/group_1761669170631	group_1761669170631
+1390	http://tool4boxology.org/DesignPattern/group_1761669246844	group_1761669246844
+1391	http://tool4boxology.org/DesignPattern/group_1761670019553	group_1761670019553
+1392	http://tool4boxology.org/DesignPattern/group_1761670042698	group_1761670042698
+1393	http://tool4boxology.org/DesignPattern/group_1761670357204	group_1761670357204
+1394	http://tool4boxology.org/DesignPattern/group_1761670417547	group_1761670417547
+1395	http://tool4boxology.org/DesignPattern/group_1761670432141	group_1761670432141
+1396	http://tool4boxology.org/DesignPattern/group_1761671529411	group_1761671529411
+1397	http://tool4boxology.org/DesignPattern/group_1761671552167	group_1761671552167
+1398	http://tool4boxology.org/DesignPattern/group_1761671571565	group_1761671571565
+1399	http://tool4boxology.org/DesignPattern/group_1761671630441	group_1761671630441
+1400	http://tool4boxology.org/DesignPattern/group_1761671697286	group_1761671697286
+1401	http://tool4boxology.org/DesignPattern/group_1761671734083	group_1761671734083
+1402	http://tool4boxology.org/DesignPattern/group_1761672417565	group_1761672417565
+1403	http://tool4boxology.org/DesignPattern/group_1761672454772	group_1761672454772
+1404	http://tool4boxology.org/DesignPattern/group_1761672474916	group_1761672474916
+1405	http://tool4boxology.org/DesignPattern/group_1761675561003	group_1761675561003
+1406	http://tool4boxology.org/DesignPattern/group_1761675655943	group_1761675655943
+1407	http://tool4boxology.org/DesignPattern/group_1761675683649	group_1761675683649
+1408	http://tool4boxology.org/DesignPattern/group_1761732125477	group_1761732125477
+1409	http://tool4boxology.org/DesignPattern/group_1761732214485	group_1761732214485
+1410	http://tool4boxology.org/DesignPattern/group_1761732231517	group_1761732231517
+1411	http://tool4boxology.org/DesignPattern/group_1761732295471	group_1761732295471
+1412	http://tool4boxology.org/DesignPattern/group_1761733102023	group_1761733102023
+1413	http://tool4boxology.org/DesignPattern/group_1761733181334	group_1761733181334
+1414	http://tool4boxology.org/DesignPattern/group_1761733275540	group_1761733275540
+1415	http://tool4boxology.org/DesignPattern/group_1761733392476	group_1761733392476
+1416	http://tool4boxology.org/DesignPattern/group_1761733421477	group_1761733421477
+1417	http://tool4boxology.org/DesignPattern/group_1761733919792	group_1761733919792
+1418	http://tool4boxology.org/DesignPattern/group_1761734067088	group_1761734067088
+1419	http://tool4boxology.org/DesignPattern/group_1761734102906	group_1761734102906
+1420	http://tool4boxology.org/DesignPattern/group_1761734120122	group_1761734120122
+1421	http://tool4boxology.org/DesignPattern/group_1761734144242	group_1761734144242
+1422	http://tool4boxology.org/DesignPattern/group_1761734887996	group_1761734887996
+1423	http://tool4boxology.org/DesignPattern/group_1761735000246	group_1761735000246
+1424	http://tool4boxology.org/DesignPattern/group_1761735060208	group_1761735060208
+1425	http://tool4boxology.org/DesignPattern/group_1761735116580	group_1761735116580
+1426	http://tool4boxology.org/DesignPattern/group_1761735198617	group_1761735198617
+1427	http://tool4boxology.org/DesignPattern/group_1761735222139	group_1761735222139
+1428	http://tool4boxology.org/DesignPattern/group_1761736413006	group_1761736413006
+1429	http://tool4boxology.org/DesignPattern/group_1761736521687	group_1761736521687
+1430	http://tool4boxology.org/DesignPattern/group_1761736648628	group_1761736648628
+1431	http://tool4boxology.org/DesignPattern/group_1761737449372	group_1761737449372
+1432	http://tool4boxology.org/DesignPattern/group_1761737592314	group_1761737592314
+1433	http://tool4boxology.org/DesignPattern/group_1761737699852	group_1761737699852
+1434	http://tool4boxology.org/DesignPattern/group_1761738894982	group_1761738894982
+1435	http://tool4boxology.org/DesignPattern/group_1761739039032	group_1761739039032
+1436	http://tool4boxology.org/DesignPattern/group_1761739096612	group_1761739096612
+1437	http://tool4boxology.org/DesignPattern/group_1761739164255	group_1761739164255
+1438	http://tool4boxology.org/DesignPattern/group_1761739395756	group_1761739395756
+1439	http://tool4boxology.org/DesignPattern/group_1761739507892	group_1761739507892
+1440	http://tool4boxology.org/DesignPattern/group_1761739681130	group_1761739681130
+1441	http://tool4boxology.org/DesignPattern/group_1761746623109	group_1761746623109
+1442	http://tool4boxology.org/DesignPattern/group_1761746642195	group_1761746642195
+1443	http://tool4boxology.org/DesignPattern/group_1761746778442	group_1761746778442
+1444	http://tool4boxology.org/DesignPattern/group_1761746792499	group_1761746792499
+1445	http://tool4boxology.org/DesignPattern/group_1761746911545	group_1761746911545
+1446	http://tool4boxology.org/DesignPattern/group_1761747446153	group_1761747446153
+1447	http://tool4boxology.org/DesignPattern/group_1761747479103	group_1761747479103
+1448	http://tool4boxology.org/DesignPattern/group_1761747497863	group_1761747497863
+1449	http://tool4boxology.org/DesignPattern/group_1761747588968	group_1761747588968
+1450	http://tool4boxology.org/DesignPattern/group_1761747815702	group_1761747815702
+1451	http://tool4boxology.org/DesignPattern/group_1761747840483	group_1761747840483
+1452	http://tool4boxology.org/DesignPattern/group_1761749152662	group_1761749152662
+1453	http://tool4boxology.org/DesignPattern/group_1761749348228	group_1761749348228
+1454	http://tool4boxology.org/DesignPattern/group_1761749427311	group_1761749427311
+1455	http://tool4boxology.org/DesignPattern/group_1761749486285	group_1761749486285
+1456	http://tool4boxology.org/DesignPattern/group_1761750061871	group_1761750061871
+1457	http://tool4boxology.org/DesignPattern/group_1761750114513	group_1761750114513
+1458	http://tool4boxology.org/DesignPattern/group_1761750150963	group_1761750150963
+1459	http://tool4boxology.org/DesignPattern/group_1761750194005	group_1761750194005
+1460	http://tool4boxology.org/DesignPattern/group_1761751110261	group_1761751110261
+1461	http://tool4boxology.org/DesignPattern/group_1761751280150	group_1761751280150
+1462	http://tool4boxology.org/DesignPattern/group_1761751323775	group_1761751323775
+1463	http://tool4boxology.org/DesignPattern/group_1761751660602	group_1761751660602
+1464	http://tool4boxology.org/DesignPattern/group_1762857681485	group_1762857681485
+1465	http://tool4boxology.org/DesignPattern/group_1762858927651	group_1762858927651
+1466	http://tool4boxology.org/DesignPattern/group_1762859598577	group_1762859598577
+1467	http://tool4boxology.org/DesignPattern/group_1762859773841	group_1762859773841
+1468	http://tool4boxology.org/DesignPattern/group_1762860065695	group_1762860065695
+1469	http://tool4boxology.org/DesignPattern/group_1762860287747	group_1762860287747
+1470	http://tool4boxology.org/DesignPattern/group_1762860357001	group_1762860357001
+1471	http://tool4boxology.org/DesignPattern/group_1762860398731	group_1762860398731
+1472	http://tool4boxology.org/DesignPattern/group_1762863957355	group_1762863957355
+1473	http://tool4boxology.org/DesignPattern/group_1762864060961	group_1762864060961
+1474	http://tool4boxology.org/DesignPattern/group_1762864139328	group_1762864139328
+1475	http://tool4boxology.org/DesignPattern/group_1762864208318	group_1762864208318
+1476	http://tool4boxology.org/DesignPattern/group_1762865876943	group_1762865876943
+1477	http://tool4boxology.org/DesignPattern/group_1762866056939	group_1762866056939
+1478	http://tool4boxology.org/DesignPattern/group_1762866231003	group_1762866231003
+1479	http://tool4boxology.org/DesignPattern/group_1762866249081	group_1762866249081
+1480	http://tool4boxology.org/DesignPattern/group_1762866330966	group_1762866330966
+1481	http://tool4boxology.org/DesignPattern/group_1762866481258	group_1762866481258
+1482	http://tool4boxology.org/DesignPattern/group_1762866871836	group_1762866871836
+1483	http://tool4boxology.org/DesignPattern/group_1762867111054	group_1762867111054
+1484	http://tool4boxology.org/DesignPattern/group_1762867191397	group_1762867191397
+1485	http://tool4boxology.org/DesignPattern/group_1762870416990	group_1762870416990
+1486	http://tool4boxology.org/DesignPattern/group_1762870903459	group_1762870903459
+1487	http://tool4boxology.org/DesignPattern/group_1762870959808	group_1762870959808
+1488	http://tool4boxology.org/DesignPattern/group_1762871061692	group_1762871061692
+1489	http://tool4boxology.org/DesignPattern/group_1762871208772	group_1762871208772
+1490	http://tool4boxology.org/DesignPattern/group_1762871254450	group_1762871254450
+1491	http://tool4boxology.org/DesignPattern/group_1762871872314	group_1762871872314
+1492	http://tool4boxology.org/DesignPattern/group_1762871914323	group_1762871914323
+1493	http://tool4boxology.org/DesignPattern/group_1762872215872	group_1762872215872
+1494	http://tool4boxology.org/DesignPattern/group_1762872487748	group_1762872487748
+1495	http://tool4boxology.org/DesignPattern/group_1762872503458	group_1762872503458
+1496	http://tool4boxology.org/DesignPattern/group_1762872750963	group_1762872750963
+1497	http://tool4boxology.org/DesignPattern/group_1762872858452	group_1762872858452
+1498	http://tool4boxology.org/DesignPattern/group_1762872986440	group_1762872986440
+1499	http://tool4boxology.org/DesignPattern/group_1762873140824	group_1762873140824
+1500	http://tool4boxology.org/DesignPattern/group_1762873258446	group_1762873258446
+1501	http://tool4boxology.org/DesignPattern/group_1762873302589	group_1762873302589
+1502	http://tool4boxology.org/DesignPattern/group_1762873353404	group_1762873353404
+1503	http://tool4boxology.org/DesignPattern/group_1762873588165	group_1762873588165
+1504	http://tool4boxology.org/DesignPattern/group_1762873656641	group_1762873656641
+1505	http://tool4boxology.org/DesignPattern/group_1762873676071	group_1762873676071
+1506	http://tool4boxology.org/DesignPattern/group_1762873721386	group_1762873721386
+1507	http://tool4boxology.org/DesignPattern/group_1762873799831	group_1762873799831
+1508	http://tool4boxology.org/DesignPattern/group_1762873898825	group_1762873898825
+1509	http://tool4boxology.org/DesignPattern/group_1762874323031	group_1762874323031
+1510	http://tool4boxology.org/DesignPattern/group_1762875100538	group_1762875100538
+1511	http://tool4boxology.org/DesignPattern/group_1762875159108	group_1762875159108
+1512	http://tool4boxology.org/DesignPattern/group_1762875221870	group_1762875221870
+1513	http://tool4boxology.org/DesignPattern/group_1762875241821	group_1762875241821
+1514	http://tool4boxology.org/DesignPattern/group_1762875639067	group_1762875639067
+1515	http://tool4boxology.org/DesignPattern/group_1762875752579	group_1762875752579
+1516	http://tool4boxology.org/DesignPattern/group_1762876272577	group_1762876272577
+1517	http://tool4boxology.org/DesignPattern/group_1762876291709	group_1762876291709
+1518	http://tool4boxology.org/DesignPattern/group_1762876372631	group_1762876372631
+1519	http://tool4boxology.org/DesignPattern/group_1762949532340	group_1762949532340
+1520	http://tool4boxology.org/DesignPattern/group_1762949656026	group_1762949656026
+1521	http://tool4boxology.org/DesignPattern/group_1762949853357	group_1762949853357
+1522	http://tool4boxology.org/DesignPattern/group_1762949958758	group_1762949958758
+1523	http://tool4boxology.org/DesignPattern/group_1762950703725	group_1762950703725
+1524	http://tool4boxology.org/DesignPattern/group_1762950950194	group_1762950950194
+1525	http://tool4boxology.org/DesignPattern/group_1762951220865	group_1762951220865
+1526	http://tool4boxology.org/DesignPattern/group_1762951871265	group_1762951871265
+1527	http://tool4boxology.org/DesignPattern/group_1762952099934	group_1762952099934
+1528	http://tool4boxology.org/DesignPattern/group_1762952184084	group_1762952184084
+1529	http://tool4boxology.org/DesignPattern/group_1762952749122	group_1762952749122
+1530	http://tool4boxology.org/DesignPattern/group_1762952801702	group_1762952801702
+1531	http://tool4boxology.org/DesignPattern/group_1762953386851	group_1762953386851
+1532	http://tool4boxology.org/DesignPattern/group_1762953400549	group_1762953400549
+1533	http://tool4boxology.org/DesignPattern/group_1762953638498	group_1762953638498
+1534	http://tool4boxology.org/DesignPattern/group_1762953874031	group_1762953874031
+1535	http://tool4boxology.org/DesignPattern/group_1762953899715	group_1762953899715
+1536	http://tool4boxology.org/DesignPattern/group_1762953918368	group_1762953918368
+1537	http://tool4boxology.org/DesignPattern/group_1762954273251	group_1762954273251
+1538	http://tool4boxology.org/DesignPattern/group_1762954316008	group_1762954316008
+1539	http://tool4boxology.org/DesignPattern/group_1762954350918	group_1762954350918
+1540	http://tool4boxology.org/DesignPattern/group_1762954380508	group_1762954380508
+1541	http://tool4boxology.org/DesignPattern/group_1762954496277	group_1762954496277
+1542	http://tool4boxology.org/DesignPattern/group_1762954977582	group_1762954977582
+1543	http://tool4boxology.org/DesignPattern/group_1762955013825	group_1762955013825
+1544	http://tool4boxology.org/DesignPattern/group_1762955031820	group_1762955031820
+1545	http://tool4boxology.org/DesignPattern/group_1762955054769	group_1762955054769
+1546	http://tool4boxology.org/DesignPattern/group_1762955552065	group_1762955552065
+1547	http://tool4boxology.org/DesignPattern/group_1762955636520	group_1762955636520
+1548	http://tool4boxology.org/DesignPattern/group_1762955749189	group_1762955749189
+1549	http://tool4boxology.org/DesignPattern/group_1762956521313	group_1762956521313
+1550	http://tool4boxology.org/DesignPattern/group_1762956556212	group_1762956556212
+1551	http://tool4boxology.org/DesignPattern/group_1762956692212	group_1762956692212
+1552	http://tool4boxology.org/DesignPattern/group_1762957593061	group_1762957593061
+1553	http://tool4boxology.org/DesignPattern/group_1762957629646	group_1762957629646
+1554	http://tool4boxology.org/DesignPattern/group_1762957643135	group_1762957643135
+1555	http://tool4boxology.org/DesignPattern/group_1762957697416	group_1762957697416
+1556	http://tool4boxology.org/DesignPattern/group_1762957738155	group_1762957738155
+1557	http://tool4boxology.org/DesignPattern/group_1762957767073	group_1762957767073
+1558	http://tool4boxology.org/DesignPattern/group_1762957792339	group_1762957792339
+1559	http://tool4boxology.org/DesignPattern/group_1762957807215	group_1762957807215
+1560	http://tool4boxology.org/DesignPattern/group_1762958770541	group_1762958770541
+1561	http://tool4boxology.org/DesignPattern/group_1762958812366	group_1762958812366
+1562	http://tool4boxology.org/DesignPattern/group_1762958862639	group_1762958862639
+1563	http://tool4boxology.org/DesignPattern/group_1762958913642	group_1762958913642
+1564	http://tool4boxology.org/DesignPattern/group_1762959041580	group_1762959041580
+1565	http://tool4boxology.org/DesignPattern/group_1762959138298	group_1762959138298
+1566	http://tool4boxology.org/DesignPattern/group_1762959182518	group_1762959182518
+1567	http://tool4boxology.org/DesignPattern/group_1762959905025	group_1762959905025
+1568	http://tool4boxology.org/DesignPattern/group_1762959929024	group_1762959929024
+1569	http://tool4boxology.org/DesignPattern/group_1762959965632	group_1762959965632
+1570	http://tool4boxology.org/DesignPattern/group_1762960083665	group_1762960083665
+1571	http://tool4boxology.org/DesignPattern/group_1762960112499	group_1762960112499
+1572	http://tool4boxology.org/DesignPattern/group_1763374078171	group_1763374078171
+1573	http://tool4boxology.org/DesignPattern/group_1763374106951	group_1763374106951
+1574	http://tool4boxology.org/DesignPattern/group_1763374135660	group_1763374135660
+1575	http://tool4boxology.org/DesignPattern/group_1763374177868	group_1763374177868
+1576	http://tool4boxology.org/DesignPattern/group_1763374242030	group_1763374242030
+1577	http://tool4boxology.org/DesignPattern/group_1763374828197	group_1763374828197
+1578	http://tool4boxology.org/DesignPattern/group_1763374850256	group_1763374850256
+1579	http://tool4boxology.org/DesignPattern/group_1763374891234	group_1763374891234
+1580	http://tool4boxology.org/DesignPattern/group_1763375147805	group_1763375147805
+1581	http://tool4boxology.org/DesignPattern/group_1763375170031	group_1763375170031
+1582	http://tool4boxology.org/DesignPattern/group_1763375227674	group_1763375227674
+1583	http://tool4boxology.org/DesignPattern/group_1763375818648	group_1763375818648
+1584	http://tool4boxology.org/DesignPattern/group_1763375902910	group_1763375902910
+1585	http://tool4boxology.org/DesignPattern/group_1763375931065	group_1763375931065
+1586	http://tool4boxology.org/DesignPattern/group_1763375966666	group_1763375966666
+1587	http://tool4boxology.org/DesignPattern/group_1763376080305	group_1763376080305
+1588	http://tool4boxology.org/DesignPattern/group_1763376488676	group_1763376488676
+1589	http://tool4boxology.org/DesignPattern/group_1763376562125	group_1763376562125
+1590	http://tool4boxology.org/DesignPattern/group_1763376686968	group_1763376686968
+1591	http://tool4boxology.org/DesignPattern/group_1763376798731	group_1763376798731
+1592	http://tool4boxology.org/DesignPattern/group_1763376832001	group_1763376832001
+1593	http://tool4boxology.org/DesignPattern/group_1763376931262	group_1763376931262
+1594	http://tool4boxology.org/DesignPattern/group_1763377657148	group_1763377657148
+1595	http://tool4boxology.org/DesignPattern/group_1763377680091	group_1763377680091
+1596	http://tool4boxology.org/DesignPattern/group_1763377774361	group_1763377774361
+1597	http://tool4boxology.org/DesignPattern/group_1763377811067	group_1763377811067
+1598	http://tool4boxology.org/DesignPattern/group_1763377844600	group_1763377844600
+1599	http://tool4boxology.org/DesignPattern/group_1763377890274	group_1763377890274
+1600	http://tool4boxology.org/DesignPattern/group_1763377946502	group_1763377946502
+1601	http://tool4boxology.org/DesignPattern/group_1763377995698	group_1763377995698
+1602	http://tool4boxology.org/DesignPattern/group_1763378900249	group_1763378900249
+1603	http://tool4boxology.org/DesignPattern/group_1763378926514	group_1763378926514
+1604	http://tool4boxology.org/DesignPattern/group_1763378956831	group_1763378956831
+1605	http://tool4boxology.org/DesignPattern/group_1763379030718	group_1763379030718
+1606	http://tool4boxology.org/DesignPattern/group_1763379039149	group_1763379039149
+1607	http://tool4boxology.org/DesignPattern/group_1763379088407	group_1763379088407
+1608	http://tool4boxology.org/DesignPattern/group_1763379148323	group_1763379148323
+1609	http://tool4boxology.org/DesignPattern/group_1763379709997	group_1763379709997
+1610	http://tool4boxology.org/DesignPattern/group_1763379753427	group_1763379753427
+1611	http://tool4boxology.org/DesignPattern/group_1763379862211	group_1763379862211
+1612	http://tool4boxology.org/DesignPattern/group_1763379878022	group_1763379878022
+1613	http://tool4boxology.org/DesignPattern/group_1763379955127	group_1763379955127
+1614	http://tool4boxology.org/DesignPattern/group_1763380021940	group_1763380021940
+1615	http://tool4boxology.org/DesignPattern/group_1763385544092	group_1763385544092
+1616	http://tool4boxology.org/DesignPattern/group_1763385592050	group_1763385592050
+1617	http://tool4boxology.org/DesignPattern/group_1763385699317	group_1763385699317
+1618	http://tool4boxology.org/DesignPattern/group_1763385811379	group_1763385811379
+1619	http://tool4boxology.org/DesignPattern/group_1763385911832	group_1763385911832
+1620	http://tool4boxology.org/DesignPattern/group_1763385955423	group_1763385955423
+1621	http://tool4boxology.org/DesignPattern/node_141762445165352	node_141762445165352
+1622	http://tool4boxology.org/Human	Human
+1623	http://tool4boxology.org/Image	Image
+1624	http://tool4boxology.org/Label	Label
+1625	http://tool4boxology.org/Normalize	Normalize
+1626	http://tool4boxology.org/Number	Number
+1627	http://tool4boxology.org/Rules	Rules
+1628	http://tool4boxology.org/SemanticModel	SemanticModel
+1629	http://tool4boxology.org/StatisticModel	StatisticModel
+1630	http://tool4boxology.org/Text	Text
+1631	http://tool4boxology.org/Time%20Series	Time%20Series
+1632	http://tool4boxology.org/actor	actor
+1633	http://tool4boxology.org/data	data
+1634	http://tool4boxology.org/deduce	deduce
+1635	http://tool4boxology.org/embed	embed
+1636	http://tool4boxology.org/engineering	engineering
+1637	http://tool4boxology.org/model	model
+1638	http://tool4boxology.org/prediction	prediction
+1639	http://tool4boxology.org/symbol	symbol
+1640	http://tool4boxology.org/training	training
+1641	http://tool4boxology.org/transform	transform
+1642	id-data	id-data
+1643	id-transform	id-transform

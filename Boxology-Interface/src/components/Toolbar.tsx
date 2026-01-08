@@ -571,7 +571,18 @@ LIMIT 100`;
           onClick={() => {
             const blob = new Blob([JSON.stringify(kgJson)], { type: "application/json" });
             const url = URL.createObjectURL(blob);
-            window.open(`/src/components/kg_viewer.html?blob=${encodeURIComponent(url)}`, "_blank");
+            const win = window.open(
+              `/src/components/kg_viewer.html?blob=${encodeURIComponent(url)}`,
+              "_blank"
+            );
+            // pass backend URL to the new window
+            if (win) {
+              win.addEventListener("load", () => {
+                (win as any).__CONFIG__ = {
+                  API_BASE: import.meta.env.VITE_BACKEND_URL || "http://localhost:8000",
+                };
+              });
+            }
           }}
           style={{
             ...simpleButtonStyle,

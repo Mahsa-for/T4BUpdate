@@ -66,7 +66,13 @@
       stroke: #a3a3a3;
       stroke-width: 1.7px;
       opacity: 0.7;
+      fill: none;
       transition: stroke 0.2s;
+    }
+    /* Arrow marker definitions */
+    marker {
+      fill: #a3a3a3;
+      opacity: 0.7;
     }
     .edge-label {
       font-size: 11px;
@@ -109,74 +115,99 @@
       margin-top: 10px;
       overflow-x: auto;
     }
-    /* Node colors by rootType (case-sensitive, matches shapeTypesTree) */
-.Boxology circle         { fill: #111827; }
-.DesignPattern circle    { fill: #2563eb; }
-.ProcessNode circle      { fill: #f97316; }
-.Node circle             { fill: #22c55e; }
-
-.Actor circle            { fill: #a21caf; }
-.Data circle             { fill: #22c55e; }
-.Symbol circle           { fill: #eab308; }
-.Model circle            { fill: #0ea5e9; }
-.Transform circle        { fill: #14b8a6; }
-.Deduce circle           { fill: #fbbf24; }
-.Train circle            { fill: #f43f5e; }
-.Engineer circle         { fill: #64748b; }
-.comment circle          { fill: #64748b; }
-
-/* Model subclasses (optional, for more granularity) */
-.InductiveModel circle           { fill: #38bdf8; }
-.NeuralModel circle              { fill: #f472b6; }
-.SemanticModel circle            { fill: #6366f1; }
-.StatisticalModel circle         { fill: #f59e42; }
-.NumericModel circle             { fill: #06b6d4; }
-.SymbolicLearningModel circle    { fill: #fbbf24; }
-.NeuralNetwork circle            { fill: #f472b6; }
-.CNN circle                      { fill: #fca5a5; }
-.RNN circle                      { fill: #fcd34d; }
-.LSTM circle                     { fill: #fde68a; }
-.GRU circle                      { fill: #fef08a; }
-.Transformer circle              { fill: #a5b4fc; }
-.DecoderOnlyTransformer circle   { fill: #818cf8; }
-.EncoderDecoderTransformer circle{ fill: #6366f1; }
-.EncoderOnlyTransformer circle   { fill: #818cf8; }
-.GNN circle                      { fill: #4ade80; }
-.GCN circle                      { fill: #22d3ee; }
-.GAT circle                      { fill: #38bdf8; }
-.SupervisedGraphNNModel circle   { fill: #0ea5e9; }
-.LLM circle                      { fill: #f472b6; }
-.OWLOntology circle              { fill: #a3e635; }
-.RDFModel circle                 { fill: #bef264; }
-.RDFSModel circle                { fill: #d9f99d; }
-.RuleBasedModel circle           { fill: #fde68a; }
-.SHACLShapesModel circle         { fill: #fbbf24; }
-.RegressionModel circle          { fill: #f59e42; }
-.ClassificationModel circle      { fill: #fbbf24; }
-.ClusteringModel circle          { fill: #fcd34d; }
-.FuzzyModel circle               { fill: #fef08a; }
-
-/* Data subclasses */
-.Number circle                   { fill: #a3e635; }
-.Dataset circle                  { fill: #bef264; }
-.Tensor circle                   { fill: #d9f99d; }
-.Text circle                     { fill: #fca5a5; }
-.Image circle                    { fill: #fcd34d; }
-.Audio circle                    { fill: #818cf8; }
-.Video circle                    { fill: #a5b4fc; }
-.TimeSeries circle               { fill: #fbbf24; }
-
-/* Symbol subclasses */
-.DB circle                       { fill: #fbbf24; }
-.KG circle                       { fill: #f59e42; }
-.Label circle                    { fill: #fca5a5; }
-.Trace circle                    { fill: #818cf8; }
-.Rules circle                    { fill: #fde68a; }
-
-/* Actor subclasses */
-.Human circle                    { fill: #f472b6; }
-.Robot circle                    { fill: #a21caf; }
-    /* Scrollbar for panel */
+    #panel .llm-section {
+      background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%);
+      border-left: 4px solid #2563eb;
+      padding: 12px;
+      border-radius: 6px;
+      margin-top: 12px;
+    }
+    #panel .llm-section h4 {
+      margin: 0 0 8px 0;
+      color: #1e40af;
+      font-size: 1em;
+      font-weight: 600;
+    }
+    #panel .llm-section p {
+      margin: 0;
+      color: #1e3a8a;
+      line-height: 1.6;
+      font-size: 14px;
+    }
+    #panel .loading {
+      color: #64748b;
+      font-style: italic;
+      animation: pulse 1.5s ease-in-out infinite;
+    }
+    @keyframes pulse {
+      0%, 100% { opacity: 0.6; }
+      50% { opacity: 1; }
+    }
+    #panel .error {
+      color: #dc2626;
+      background: #fee2e2;
+      padding: 8px;
+      border-radius: 4px;
+      font-size: 13px;
+    }
+    /* Node colors by rootType */
+    .Boxology circle         { fill: #111827; }
+    .DesignPattern circle    { fill: #2563eb; }
+    .ProcessNode circle      { fill: #f97316; }
+    .Node circle             { fill: #22c55e; }
+    .Actor circle            { fill: #a21caf; }
+    .Data circle             { fill: #22c55e; }
+    .Symbol circle           { fill: #eab308; }
+    .Model circle            { fill: #0ea5e9; }
+    .Transform circle        { fill: #14b8a6; }
+    .Deduce circle           { fill: #fbbf24; }
+    .Train circle            { fill: #f43f5e; }
+    .Engineer circle         { fill: #64748b; }
+    .comment circle          { fill: #64748b; }
+    .InductiveModel circle           { fill: #38bdf8; }
+    .NeuralModel circle              { fill: #f472b6; }
+    .SemanticModel circle            { fill: #6366f1; }
+    .StatisticalModel circle         { fill: #f59e42; }
+    .NumericModel circle             { fill: #06b6d4; }
+    .SymbolicLearningModel circle    { fill: #fbbf24; }
+    .NeuralNetwork circle            { fill: #f472b6; }
+    .CNN circle                      { fill: #fca5a5; }
+    .RNN circle                      { fill: #fcd34d; }
+    .LSTM circle                     { fill: #fde68a; }
+    .GRU circle                      { fill: #fef08a; }
+    .Transformer circle              { fill: #a5b4fc; }
+    .DecoderOnlyTransformer circle   { fill: #818cf8; }
+    .EncoderDecoderTransformer circle{ fill: #6366f1; }
+    .EncoderOnlyTransformer circle   { fill: #818cf8; }
+    .GNN circle                      { fill: #4ade80; }
+    .GCN circle                      { fill: #22d3ee; }
+    .GAT circle                      { fill: #38bdf8; }
+    .SupervisedGraphNNModel circle   { fill: #0ea5e9; }
+    .LLM circle                      { fill: #f472b6; }
+    .OWLOntology circle              { fill: #a3e635; }
+    .RDFModel circle                 { fill: #bef264; }
+    .RDFSModel circle                { fill: #d9f99d; }
+    .RuleBasedModel circle           { fill: #fde68a; }
+    .SHACLShapesModel circle         { fill: #fbbf24; }
+    .RegressionModel circle          { fill: #f59e42; }
+    .ClassificationModel circle      { fill: #fbbf24; }
+    .ClusteringModel circle          { fill: #fcd34d; }
+    .FuzzyModel circle               { fill: #fef08a; }
+    .Number circle                   { fill: #a3e635; }
+    .Dataset circle                  { fill: #bef264; }
+    .Tensor circle                   { fill: #d9f99d; }
+    .Text circle                     { fill: #fca5a5; }
+    .Image circle                    { fill: #fcd34d; }
+    .Audio circle                    { fill: #818cf8; }
+    .Video circle                    { fill: #a5b4fc; }
+    .TimeSeries circle               { fill: #fbbf24; }
+    .DB circle                       { fill: #fbbf24; }
+    .KG circle                       { fill: #f59e42; }
+    .Label circle                    { fill: #fca5a5; }
+    .Trace circle                    { fill: #818cf8; }
+    .Rules circle                    { fill: #fde68a; }
+    .Human circle                    { fill: #f472b6; }
+    .Robot circle                    { fill: #a21caf; }
     #panel::-webkit-scrollbar { width: 8px; background: #f3f4f6; }
     #panel::-webkit-scrollbar-thumb { background: #e5e7eb; border-radius: 4px; }
   </style>
@@ -188,9 +219,25 @@
   </div>
   <div id="main">
     <svg></svg>
-    <div id="panel"><b>Click a node</b></div>
+    <div id="panel"><b>Click a node to see details and LLM description</b></div>
   </div>
 <script>
+  // Get backend URL from window if available, otherwise use default
+  const getBackendUrl = () => window.__CONFIG__?.API_BASE || 'http://localhost:8000';
+  const BACKEND_URL = getBackendUrl();
+  console.log(`[KG Viewer] Backend URL: ${BACKEND_URL}`);
+  console.log(`[KG Viewer] Current location: ${window.location.origin}`);
+
+  // ✅ TEST: Verify backend is accessible
+  fetch(`${BACKEND_URL}/api/health`)
+    .then(r => r.json())
+    .then(data => {
+      console.log(`[KG Viewer] ✅ Backend is accessible:`, data);
+    })
+    .catch(err => {
+      console.error(`[KG Viewer] ❌ Backend NOT accessible:`, err);
+    });
+
 const shapeTypesTree = {
   Actor: { Human: null, Robot: null },
   Data: { Number: null, Dataset: null, Tensor: null, Text: null, Image: null, Audio: null, Video: null, TimeSeries: null },
@@ -243,7 +290,6 @@ const shapeTypesTree = {
   comment: null,
 };
 
-// Recursively search the tree for a label and return the root type
 function getRootType(label, tree = shapeTypesTree, root = null) {
   for (const key in tree) {
     if (key.toLowerCase() === label.toLowerCase()) return root || key;
@@ -267,6 +313,7 @@ function addTypedNode(obj) {
     meta: obj
   };
 }
+
 const params = new URLSearchParams(window.location.search);
 const blobUrl = params.get('blob');
 fetch(blobUrl).then(r=>r.json()).then(raw=>{
@@ -300,6 +347,22 @@ fetch(blobUrl).then(r=>r.json()).then(raw=>{
   const height = window.innerHeight - 48;
   svg.attr("width", width).attr("height", height);
 
+  // Define arrow markers for directed edges
+  svg.append("defs").selectAll("marker")
+    .data(["default"])
+    .join("marker")
+    .attr("id", d => `arrow-${d}`)
+    .attr("viewBox", "0 -5 10 10")
+    .attr("refX", 20)  // Position arrow at the edge of target node
+    .attr("refY", 0)
+    .attr("markerWidth", 6)
+    .attr("markerHeight", 6)
+    .attr("orient", "auto")
+    .append("path")
+    .attr("d", "M0,-5L10,0L0,5")
+    .attr("fill", "#a3a3a3")
+    .attr("opacity", 0.7);
+
   const g = svg.append("g");
   svg.call(d3.zoom().on("zoom", e => g.attr("transform", e.transform)));
 
@@ -312,7 +375,8 @@ fetch(blobUrl).then(r=>r.json()).then(raw=>{
   const link = g.selectAll(".link")
     .data(edges)
     .join("line")
-    .attr("class","link");
+    .attr("class","link")
+    .attr("marker-end", "url(#arrow-default)");  // Add arrow marker
 
   const node = g.selectAll(".node")
     .data(nodeArr)
@@ -361,8 +425,7 @@ fetch(blobUrl).then(r=>r.json()).then(raw=>{
       .attr("y", d => (d.source.y + d.target.y) / 2);
   });
 
-  function showDetails(e, d){
-    // Clarification mapping for root types and common subclasses
+  async function showDetails(e, d) {
     const clarifications = {
       Boxology: "A Boxology diagram describing a neuro-symbolic architecture.",
       DesignPattern: "A reusable pattern or building block in the Boxology framework.",
@@ -377,7 +440,6 @@ fetch(blobUrl).then(r=>r.json()).then(raw=>{
       Train: "A training operation for models.",
       Engineer: "An engineering or design operation.",
       comment: "A comment or annotation node.",
-      // Subclasses (examples)
       Human: "A human actor in the system.",
       Robot: "A robot actor in the system.",
       Number: "A numeric data value.",
@@ -395,17 +457,66 @@ fetch(blobUrl).then(r=>r.json()).then(raw=>{
       SemanticModel: "A semantic or ontology-based model.",
       StatisticalModel: "A statistical or probabilistic model.",
       InductiveModel: "A model that learns from data.",
-      // ...add more as needed...
     };
 
-    // Prefer clarification for type, then rootType, else fallback
     const explanation = clarifications[d.type] || clarifications[d.rootType] || "No further description available.";
 
+    // Display initial info
     document.getElementById("panel").innerHTML =
       `<h3>${d.label}</h3>
        <p><b>Type:</b> ${d.type} <span style="color:#888">(root: ${d.rootType})</span></p>
        <p style="color:#2563eb; margin-bottom:10px;">${explanation}</p>
+       <div class="llm-section">
+         <h4>🤖 AI-Generated Description</h4>
+         <p class="loading">Loading description from LLM...</p>
+       </div>
        <pre>${JSON.stringify(d.meta, null, 2)}</pre>`;
+
+    // Fetch LLM description from backend
+    try {
+      console.log(`[KG Viewer] Requesting description for node: ${d.label} (${d.id})`);
+      console.log(`[KG Viewer] Backend URL: ${BACKEND_URL}`);
+      
+      const response = await fetch(`${BACKEND_URL}/api/kg/node-description`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          id: d.id,
+          label: d.label,
+          type: d.type,
+          rootType: d.rootType
+        })
+      });
+
+      console.log(`[KG Viewer] Response status: ${response.status}`);
+
+      if (!response.ok) {
+        const errorText = await response.text();
+        console.error(`[KG Viewer] API error ${response.status}:`, errorText);
+        throw new Error(`API error: ${response.status} - ${response.statusText}`);
+      }
+
+      const result = await response.json();
+      console.log(`[KG Viewer] Received result:`, result);
+
+      // Update panel with LLM description
+      const descElement = document.querySelector('.llm-section p');
+      if (descElement) {
+        descElement.className = result.status === 'error' ? 'error' : '';
+        descElement.textContent = result.description || 'No description available.';
+      }
+
+    } catch (error) {
+      console.error('[KG Viewer] Error fetching node description:', error);
+      const descElement = document.querySelector('.llm-section p');
+      if (descElement) {
+        descElement.className = 'error';
+        descElement.textContent = 
+          `⚠️ Failed to fetch AI description:\n${error.message}\n\nMake sure:\n1. Backend is running at ${BACKEND_URL}\n2. A Knowledge Graph has been created\n3. RAG model files are available`;
+      }
+    }
   }
 
   function dragStart(e,d){ if(!e.active) sim.alphaTarget(0.3).restart(); d.fx=d.x; d.fy=d.y; }
